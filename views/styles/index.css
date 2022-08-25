@@ -4,3 +4,10 @@
 .logo img {
     width: 100%;
 }
+.options {
+    width: 200px;
+    text-align: center;
+    background-color: #AED9A3;
+    height: 100%;
+}
+
