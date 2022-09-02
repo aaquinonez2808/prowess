@@ -1,0 +1,38 @@
+#sidebar {
+    background: #B3E6A9;
+    min-width: 250px;
+    max-width: 250px;
+    min-height: 100vh;
+}
+
+.navbar {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    margin-left: -300px;
+    background-color: #A3E6A9;
+    transition: 0.4s;
+}
+
+.nav-link {
+    font-size: 1.25em;
+}
+
+.nav-link:active,
+.nav-link:focus,
+.nav-link:hover {
+    background-color: #ffffff;
+}
+
+.dropdown-menu {
+    background-color: #A3E6A9;
+}
+
+.dropdown-item:active,
+.dropdown-item:focus,
+.dropdown-item:hover {
+    background-color: #ffffff26;
+}
+.active-nav {
+    margin-left: 0;
+}
