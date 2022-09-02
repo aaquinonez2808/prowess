@@ -1,7 +1,9 @@
 import React, { memo, useEffect, useState } from "react";
 import { Route, Routes } from "react-router-dom";
+import FormCourse from "../admin/components/courses/FormCourse";
 import Navbar from "../admin/components/navbar/Navbar";
 import Sidebar from "../admin/components/sidebar/Sidebar";
+import CoursePageForm from "../admin/pages/CoursePageForm";
 import HomePage from "../admin/pages/HomePage";
 import '../admin/pages/style.css'
 
@@ -55,13 +57,13 @@ const AdminRoutes = memo(() => {
           <button className="btn my-1" onClick={handleSideberChange}>Menu</button>
         ) : (
           <>
-
           </>
         )
       }
         <Sidebar claseActiva={sidebar}/>
         <Routes>
           <Route path="/" element={<HomePage claseActiva={container} />} />
+          <Route path="/cursos/crear" element={<CoursePageForm claseActiva={container}/>} />
         </Routes>
       </>
     </>

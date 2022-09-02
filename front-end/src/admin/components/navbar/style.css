@@ -1,3 +1,12 @@
 .nav_bar{
     background-color: #70B38D;
 }
+.logo {
+    max-width: 150px;
+    min-width: 100px;
+    
+}
+.logout {
+    background: none;
+    border: none;
+}
