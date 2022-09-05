@@ -5,19 +5,22 @@ import * as Yup from 'yup';
 
 export const Signup = () => {
    const validate = Yup.object({  
-    firstName: Yup.string()
-    .min(3, 'Must be 15 characters or less')
-    .max(15, 'Must be 15 characters or less')
-    .required('Required'),
-    lastName: Yup.string()
-      .max(20, 'Must be 20 characters or less')
-      .required('Required'),
-    email: Yup.string()
-      .email('Email is invalid')
-      .required('Email is required'),
-    password: Yup.string()
-      .min(6, 'Password must be at least 6 charaters')
-      .required('Password is required'),
+    nombre: Yup.string()
+    .min(3, 'Debe tener 15 caracteres o menos')
+    .max(15, 'Debe tener 15 caracteres o menos')
+    .required('Requerido'),
+    apellido: Yup.string()
+      .max(20, 'Debe tener 20 caracteres o menos')
+      .required('Requerido'),
+    departamento: Yup.string()
+      .max(20, 'Debe tener 20 caracteres o menos')
+      .required('Requerido'),
+    areaConocimiento: Yup.string()
+      .max(20, 'Debe tener 20 caracteres o menos')
+      .required('Requerido'),
+    cedula: Yup.string()
+      .min(6, 'La cedula debe tener 10 caracteres')
+      .required('La cedula es requerida'),
     confirmPassword: Yup.string()
       .oneOf([Yup.ref('password'), null], 'Password must match')
       .required('Confirm password is required'),
@@ -26,10 +29,11 @@ export const Signup = () => {
   return (
     <Formik
       initialValues={{
-        firstName: '',
-        lastName: '',
-        email: '',
-        password: '',
+        nombre: '',
+        apellido: '',
+        departamento: '',
+        areaConocimiento: '',
+        cedula: '',
         confirmPassword: ''
       }}
       validationSchema={validate}
@@ -41,10 +45,11 @@ export const Signup = () => {
         <div>
           <h1 className="my-4 font-weight-bold .display-4">Sign Up</h1>
           <Form>
-            <TextField label="First Name" name="firstName" type="text" />
-            <TextField label="last Name" name="lastName" type="text" />
-            <TextField label="Email" name="email" type="email" />
-            <TextField label="password" name="password" type="password" />
+            <TextField label="Nombre" name="nombre" type="text" />
+            <TextField label="Apellido" name="apellido" type="text" />
+            <TextField label="Departamento" name="departamento" type="text" />
+            <TextField label="Area del Conocimiento" name="areaConocimiento" type="text" />
+            <TextField label="Cedula" name="cedula" type="number" />          
             <TextField label="Confirm Password" name="confirmPassword" type="password" />
             <button className="btn btn-dark mt-3" type="submit">Register</button>
             <button className="btn btn-danger mt-3 ml-3" type="reset">Reset</button>
