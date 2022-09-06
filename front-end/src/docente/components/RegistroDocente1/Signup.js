@@ -1,5 +1,6 @@
 import React from 'react';
 import { Formik, Form } from 'formik';
+import { Field} from "formik";
 import { TextField } from './TextField';
 import * as Yup from 'yup';
 
@@ -21,9 +22,8 @@ export const Signup = () => {
     cedula: Yup.string()
       .min(6, 'La cedula debe tener 10 caracteres')
       .required('La cedula es requerida'),
-    confirmPassword: Yup.string()
-      .oneOf([Yup.ref('password'), null], 'Password must match')
-      .required('Confirm password is required'),
+    checked:  Yup.boolean()
+      .oneOf([true], "Debe seleccionar al menos una de las opciones"),      
     })
   
   return (
@@ -34,7 +34,7 @@ export const Signup = () => {
         departamento: '',
         areaConocimiento: '',
         cedula: '',
-        confirmPassword: ''
+        checked: false,
       }}
       validationSchema={validate}
       onSubmit={values => {
@@ -43,16 +43,29 @@ export const Signup = () => {
     >
       {formik => (
         <div>
-          <h1 className="my-4 font-weight-bold .display-4">Sign Up</h1>
+          <h1 className="my-4 font-weight-bold .display-4">Registro Docente</h1>
           <Form>
             <TextField label="Nombre" name="nombre" type="text" />
             <TextField label="Apellido" name="apellido" type="text" />
             <TextField label="Departamento" name="departamento" type="text" />
             <TextField label="Area del Conocimiento" name="areaConocimiento" type="text" />
-            <TextField label="Cedula" name="cedula" type="number" />          
-            <TextField label="Confirm Password" name="confirmPassword" type="password" />
-            <button className="btn btn-dark mt-3" type="submit">Register</button>
-            <button className="btn btn-danger mt-3 ml-3" type="reset">Reset</button>
+            <TextField label="Cedula" name="cedula" type="number" /> 
+            <div role="group" aria-labelledby="checkbox-group">
+            <label>Medios de Comunicacion</label><br/>
+            <label>
+              <Field type="checkbox" name="checked" value="Zoom" />
+              Zoom
+            </label><br/>
+            <label>
+              <Field type="checkbox" name="checked" value="Meet" />
+              Meet
+            </label><br/>
+            <label>
+              <Field type="checkbox" name="checked" value="Teams" />
+              Teams
+            </label><br/>
+            </div>   
+            <button className="btn btn-danger mt-3 ml-3" variant="success"  type="submit">Siguiente</button>
           </Form>
         </div>
       )}
