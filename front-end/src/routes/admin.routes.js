@@ -1,5 +1,5 @@
-import { AppBar, Box, CssBaseline, IconButton, Toolbar, Typography } from "@mui/material";
-import React, { memo, useEffect, useState } from "react";
+import {Box, CssBaseline, Toolbar } from "@mui/material";
+import React, { memo } from "react";
 import { Route, Routes } from "react-router-dom";
 import Navbar from "../admin/components/navbar/Navbar";
 import Sidebar from "../admin/components/sidebar/Sidebar";
@@ -10,7 +10,7 @@ import '../admin/pages/style.css'
 import TeacherPageForm from "../admin/pages/TeacherPageForm";
 
 
-const AdminRoutes = memo(({props}) => {
+const AdminRoutes = memo(() => {
   const drawerWidth = 280;
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
@@ -35,29 +35,7 @@ const AdminRoutes = memo(({props}) => {
           <Route path="/cursos/ver" element={<CoursePageList drawerWidth={drawerWidth}/>} />
           <Route path="/docentes/crear" element={<TeacherPageForm drawerWidth={drawerWidth}/>} />
         </Routes>
-
       </Box>
-      
-
-      {/* <Navbar />
-      <>
-      {
-        cargaBoton ? (
-          <button className="btn my-1" onClick={handleSideberChange}>Menu</button>
-        ) : (
-          <>
-          </>
-        )
-      }
-        <Sidebar claseActiva={sidebar}/>
-        <Routes>
-          <Route path="/" element={<HomePage claseActiva={container} />} />
-          <Route path="/cursos/crear" element={<CoursePageForm claseActiva={container}/>} />
-          <Route path="/cursos/ver" element={<CoursePageList claseActiva={container}/>} />
-          <Route path="/docentes/crear" element={<TeacherPageForm claseActiva={container}/>} />
-        </Routes>
-      </>} */
-      }
     </Box>
   );
 

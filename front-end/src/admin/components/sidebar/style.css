@@ -17,9 +17,9 @@
     font-size: 1.25em;
 }
 
-.nav-link:active,
-.nav-link:focus,
-.nav-link:hover {
+Link:active,
+Link:focus,
+Link:hover {
     background-color: #ffffff;
 }
 
