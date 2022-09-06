@@ -3,8 +3,8 @@ import "./style.css";
 const TableCourse = () => {
   return (
     <>
-      <table class="table w-90 m-auto">
-        <thead class="table-prwowess">
+      <table className="table w-90 m-auto">
+        <thead className="table-prwowess">
           <tr>
             <th>Id</th>
             <th>Nombre</th>

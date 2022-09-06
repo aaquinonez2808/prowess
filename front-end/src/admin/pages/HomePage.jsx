@@ -1,11 +1,15 @@
+import { Box, Typography } from '@mui/material';
 import React from 'react'
 
-const HomePage = ({claseActiva}) => {
+const HomePage = ({drawerWidth}) => {
 
   return (
-    <div className={`p-4 my-container ${claseActiva===""? "":claseActiva}`}>
-        AREA PERSONAL
-    </div>
+    <Box>
+        <Typography paragraph>
+          AREA PERSONAL
+        </Typography>
+
+      </Box>
   )
 }
 export default HomePage;
