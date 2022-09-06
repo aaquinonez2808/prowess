@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import AdminRoutes from './admin.routes'
 import ClientRoutes from './client/client.routes'
 
+
 const AppRoutes = () => {
   return (
     <Router>
@@ -14,4 +15,4 @@ const AppRoutes = () => {
   )
 }
 
-export default AppRoutes
+export default AppRoutes;
