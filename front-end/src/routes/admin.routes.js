@@ -1,9 +1,9 @@
 import React, { memo, useEffect, useState } from "react";
 import { Route, Routes } from "react-router-dom";
-import FormCourse from "../admin/components/courses/FormCourse";
 import Navbar from "../admin/components/navbar/Navbar";
 import Sidebar from "../admin/components/sidebar/Sidebar";
 import CoursePageForm from "../admin/pages/CoursePageForm";
+import CoursePageList from "../admin/pages/CoursePageList";
 import HomePage from "../admin/pages/HomePage";
 import '../admin/pages/style.css'
 
@@ -64,6 +64,7 @@ const AdminRoutes = memo(() => {
         <Routes>
           <Route path="/" element={<HomePage claseActiva={container} />} />
           <Route path="/cursos/crear" element={<CoursePageForm claseActiva={container}/>} />
+          <Route path="/cursos/ver" element={<CoursePageList claseActiva={container}/>} />
         </Routes>
       </>
     </>
