@@ -1,4 +1,5 @@
 import React from "react";
+import './style.css'
 
 const FormCourse = () => {
   return (
@@ -9,10 +10,10 @@ const FormCourse = () => {
         </label>
         <input type="email" className="form-control" id="inputEmail4" />
       </div>
-      <div class="col-12">
-        <label for="floatingTextarea">Descripcion</label>
+      <div className="col-12">
+        <label htmlFor="floatingTextarea">Descripcion</label>
         <textarea
-          class="form-control"
+          className="form-control"
           placeholder=""
           id="floatingTextarea"
         ></textarea>

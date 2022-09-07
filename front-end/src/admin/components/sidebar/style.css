@@ -9,7 +9,7 @@
     height: 100vh;
     position: fixed;
     margin-left: -300px;
-    background-color: #A3E6A9;
+    
     transition: 0.4s;
 }
 
@@ -17,9 +17,9 @@
     font-size: 1.25em;
 }
 
-.nav-link:active,
-.nav-link:focus,
-.nav-link:hover {
+Link:active,
+Link:focus,
+Link:hover {
     background-color: #ffffff;
 }
 

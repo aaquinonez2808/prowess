@@ -1,73 +1,44 @@
-import React, { memo, useEffect, useState } from "react";
+import {Box, CssBaseline, Toolbar } from "@mui/material";
+import React, { memo } from "react";
 import { Route, Routes } from "react-router-dom";
-import FormCourse from "../admin/components/courses/FormCourse";
 import Navbar from "../admin/components/navbar/Navbar";
 import Sidebar from "../admin/components/sidebar/Sidebar";
 import CoursePageForm from "../admin/pages/CoursePageForm";
+import CoursePageList from "../admin/pages/CoursePageList";
 import HomePage from "../admin/pages/HomePage";
 import '../admin/pages/style.css'
+import TeacherPageForm from "../admin/pages/TeacherPageForm";
+
 
 const AdminRoutes = memo(() => {
-    const [sidebar, setSidebar] = useState("");
-    const [container, setContainer] = useState("");
-    const [cargaBoton, setCargaBoton] = useState(false);
-    const [widh, setWidth] = useState(window.innerWidth);
-    const [pushboton, setPushBoton] = useState(false);
-    useEffect(() => {
-      console.log("hola")
-      window.addEventListener("resize", () => {
-        setWidth(window.innerWidth);
-      });
-      if(widh<600){
-        setCargaBoton(true);
-        setSidebar("");
-        setContainer("")
-      }else{
-        setSidebar("active-nav");
-        setContainer("active-cont")
-        setCargaBoton(false);
-      }
-      if(pushboton===true){
-        setSidebar("active-nav")
-      }
-      return () => {
-        window.removeEventListener("resize", () => {
-          setWidth(window.innerWidth);
-        });
-      }
-    }, [sidebar, container, cargaBoton, widh, pushboton]);
+  const drawerWidth = 280;
+  const [mobileOpen, setMobileOpen] = React.useState(false);
 
-  const handleSideberChange = () => {
-    setPushBoton(!pushboton)
-    if(sidebar === "active-nav" ){
-        setSidebar("");
-        setContainer("");
-    }else if(sidebar === ""){
-        setSidebar("active-nav");
-        setContainer("active-cont");
-    }
-  }
+  const handleDrawerToggle = () => {
+    setMobileOpen(!mobileOpen);
+  };
+  const container =() => window.document.body;
 
   return (
-    <>
-      <Navbar />
-      <>
-      {
-        cargaBoton ? (
-          <button className="btn my-1" onClick={handleSideberChange}>Menu</button>
-        ) : (
-          <>
-          </>
-        )
-      }
-        <Sidebar claseActiva={sidebar}/>
+    <Box sx={{ display: 'flex' }}>
+      <CssBaseline />
+      <Navbar  container={container} drawerWidth = {drawerWidth} mobileOpen = {mobileOpen} handleDrawerToggle = {handleDrawerToggle}/>
+      <Sidebar  container={container} drawerWidth = {drawerWidth} mobileOpen = {mobileOpen} handleDrawerToggle = {handleDrawerToggle}/>
+      <Box
+        component="main"
+        sx={{ flexGrow: 1, p: 3, width: { sm: `calc(100% - ${drawerWidth}px)` } }}
+      >
+        <Toolbar />
         <Routes>
-          <Route path="/" element={<HomePage claseActiva={container} />} />
-          <Route path="/cursos/crear" element={<CoursePageForm claseActiva={container}/>} />
+          <Route path="/" element={<HomePage drawerWidth={drawerWidth} />} />
+          <Route path="/cursos/crear" element={<CoursePageForm drawerWidth={drawerWidth}/>} />
+          <Route path="/cursos/ver" element={<CoursePageList drawerWidth={drawerWidth}/>} />
+          <Route path="/docentes/crear" element={<TeacherPageForm drawerWidth={drawerWidth}/>} />
         </Routes>
-      </>
-    </>
+      </Box>
+    </Box>
   );
+
 });
 
 export default AdminRoutes;

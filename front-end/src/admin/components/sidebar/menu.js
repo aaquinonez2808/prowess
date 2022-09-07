@@ -4,7 +4,13 @@ import PersonIcon from '@mui/icons-material/Person';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 const menus =[
     {
-        id:1,
+        id: 1,
+        title: "Area Personal",
+        path: "/admin",
+        icon: <AccountCircleIcon />,
+    },
+    {
+        id:2,
         title:"Cursos",
         icon:<SchoolIcon/>,
         submenus:[
@@ -21,7 +27,7 @@ const menus =[
         ]
     },
     {
-        id:2,
+        id:3,
         title:"Docentes",
         icon:<PersonIcon/>,
         submenus:[
@@ -38,13 +44,13 @@ const menus =[
         ]
     },
     {
-        id:3,
+        id:4,
         title:"Registrar Pago Realizado",
         icon:<PaymentIcon/>,
         path:"/admin/pagos/crear"
     },
     {
-        id:4,
+        id:5,
         title:"Estudiantes",
         icon:<PersonIcon/>,
         submenus:[
@@ -61,7 +67,7 @@ const menus =[
         ]
     },
     {
-        id:5,
+        id:6,
         title:"Gestion de Usuarios",
         icon:<AccountCircleIcon/>,
         submenus:[
@@ -78,7 +84,7 @@ const menus =[
         ]
     },
     {
-        id:6,
+        id:7,
         title:"Certificados",
         icon:<SchoolIcon/>,
         submenus:[
