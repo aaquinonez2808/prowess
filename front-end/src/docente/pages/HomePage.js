@@ -1,19 +1,30 @@
 import './style.css';
 import rocketImg from '../assets/rocket.png';
-import { Signup } from '../components/RegistroDocente/Signup';
+import logo from '../assets/logo.png'
+import { Signup } from '../components/RegistroDocente1/Signup';
 
 function HomePage() {
   return (
-    <div className="container mt-3">
-      <div className="row">
-        <div className="col-md-7 my-auto">
+    <body>
+      
+      <aside>
+      <div className='d-flex justify-content-between p-2 align-content-center nav_bar'>
+      <img src={logo} alt={"logo"} className='logo' />
+      </div><br/>
+        <div>
           <img className="img-fluid w-100" src={rocketImg} alt=""/>
         </div>
-        <div className="col-md-5">
-          <Signup />
+      </aside>
+        <main>
+        <div className="container mt-1">
+          <div className="row">
+            <div className="col-md-9">
+              <Signup />
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
+        </main>
+    </body>
   );
 }
 
