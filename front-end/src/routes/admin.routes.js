@@ -3,9 +3,11 @@ import React, { memo } from "react";
 import { Route, Routes } from "react-router-dom";
 import Navbar from "../admin/components/navbar/Navbar";
 import Sidebar from "../admin/components/sidebar/Sidebar";
+import CategoryPageForm from "../admin/pages/CategoryPageForm";
 import CoursePageForm from "../admin/pages/CoursePageForm";
 import CoursePageList from "../admin/pages/CoursePageList";
 import HomePage from "../admin/pages/HomePage";
+import MethodPayPage from "../admin/pages/MethodPayPage";
 import StudentPageForm from "../admin/pages/StudentPageForm";
 import StudentPageList from "../admin/pages/StudentPageList";
 import '../admin/pages/style.css'
@@ -41,7 +43,9 @@ const AdminRoutes = memo(() => {
           <Route path="/docentes/ver" element={<TeacherPageList drawerWidth={drawerWidth}/>} />
           <Route path="/estudiantes/crear" element={<StudentPageForm drawerWidth={drawerWidth}/>} />
           <Route path="/estudiantes/ver" element={<StudentPageList drawerWidth={drawerWidth}/>} />
-
+          <Route path="/categorias/crear" element={<CategoryPageForm drawerWidth={drawerWidth}/>}/>
+          <Route path="/categorias/ver" element={<CategoryPageForm drawerWidth={drawerWidth}/>}/>
+          <Route path="/pagos/crear" element={<MethodPayPage drawerWidth={drawerWidth}/>}/>
         </Routes>
       </Box>
     </Box>

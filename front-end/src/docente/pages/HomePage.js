@@ -1,4 +1,3 @@
-import './style.css';
 import rocketImg from '../assets/rocket.png';
 import logo from '../assets/logo.png'
 import { Signup } from '../components/RegistroDocente1/Signup';
