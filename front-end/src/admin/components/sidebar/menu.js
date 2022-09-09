@@ -2,6 +2,8 @@ import SchoolIcon from '@mui/icons-material/School';
 import PaymentIcon from '@mui/icons-material/Payment';
 import PersonIcon from '@mui/icons-material/Person';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import CategoryIcon from '@mui/icons-material/Category';
+import ClassIcon from '@mui/icons-material/Class';
 const menus =[
     {
         id: 1,
@@ -11,8 +13,25 @@ const menus =[
     },
     {
         id:2,
+        title:"Categorias",
+        icon:<CategoryIcon/>,
+        submenus:[
+            {
+                id:1,
+                title:"Crear Categoria",
+                path:"/admin/categorias/crear"
+            },
+            {
+                id:2,
+                title:"Ver Categorias",
+                path:"/admin/categorias/ver"
+            }
+        ]
+    },
+    {
+        id:3,
         title:"Cursos",
-        icon:<SchoolIcon/>,
+        icon:<ClassIcon/>,
         submenus:[
             {
                 id:1,
@@ -27,7 +46,7 @@ const menus =[
         ]
     },
     {
-        id:3,
+        id:4,
         title:"Docentes",
         icon:<PersonIcon/>,
         submenus:[
@@ -44,13 +63,13 @@ const menus =[
         ]
     },
     {
-        id:4,
+        id:5,
         title:"Registrar Pago Realizado",
         icon:<PaymentIcon/>,
         path:"/admin/pagos/crear"
     },
     {
-        id:5,
+        id:6,
         title:"Estudiantes",
         icon:<PersonIcon/>,
         submenus:[
@@ -67,7 +86,7 @@ const menus =[
         ]
     },
     {
-        id:6,
+        id:7,
         title:"Gestion de Usuarios",
         icon:<AccountCircleIcon/>,
         submenus:[
@@ -84,7 +103,7 @@ const menus =[
         ]
     },
     {
-        id:7,
+        id:8,
         title:"Certificados",
         icon:<SchoolIcon/>,
         submenus:[
