@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from 'react'
 import './login.css';
 import rocket from '../assets/rocket.png';
@@ -54,10 +55,10 @@ const defaultState = {
       }
     render(){
       return(
-        <div className="App">
+        <div class="App">
           <aside>
               <div class='d-flex justify-content-between p-2 align-content-center nav_bar'>
-              <img src={logo} alt={"logo"} class='logo' />
+              <img src={logo} alt={"logo"} className='logo' />
               </div>
           </aside>
           <div class="container-fluid ps-md-0">
@@ -73,20 +74,20 @@ const defaultState = {
                           
                           <form>
                             <div class="form-floating mb-3">
-                              <input type="email" className={"form-control " + (this.state.emailError ? 'invalid' : '')} id="floatingInput" name='email' placeholder="name@example.com" value={this.state.email} onChange={this.handleInputChange} />
+                              <input type="email" class={"form-control " + (this.state.emailError ? 'invalid' : '')} id="floatingInput" name='email' placeholder="name@example.com" value={this.state.email} onChange={this.handleInputChange} />
                               <label for="floatingInput">Email</label>
-                              <span className="text-danger">{this.state.emailError}</span>
+                              <span class="text-danger">{this.state.emailError}</span>
                             </div>
                             <div class="form-floating mb-3">
-                              <input type="password" className={"form-control " + (this.state.passwordError ? 'invalid' : '')} id="floatingPassword" name="password" placeholder="Password" value={this.state.password} onChange={this.handleInputChange} />
+                              <input type="password" class={"form-control " + (this.state.passwordError ? 'invalid' : '')} id="floatingPassword" name="password" placeholder="Password" value={this.state.password} onChange={this.handleInputChange} />
                               <label for="floatingPassword">Contraseña</label>
-                              <span className="text-danger">{this.state.passwordError}</span>
+                              <span class="text-danger">{this.state.passwordError}</span>
                             </div>
             
                             <div class="form-check mb-3">
                               <input class="form-check-input" type="checkbox" value="" id="rememberPasswordCheck" />
                               <label class="form-check-label" for="rememberPasswordCheck">
-                                Remember password
+                                Recordar contraseña
                               </label>
                             </div>
             
@@ -103,7 +104,7 @@ const defaultState = {
                     </div>
                   </div>
                 </div>
-                <div class="d-none d-md-flex col-md-4 col-lg-6">
+                <div className="d-none d-md-flex col-md-4 col-lg-6">
                   <img class="img-fluid w-100"  src={rocket} />
                 </div>
               </div>
