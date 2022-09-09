@@ -19,6 +19,10 @@
     display: flex;
   }
 
+.btn-group-class {
+  padding-left: 80px;
+}
+
 label {
   font-size: .7rem;
 }

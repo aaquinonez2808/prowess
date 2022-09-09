@@ -5,6 +5,7 @@ import rocket from '../assets/rocket.png';
 import logo from '../assets/logo.png'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
+
 const defaultState = {
   name:null,
   email:null,
@@ -61,18 +62,35 @@ const defaultState = {
               <img src={logo} alt={"logo"} className='logo' />
               </div>
           </aside>
+          
           <div class="container-fluid ps-md-0">
               <div class="row g-0">
-               
+              
                 <div class="col-md-8 col-lg-6">
                   <div class="login d-flex align-items-center py-5">
                     <div class="container">
+                    
                       <div class="row">
                         <div class="col-md-9 col-lg-8 mx-auto">
                           <h3 class="login-heading mb-4">Inicio de Sesión</h3>
-            
+                          <div class="btn-group btn-group-class" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off"/>
+                            <a href="#"/>
+                            <label class="btn btn-outline-primary" for="btnradio1">Estudiante</label>
+
+                            <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off"/>
+                            <label class="btn btn-outline-primary" for="btnradio2">Docente</label>
+
+                            <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off"/>
+                            <label class="btn btn-outline-primary" for="btnradio3">Administrador</label>
+                          </div>
+                          {/* <div class="btn-group btn-group-class">
+                            <a href="#" class="btn btn-primary active" aria-current="page">Estudiante</a>
+                            <a href="#" class="btn btn-primary">Docente</a>
+                            <a href="#" class="btn btn-primary">Administrador</a>
+                          </div><br/> */}
                           
-                          <form>
+                          <form><br/>
                             <div class="form-floating mb-3">
                               <input type="email" class={"form-control " + (this.state.emailError ? 'invalid' : '')} id="floatingInput" name='email' placeholder="name@example.com" value={this.state.email} onChange={this.handleInputChange} />
                               <label for="floatingInput">Email</label>
