@@ -27,7 +27,7 @@ const Navbar = ({ drawerWidth, handleDrawerToggle }) => {
             <MenuIcon />
           </IconButton>
           <Typography variant="h4" component="div" sx={{ flexGrow: 1 }}>
-            <img src={logo} className="logo" alt="logo" />
+            <img src={logo} className="logo-admin" alt="logo" />
           </Typography>
           Administrador
           <button className="logout">
