@@ -33,15 +33,10 @@ const LoginPage = () => {
                   <div class="col-md-9 col-lg-8 mx-auto">
                     <h3 class="login-heading mb-4">Inicio de Sesión</h3>
                     <div onSubmit={handleSubmit} class="btn-group mr-2" role="group" aria-label="First group">
-                      <button type="button" class="btn btn-secondary">Estudiante</button>
-                      <button type="button" onClick={() => navigate('loginDocente')} class="btn btn-secondary">Docente</button>
-                      <button type="button" class="btn btn-secondary">Administrador</button>
+                      <button type="button" class="btn btn-primary">Estudiante</button>
+                      <button type="button" onClick={() => navigate('loginDocente')} class="btn btn-primary">Docente</button>
+                      <button type="button" class="btn btn-primary">Administrador</button>
                     </div>
-                    {/* <div class="btn-group btn-group-class">
-                      <a href="#" class="btn btn-primary active" aria-current="page">Estudiante</a>
-                      <a href="#" class="btn btn-primary">Docente</a>
-                      <a href="#" class="btn btn-primary">Administrador</a>
-                    </div><br/> */}
                     <form onSubmit={handleSubmit}>
                       <div className="mb-3">
                         <label htmlFor="exampleEmail" className="form-label">
