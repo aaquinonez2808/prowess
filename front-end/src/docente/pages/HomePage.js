@@ -1,12 +1,12 @@
-
+import React from 'react'
 import './style.css';
-import CustomFormValidation from '../components/Login/login';
+import LoginPage from '../components/Login/login';
 
 function HomePage() {
   return (
     <body>
             <div>
-              <CustomFormValidation/>
+              <LoginPage/>
             </div>
     </body>
   );

@@ -7,9 +7,8 @@ import 'bootstrap/dist/js/bootstrap.min.js';
 import { useNavigate } from "react-router-dom";
 
 
-const LoginPage = () => {
-
-  const navigate = useNavigate();
+const LoginDocente = () => {
+    const navigate = useNavigate();
     const handleSubmit = (e) => {
         e.preventDefault();
         navigate("loginDocente", { replace: true });
@@ -31,39 +30,29 @@ const LoginPage = () => {
               
                 <div class="row">
                   <div class="col-md-9 col-lg-8 mx-auto">
-                    <h3 class="login-heading mb-4">Inicio de Sesión</h3>
-                    <div onSubmit={handleSubmit} class="btn-group mr-2" role="group" aria-label="First group">
-                      <button type="button" class="btn btn-secondary">Estudiante</button>
-                      <button type="button" onClick={() => navigate('loginDocente')} class="btn btn-secondary">Docente</button>
-                      <button type="button" class="btn btn-secondary">Administrador</button>
-                    </div>
-                    {/* <div class="btn-group btn-group-class">
-                      <a href="#" class="btn btn-primary active" aria-current="page">Estudiante</a>
-                      <a href="#" class="btn btn-primary">Docente</a>
-                      <a href="#" class="btn btn-primary">Administrador</a>
-                    </div><br/> */}
+                    <h3 class="login-heading mb-4">Inicio de Sesión Docente</h3>
                     <form onSubmit={handleSubmit}>
-                      <div className="mb-3">
+                        <div className="mb-3">
                         <label htmlFor="exampleEmail" className="form-label">
-                          Email
+                            Email
                         </label>
                         <input type="email" className="form-control" id="exampleEmail" />
-                      </div>
-                      <div className="mb-3">
+                        </div>
+                        <div className="mb-3">
                         <label htmlFor="examplePassword" className="form-label">
-                          Password
+                            Password
                         </label>
                         <input
-                          type="password"
-                          className="form-control"
-                          id="examplePassword"
+                            type="password"
+                            className="form-control"
+                            id="examplePassword"
                         />
-                      </div>
-                      <div className="mb-3">
-                        <button className="btn btn-primary" >
-                          Submit
+                        </div>
+                        <div className="mb-3">
+                        <button className="btn btn-primary" type="submit">
+                            Submit
                         </button>
-                      </div>
+                        </div>
                     </form>
                     
                   </div>
@@ -86,7 +75,4 @@ const LoginPage = () => {
   );
 };
 
-export default LoginPage;
-
-
-                        
+export default LoginDocente;
