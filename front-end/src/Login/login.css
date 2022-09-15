@@ -9,6 +9,12 @@
   position: absolute;
   top: 50px;
 }
+.ftadmin{
+  width: 30px;
+  height: 30px;
+  top: 100px;
+
+}
   aside {
     background: #FFFFFF;
     color: #333;
