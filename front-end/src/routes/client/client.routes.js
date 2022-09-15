@@ -9,7 +9,7 @@ const ClientRoutes = () => {
       <Routes>
         <Route path="/" element={<div>Cliente</div>} />
         <Route path="/estudiante/*" element={<EstudianteRoutes/>} />
-        <Route path="/docente/*" element={<DocenteRoutes/>} />
+        <Route path="/login/*" element={<DocenteRoutes/>} />
         
       </Routes>
     </>

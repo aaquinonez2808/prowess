@@ -1,7 +1,7 @@
 import React from 'react'
 import './login.css';
-import rocket from '../assets/rocket.png';
-import logo from '../assets/logo.png'
+import rocket from '../docente/components/assets/rocket.png';
+import logo from '../docente/components/assets/logo.png'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import { useNavigate } from "react-router-dom";
