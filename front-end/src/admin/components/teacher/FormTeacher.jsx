@@ -1,15 +1,10 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 const FormTeacher = () => {
-  const [nextPage, setNextPage] = React.useState(false);
-
-  useEffect(() => {
-    console.log("nextPage", nextPage);
-  }, [nextPage]);
 
   return (
     <form className="row g-1 w-50 m-auto gap-xl-2">
-        <>
+
           <div className="col-md-12">
             <label htmlFor="idName" className="form-label">
               Nombre del Docente
@@ -69,46 +64,7 @@ const FormTeacher = () => {
               name="cedula"
             />
           </div>
-          <div className="col-md-12">
-            <label>Medios de Comunicacion</label>
-            <div className="form-check">
-              <input
-                className="form-check-input"
-                type="checkbox"
-                value="zoom"
-                id="idZoom"
-                name="medios"
-              />
-              <label className="form-check-label" htmlFor="idZoom">
-                zoom
-              </label>
-            </div>
-            <div className="form-check">
-              <input
-                className="form-check-input"
-                type="checkbox"
-                value="meet"
-                id="idMeet"
-                name="medios"
-              />
-              <label className="form-check-label" htmlFor="idMeet">
-                meet
-              </label>
-            </div>
-            <div className="form-check">
-              <input
-                className="form-check-input"
-                type="checkbox"
-                value="teams"
-                id="idTeams"
-                name="medios"
-              />
-              <label className="form-check-label" htmlFor="idTeam">
-                teams
-              </label>
-            </div>
-          </div>
-
+          
           <div className="mt-2 col-12 d-flex justify-content-end">
             <button
               type="submit"
@@ -117,7 +73,6 @@ const FormTeacher = () => {
               Registrar Docente 
             </button>
           </div>
-        </>
     </form>
   );
 };

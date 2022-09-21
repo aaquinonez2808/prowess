@@ -4,7 +4,6 @@ const FormCategory = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
     };
-
   return (
     <>
       <form className="row g-1 w-50 m-auto gap-xl-2"  onSsubmit={handleSubmit}>

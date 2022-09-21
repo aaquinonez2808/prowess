@@ -118,6 +118,23 @@ const menus =[
                 path:"/admin/certificados/configuraciones"
             }
         ]
+    },
+    {
+        id:9,
+        title:"Organizaciones",
+        icon:<SchoolIcon/>,
+        submenus:[
+            {
+                id:1,
+                title:"Crear Organizacion",
+                path:"/admin/organizaciones/crear"
+            },
+            {
+                id:2,
+                title:"Ver Organizaciones",
+                path:"/admin/organizaciones/ver"
+            }
+        ]
     }
 ]
 export default menus;

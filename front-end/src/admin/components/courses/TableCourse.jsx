@@ -9,7 +9,6 @@ const TableCourse = () => {
             <th>Id</th>
             <th>Nombre</th>
             <th>Descripcion</th>
-            <th>Horario</th>
             <th>Nombre del Estududiante</th>
             <th>Nombre del Docente</th>
             <th>Acciones</th>

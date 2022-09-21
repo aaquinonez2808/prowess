@@ -30,17 +30,6 @@ const FormCourse = () => {
       <div className="col-12">
         <div className="row">
           <div className="col-md-6">
-            <label htmlFor="inputAddress" className="form-label col-12">
-              Horarios
-            </label>
-            <input
-              type="date"
-              className="form-control col-md-6"
-              id="inputAddress"
-              placeholder="1234 Main St"
-            />
-          </div>
-          <div className="col-md-6">
             <label htmlFor="inputState" className="form-label">
               Docente
             </label>
