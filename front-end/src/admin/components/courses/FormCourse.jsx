@@ -41,6 +41,9 @@ const FormCourse = () => {
               <option>Seleccione un Docente</option>
               <option>...</option>
             </select>
+            <div className="image-course">
+              
+            </div>
           </div>
         </div>
       </div>
