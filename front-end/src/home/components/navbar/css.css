@@ -1,0 +1,21 @@
+.logo {
+    max-width: 200px;
+    min-width: 200px;
+}
+
+.logo2 {
+    max-width: 500px;
+    min-width: 200px;
+}
+
+.div1 {
+    text-align:center;
+}
+
+.bgnavbar{
+    background-color: rgb(219,219,219);
+    font-size:large;
+}
+.bgnavbar2{
+    background-color: #57837b;
+}
