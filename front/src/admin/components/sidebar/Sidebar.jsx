@@ -1,6 +1,5 @@
 import React from "react";
 import menus from "./menu";
-import "./style.css";
 import SubMenu from "./SubMenu";
 import {
   Divider,

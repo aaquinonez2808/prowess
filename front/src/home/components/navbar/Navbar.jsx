@@ -28,7 +28,7 @@ export const Navbar = () => {
             </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink to="/contacto" className="nav-link">
+            <NavLink to="/register" target={"_blank"} className="nav-link">
               Inscripciones
             </NavLink>
           </li>
@@ -39,7 +39,7 @@ export const Navbar = () => {
           </li>
           <li className="nav-item">
             <a
-              href="http://prowessmooc.ultimatefreehost.in/login/index.php"
+              href="https://prowessmooc.milaulas.com/login/index.php"
               target="_blank"
               className="nav-link"
             >
