@@ -13,7 +13,7 @@
   
   body {
     margin: 0;
-    background: var(--cfondo);
+    background: var(--cblanco);
     font-family: sans-serif;
   }
   
@@ -21,12 +21,12 @@
     /* border: 3px solid red; */
     max-width: 90%;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 20px;;
   }
   
   :root {
     --cfondo: rgb(207, 211, 212);
-    --cfondoForm1: rgba(1, 80, 88, 0.39);
+    --cfondoForm1: rgba(1, 1, 1, 0.39);
     --cfondoForm2: rgb(129, 193, 202);
     --cnegro: black;
     --ctexto: rgb(0, 0, 0);
@@ -143,3 +143,17 @@
     font-weight: bold;
   }
 
+.title-curso{
+    font-size: 50px;
+    font-weight: bold;
+    color: #3B8479;
+    text-align: center;
+    font-family: 'Gagalin', sans-serif;
+}
+.descripcion-curso {
+    font-size: 15px;
+    color: #3B8479;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: lighter;
+}

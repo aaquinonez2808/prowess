@@ -17,6 +17,7 @@ const ClientRoutes = () => {
         <Route path="/nosotros" element={<NosotrosPage />} />
         <Route path="/cursos" element={<CursosPage />} />
         <Route path="/contacto" element={<ContactoPage />} />
+        
       </Routes>
     </>
   );

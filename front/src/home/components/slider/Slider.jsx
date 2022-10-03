@@ -1,6 +1,6 @@
 import React from 'react';
-import Slider1 from '../../assets/img/slider1.jpg'
-import Slider2 from '../../assets/img/slider2.jpeg'
+import Slider1 from '../../assets/img/sslider1.jpg'
+import Slider2 from '../../assets/img/slider2.jpg'
 import Slider3 from '../../assets/img/slider3.jpg'
 import './style.css'
 export const Slider = () => {

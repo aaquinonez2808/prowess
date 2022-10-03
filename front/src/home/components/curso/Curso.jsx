@@ -1,21 +1,22 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-
-const Curso = ({curso}) => {
+import "./style.css";
+const Curso = ({ curso }) => {
   return (
-    <>
-      <img src={curso.imagen} className="card-img-top" alt="..." />
-      <div className="card-body">
-        <h5 className="card-title">{curso.nombre}</h5>
-        <p className="card-text">
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </p>
-        <NavLink to="/" className="btn btn-primary">
-          Ir al Curso
-        </NavLink>
-      </div>
-    </>
+    <div className="col-lg-4 col-sm-6 col-xs-12">
+      <NavLink to={"/curso"} className="nav-link">
+        <div className="card-body">
+          <h5 className="card-title mb-0">{curso.nombre}</h5>
+        </div>
+        <div className="imagen-contenido-curso">
+          <img
+            src={curso.imagen}
+            className="card-img-top imagen-curso"
+            alt="..."
+          />
+        </div>
+      </NavLink>
+    </div>
   );
 };
 
