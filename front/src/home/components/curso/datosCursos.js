@@ -16,43 +16,110 @@ export const cursos = [
       id: 1,
       nombre: 'CONTABILIDAD BASICA',
       descripcion: 'Curso de React',
-      imagen: imagen1
+      imagen: imagen1,
+      modalidad:" En linea",
+      aprender: [
+        "Aprenderas: -Conceptos basicos contables",
+        "-Estudio de las cuentas",
+        "-Clasificacion de empresas y sociedades",
+        "-Principios fundamentales contables",
+        "-El ciclo contable",
+        "-Cuentas especiales",
+        "-Nomina"
+      ]   
     },
     {
       id: 2,
       nombre: 'CONTABILIDAD DE COSTOS',
       descripcion: 'Curso de Angular',
-      imagen: imagen2
+      imagen: imagen2,
+      modalidad: "En Linea",
+      aprender: [
+        "Aprenderas: ",
+        "-Introduccion a la contabilidad de costos y presupuestos",
+        "-Metodologia",
+        "-Metodologia para el calculo de costos: Modelo Organico"
+      ]
     },
     {
       id: 3,
       nombre: 'COSTOS AVANZADOS',
       descripcion: 'Curso de Vue',
-      imagen: imagen3
+      imagen: imagen3,
+      modalidad: "En Linea",
+      aprender: [
+        "Aprenderas: ",
+        "-Sistema de costo por procesos",
+        "-Presupuesto",
+        "-Costeo estandar y produccion conjunta",
+        "-Costos Conjuntos",
+        "-Subproductos"
+      ]
     },
     {
       id: 4,
       nombre: 'AUXILIAR CONTABLE',
       descripcion: 'Curso de Node',
-      imagen: imagen4
+      imagen: imagen4,
+      modalidad: "En linea",
+      aprender: [
+        "Aprenderas: ",
+        "-Sistema de informacion contable",
+        "-Principios fundamentales",
+        "-Clasificacion de empresas y sociedades",
+        "-Principios fundamentales contables",
+        "-El ciclo contable",
+        "-Cuentas especiales",
+        "-Nomina"
+      ]
     },
     {
       id: 5,
       nombre: 'ACTUALIZACIÓN REFORMA TRIBUTARIA',
       descripcion: 'Curso de Laravel',
-      imagen: imagen5
+      imagen: imagen5,
+      modalidad: 'En Linea',
+      aprender: [
+        "Aprenderas: ",
+        "-Impuesto a la renta",
+        "-Reduccion de IVA e ICE",
+        "-Emprendimiento",
+        "-Patrimonio",
+        "-Utilidades",
+        "-Activos en el exterior",
+        "-Salidas de divisas",
+        "-Mediacion de deuda"
+      ]
     },
     {
       id: 6,
       nombre: 'CÓMO CREAR TU PÁGINA WEB',
       descripcion: 'Curso de PHP',
-      imagen: imagen6
+      imagen: imagen6,
+      modalidad: "En Linea",
+      aprender: [
+        "Aprenderas: ",
+        "-Introduccion",
+        "-El plan estrategico de marketing",
+        "-Bloques de Texto",
+        "-Bloques de medios",
+        "-Estrategias de venta"
+      ] 
     },
     {
       id: 7,
       nombre: 'MARKETING DIGITAL BÁSICO',
       descripcion: 'Curso de Python',
       imagen: imagen7,
+      modalidad: "En Linea",
+      aprender: [
+        "Aprenderas: ",
+        "-Sistema de costo por procesos",
+        "-Presupuesto",
+        "-Costeo estandar y produccion conjunta",
+        "-Costos Conjuntos",
+        "-Subproductos"
+      ]
     },
     {
       id: 8,
