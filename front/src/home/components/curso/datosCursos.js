@@ -114,11 +114,12 @@ export const cursos = [
       modalidad: "En Linea",
       aprender: [
         "Aprenderas: ",
-        "-Sistema de costo por procesos",
-        "-Presupuesto",
-        "-Costeo estandar y produccion conjunta",
-        "-Costos Conjuntos",
-        "-Subproductos"
+        "-Identidad de marca",
+        "-Utilizacion de canva",
+        "-Creacion y manejo de redes sociales",
+        "-Generacion de material digital",
+        "-Estrategias de ventas",
+        "-Atencion al cliente y negociacion"
       ]
     },
     {
@@ -126,35 +127,100 @@ export const cursos = [
       nombre: 'MARKETING DIGITAL AVANZADO',
       descripcion: 'Curso de Java',
       imagen: imagen8,
+      modalidad: "En Linea",
+      aprender: [
+        "Aprenderas: ",
+        "-Funciones del marketing de la empresa",
+        "-Plan estrategico de marketing",
+        "-Analisis interno",
+        "-Analisis Externo",
+        "-Gestion y Emprendimiento",
+        " Estrategia de ventas",
+        "Atencion al cliente"
+      ]
     },
     {
       id: 9,
       nombre: 'LÍDERES COMUNITARIOS',
       descripcion: 'Curso de C#',
       imagen: imagen9,
+      modalidad: "En Linea",
+      aprender: [
+        "Aprenderas: ",
+        "-Liderazgo",
+        "-Diagnostico comunitario",
+        "-Planificacion",
+        "-Implementacion",
+        "-Monitoreo",
+        "-Rendicion de Cuenta"
+      ]
     },
     {
       id: 10,
       nombre: 'DESCUBRE TU POTENCIAL EMPRENDEDOR',
       descripcion: 'Curso de C++',
       imagen: imagen10,
+      modalidad: "En Linea",
+      aprender: [
+        "Aprenderas: ",
+        "-Conceptos basicos de emprendimiento",
+        "-Tecnicas y herramientas para generar ideas de negocios",
+        "-Tecnicas para el desarrollo de un emprendimiento",
+        "-Metodo Canvas",
+        "-Plan Financiero",
+        "-Plan de Marketing",
+        "-Obligaciones Tributarias"
+      ]
     },
     {
       id: 11,
       nombre: 'FINANZAS PERSONALES',
       descripcion: 'Curso de C',
       imagen: imagen11,
+      modalidad: "En Linea",
+      aprender: [
+        "Aprenderas: ",
+        "-Concepto basico de finanzas",
+        "-Herramientas utiles para mejorar el uso de recursos",
+        "-Revisa tu situacion financiera",
+        "-Plan con base en objetivos",
+        "-Flujo de caja",
+        "-Desarrollo del plan financiero",
+        "-Paso para elaborar tu presupuesto",
+        "-Monitoreo del plan de finanzas personales",
+        "-Matematica financiera"
+      ]
     },
     {
       id: 12,
       nombre: 'E-COMMERCE',
       descripcion: 'Curso de Ruby',
       imagen: imagen12,
+      modalidad: 'En Linea',
+      aprender: [
+        "Aprenderas: ",
+        "-Fundamentos de la transformacion digital",
+        "-Modelos de negocios digitales y cascs de exito",
+        "-Herramientas digitales para emprendimientos, pequeñas, medianas y grandes empresas",
+        "-Marketplace vs E-Commerce",
+        "-Construir en la era digital",
+        "-Introduccion al marketing digital",
+        "-Rol de las RRSS en los negocios",
+        "-Whatsapp business'"
+      ]
     },
     {
       id: 13,
       nombre: 'MI NEGOCIO',
       descripcion: 'Curso de Swift',
       imagen: imagen13,
+      modalidad: "En Linea",
+      aprender: [
+        "Aprenderas: ",
+        "-Desarrollo de la idea de negocio",
+        "-El mercado",
+        "-Administracion",
+        "-Calculo de manejo del dinero en el negocio"
+      ]    
     }
   ]

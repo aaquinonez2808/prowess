@@ -5,7 +5,7 @@ import contenidos from './datosContenido';
 const ListContenido = () => {
   
   return (
-    <div className="row g-5 mx-auto">
+    <div className="row mt-3 mx-auto">
       {
         contenidos.map(contenido => {
         return <Contenido key={contenido.id} contenido={contenido} />;
