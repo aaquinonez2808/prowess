@@ -6,7 +6,7 @@ const Contenido = ({ curso }) => {
     <>
       <div className="row " id="principal">
         <div className="col-md-6 col-xs-12 p-4">
-            <h1 className="title-nombre">{curso.nombre}</h1>
+            <h1 className="title-nombre"> CURSO DE {curso.nombre}</h1>
             <h4 align="left" className="text-modalidad "> Modalidad del Curso: {curso.modalidad}</h4>
             <ul className="list-group">
               {
@@ -19,7 +19,7 @@ const Contenido = ({ curso }) => {
         </div>
         <div className="col-md-6 col-xs-12">  
           <img 
-            src={curso.imagen}
+            src={curso.imagenCurso}
             className=" p-0 w-100 h-100 "
             alt="..."
           />
