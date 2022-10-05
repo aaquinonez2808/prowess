@@ -20,8 +20,24 @@
     border-radius: 0.5em;
     border-color: black;
     background-color: rgb(22, 228, 132);
+    font-size: 30px;
     color: black;
     font-family: sans-serif;
     max-width: 350px;
     max-height: 50px;
+    display: block;
+    margin: auto;
+}
+.bg-none {
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 25px;
+    color: white;
+}
+.bg-none:first-child{
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 0;
+    margin: 0;
 }

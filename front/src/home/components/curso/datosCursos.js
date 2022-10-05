@@ -11,6 +11,7 @@ import imagen10 from './images/10.png'
 import imagen11 from './images/11.png'
 import imagen12 from './images/12.png'
 import imagen13 from './images/13.png'
+
 export const cursos = [
     {
       id: 1,
@@ -19,14 +20,16 @@ export const cursos = [
       imagen: imagen1,
       modalidad:" En linea",
       aprender: [
-        "Aprenderas: -Conceptos basicos contables",
+        "Aprenderas:",
+        "-Conceptos basicos contables",
         "-Estudio de las cuentas",
         "-Clasificacion de empresas y sociedades",
         "-Principios fundamentales contables",
         "-El ciclo contable",
         "-Cuentas especiales",
         "-Nomina"
-      ]   
+      ],
+      imagenCurso: imagen1
     },
     {
       id: 2,
