@@ -11,7 +11,7 @@ function RegistroPage() {
   const handlePrev = () => {
     setPage((prevPage) => prevPage - 1);
   };
-  
+
   return (
 
 
@@ -96,23 +96,26 @@ function RegistroPage() {
                   <p className="mensajeError"></p>
                 </div>
                 <div className="form-input mobile">
-                  <label htmlFor="mobile">Diplomado</label>
-                  <input type="text" name="Diplomado" placeholder="Diplomado"></input>
-                  <p className="mensajeError"></p>
+                    <select >
+                      <option >Diplomado</option>
+                      <option value="">2</option>
+                      <option value=""> 3</option>
+                    </select>
                 </div>
                 <div className="form-input mobile">
-                  <select name="¿Como se entero?">
-                    <option value="value1"> 1</option>
-                    <option value="value2">2</option>
-                    <option value="value3"> 3</option>
-                  </select>
+                    <select >
+                      <option >¿Como se entero?</option>
+                      <option value="">2</option>
+                      <option value=""> 3</option>
+                    </select>
                 </div>
-                <div className="form-input mobile">
+                <div className="form-radio">
+                  <input type="radio" id="Masculino" value="Masculino" />
                   <label htmlFor="Masculino">Masculino</label>
-                  <input type="checkbox" name="Masculino" id="Masculino" value="Masculino" />
-                  <p className="mensajeError"></p>
-                </div>
 
+                  <input type="radio" id="Femenino" value="Femenino" />
+                  <label htmlFor="Femenino">Femenino</label>
+                </div>
                 <div className="form-termsAndConditions termsAndConditions">
                   <label htmlFor="termsAndConditions">He leído y acepto los </label>
                   <a href="#">Términos y Condiciones</a>
