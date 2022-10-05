@@ -1,0 +1,43 @@
+.title-nombre {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    font-family: 'Gagalin', sans-serif;
+    text-align: center;
+}
+.text-modalidad, .text-aprender{
+    color: white;
+    font-family: sans-serif;
+}
+
+ #principal{
+    background-color:  #3B8479;
+    height: 100%;
+}
+
+.button{
+    margin-bottom: 20px;
+    border-radius: 0.5em;
+    border-color: black;
+    background-color: rgb(22, 228, 132);
+    font-size: 30px;
+    color: black;
+    font-family: sans-serif;
+    max-width: 350px;
+    max-height: 50px;
+    display: block;
+    margin: auto;
+}
+.bg-none {
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 25px;
+    color: white;
+}
+.bg-none:first-child{
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 0;
+    margin: 0;
+}

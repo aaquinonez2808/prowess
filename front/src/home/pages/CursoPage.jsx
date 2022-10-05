@@ -1,17 +1,29 @@
-import React from 'react'
-import ListContenido from '../components/detalle curso/ListContenido'
+import React, { useState } from "react";
+import { useEffect } from "react";
+import { useParams } from "react-router-dom";
+import Contenido from "../components/detalle curso/Contenido";
+import { getCursoById } from "../helpers/getCursoById";
 
 const CursoPage = () => {
-  return (
-    <div className='container bg-light'>
-        <h1 className='text-center my-5'>
-          <p className=' text-center'> Contenido </p>
-          <h2 align="center"> Curso de Contabilidad Basica </h2>
-          <ListContenido/>
-        </h1>
-        <button >Incribirse</button>
-    </div>
-  )
-}
+  const [curso, setCurso] = useState({});
+  const [loading, setLoading] = useState(false);
+  const { id } = useParams();
 
-export default CursoPage
+  useEffect(() => {
+    if (id) {
+      setLoading(true);
+      const newId = parseInt(id);
+      setCurso(getCursoById(newId));
+      setLoading(false);
+    }
+  }, [id, curso]);
+  if (loading) {
+    return <h1>Loading...</h1>;
+  } else {
+    return (
+        <Contenido curso={curso} />
+    );
+  }
+};
+
+export default CursoPage;

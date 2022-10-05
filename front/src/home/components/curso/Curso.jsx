@@ -4,11 +4,11 @@ import "./style.css";
 const Curso = ({ curso }) => {
   return (
     <div className="col-lg-4 col-sm-6 col-xs-12">
-      <NavLink to={"/curso"} className="nav-link">
+      <NavLink to={`/cursos/${curso.id}`} className="nav-link">
         <div className="card-body">
           <h5 className="card-title mb-0">{curso.nombre}</h5>
         </div>
-        <div className="imagen-contenido-curso">
+        <div className="imagen-contenido-curso">  
           <img
             src={curso.imagen}
             className="card-img-top imagen-curso"
