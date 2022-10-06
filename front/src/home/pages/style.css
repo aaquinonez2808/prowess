@@ -31,44 +31,17 @@ body {
   --cfondoForm2: rgb(129, 193, 202);
   --cnegro: black;
   --ctexto: rgb(0, 0, 0);
-  --ctextoDark: rgb(1, 35, 39);
+  --ctextoDark: #3B8479;
   --cblanco: white;
   --error: rgb(184, 31, 31);
 }
 
-[type="checkbox"] {
-  display: none;
-}
-
-[type="radio"] {
-  display: none;
-}
-
-[type="checkbox"]:checked+label::before {
-  background: var(--cnegro);
-  transition: 0.5s;
-  transform: rotate(180deg);
-}
-
-[type="radio"]:checked+label::before {
-  background: var(--cnegro);
-  transition: 0.5s;
-  transform: rotate(180deg);
-}
-
-[type="checkbox"]:checked+label {
-  color: var(--cnegro);
-}
-
-[type="radio"]:checked+label {
-  color: var(--cnegro);
-}
 
 /* ---- FORMULARIO ---- */
 
 .form {
 
-  max-width: 400px;
+  max-width: 500px;
   padding: 30px 50px;
   margin: auto;
   margin-top: 10px;
@@ -108,67 +81,30 @@ body {
   color: var(--cnegro);
 }
 
-.form-termsAndConditions {
-  margin-left: 15px;
-  position: relative;
-  color: var(--ctexto);
-  font-size: 13px;
-}
 
-.form-termsAndConditions label::before {
-  content: "";
-  width: 8px;
-  height: 8px;
-  border: 1px solid var(--cnegro);
-  position: absolute;
-  left: -14px;
-}
 
-.form-boton input {
+
+.form-boton button {
   background: var(--cnegro);
   color: var(--cblanco);
-  padding: 10px 50px;
-  font-size: 25px;
-  display: block;
-  margin: auto;
+  padding: 10px 30px;
+  font-size: 18px;
   margin-top: 40px;
   border: none;
 }
 
-.form-boton input:hover {
+.form-boton button:hover {
   background: var(--ctextoDark);
   transition: 0.5s;
 }
 
-.form-radio label {
-  display: inline-block;
-  /*cursor: pointer;*/
-  color: rgba(0, 0, 0, 0.397);
-  position: relative;
-  padding: 5px 15px 5px 51px;
-  font-size: 1em;
-  border-radius: 5px;
+/*.form-regist-radio {
   
 }
 
-
-.form-radio label:before{
-  content: "";
-  display: inline-block;
-  width: 17px;
-  height: 17px;
-  position: absolute;
-  left: 15px;
-  border-radius: 50%;
-  background: none;
-  border: 3px  rgba(0, 0, 0, 0.397);
-}
-
-.form-radio input:checked+label {
-  padding: 5px 15px;
-  border-radius: 2px;
-  color: rgb(22, 9, 9);
-}
+.form-regist-select {
+  
+}*/
 
 
 .mensajeError {
