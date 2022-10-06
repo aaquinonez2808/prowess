@@ -11,6 +11,20 @@ import imagen10 from './images/10.png'
 import imagen11 from './images/11.png'
 import imagen12 from './images/12.png'
 import imagen13 from './images/13.png'
+//Imagenes de cursos detallados
+import imagecurso1 from "..///detalle curso/image/1.png"
+import imagecurso2 from "..///detalle curso/image/2.png"
+import imagecurso3 from "..///detalle curso/image/3.png"
+import imagecurso4 from "..///detalle curso/image/4.png"
+import imagecurso5 from "..///detalle curso/image/5.png"
+import imagecurso6 from "..///detalle curso/image/6.png"
+import imagecurso11 from "..///detalle curso/image/11.png"
+import imagecurso12 from "..///detalle curso/image/12.png"
+import imagecurso14 from "..///detalle curso/image/14.png"
+import imagecurso15 from "..///detalle curso/image/15.png"
+import imagecurso16 from "..///detalle curso/image/16.png"
+import imagecurso17 from "..///detalle curso/image/17.png"
+import imagecurso18 from "..///detalle curso/image/18.png"
 
 export const cursos = [
     {
@@ -29,7 +43,7 @@ export const cursos = [
         "-Cuentas especiales",
         "-Nomina"
       ],
-      imagenCurso: imagen1
+      imagenCurso: imagecurso3
     },
     {
       id: 2,
@@ -42,7 +56,8 @@ export const cursos = [
         "-Introduccion a la contabilidad de costos y presupuestos",
         "-Metodologia",
         "-Metodologia para el calculo de costos: Modelo Organico"
-      ]
+      ],
+      imagenCurso: imagecurso6
     },
     {
       id: 3,
@@ -57,7 +72,7 @@ export const cursos = [
         "-Costeo estandar y produccion conjunta",
         "-Costos Conjuntos",
         "-Subproductos"
-      ]
+      ],imagenCurso: imagecurso15
     },
     {
       id: 4,
@@ -74,7 +89,7 @@ export const cursos = [
         "-El ciclo contable",
         "-Cuentas especiales",
         "-Nomina"
-      ]
+      ],imagenCurso: imagecurso18
     },
     {
       id: 5,
@@ -92,7 +107,7 @@ export const cursos = [
         "-Activos en el exterior",
         "-Salidas de divisas",
         "-Mediacion de deuda"
-      ]
+      ], imagenCurso: imagecurso14
     },
     {
       id: 6,
@@ -107,7 +122,7 @@ export const cursos = [
         "-Bloques de Texto",
         "-Bloques de medios",
         "-Estrategias de venta"
-      ] 
+      ], imagenCurso: imagecurso12 
     },
     {
       id: 7,
@@ -123,7 +138,7 @@ export const cursos = [
         "-Generacion de material digital",
         "-Estrategias de ventas",
         "-Atencion al cliente y negociacion"
-      ]
+      ],imagenCurso: imagecurso11
     },
     {
       id: 8,
@@ -140,7 +155,7 @@ export const cursos = [
         "-Gestion y Emprendimiento",
         " Estrategia de ventas",
         "Atencion al cliente"
-      ]
+      ], imagenCurso: imagecurso5
     },
     {
       id: 9,
@@ -156,7 +171,7 @@ export const cursos = [
         "-Implementacion",
         "-Monitoreo",
         "-Rendicion de Cuenta"
-      ]
+      ], imagenCurso: imagecurso4
     },
     {
       id: 10,
@@ -173,7 +188,7 @@ export const cursos = [
         "-Plan Financiero",
         "-Plan de Marketing",
         "-Obligaciones Tributarias"
-      ]
+      ], imagenCurso: imagecurso2
     },
     {
       id: 11,
@@ -192,7 +207,7 @@ export const cursos = [
         "-Paso para elaborar tu presupuesto",
         "-Monitoreo del plan de finanzas personales",
         "-Matematica financiera"
-      ]
+      ], imagenCurso: imagecurso1
     },
     {
       id: 12,
@@ -210,7 +225,7 @@ export const cursos = [
         "-Introduccion al marketing digital",
         "-Rol de las RRSS en los negocios",
         "-Whatsapp business'"
-      ]
+      ], imagenCurso: imagecurso17
     },
     {
       id: 13,
@@ -224,6 +239,6 @@ export const cursos = [
         "-El mercado",
         "-Administracion",
         "-Calculo de manejo del dinero en el negocio"
-      ]    
+      ], imagenCurso: imagecurso16    
     }
   ]
