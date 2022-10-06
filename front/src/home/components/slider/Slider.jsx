@@ -13,10 +13,10 @@ export const Slider = () => {
 			<img src={Slider1} className="d-block w-100" alt="..."/>
 		  </div>
 		  <div className="carousel-item">
-			<img src={Slider2} className="d-block w-100" alt="..."/>
+			<img src={Slider3} className="d-block w-100" alt="..."/>
 		  </div>
 		  <div className="carousel-item">
-			<img src={Slider3} className="d-block w-100" alt="..."/>
+			<img src={Slider2} className="d-block w-100" alt="..."/>
 		  </div>
 		</div>
 		<button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
