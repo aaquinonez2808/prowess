@@ -1,7 +1,6 @@
 import React from 'react'
 import inscripcion from '../assets/img/inscrip.jpg'
 import {NavbarRedes} from  '../components/navbar/NavbarRedes'
-import { NavbarRedes } from '../components/navbar/NavbarRedes'
 
 function RegistroPage() {
   const [page, setPage] = React.useState(1);
@@ -141,11 +140,8 @@ function RegistroPage() {
                   </div>
                 </div>
                 <div className=" row mb-4 gap-2 ">
-                  <div className="form-check-label">
-                    <input type="checkbox" name="terminos" id="terminos" value="Terminos" />
-
-                  </div>
-                  <div className="col-10">         
+                  <div className="">     
+                  <input type="checkbox" name="terminos" id="terminos" value="Terminos" />    
                     <a href="/terminos" target="_blank" rel="noreferrer">He Leído y Acepto los Términos y Condiciones </a>                    
                   </div>
                 </div>
