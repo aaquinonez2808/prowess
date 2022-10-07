@@ -5,7 +5,7 @@ const Contenido = ({ curso }) => {
   return (
     <>
     <div className="row " id="principal">
-        <div className="col-md-6 col-xs-12 p-4">
+        <div className="col-md-6 col-xs-12 p-4 cabecera" >
             <h1 className="title-nombre"> CURSO DE {curso.nombre}</h1>
             <h4 align="left" className="text-modalidad "> Modalidad del Curso: {curso.modalidad}</h4>
             <ul className="list-group">
@@ -15,6 +15,7 @@ const Contenido = ({ curso }) => {
                 })
               }
             </ul>
+
             <button className="button">INSCRIBETE YA</button>
         </div>
         <div className="col-md-6 col-xs-12" id="prueba">  

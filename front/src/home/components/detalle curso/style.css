@@ -1,7 +1,6 @@
 
 @import url('http://fonts.cdnfonts.com/css/gagalin');
 
-
 .title-nombre {
     font-size: 4rem;
     font-weight: bold;
@@ -20,6 +19,10 @@
     position: absolute;
     font-family: 'Montserrat', sans-serif;
 }
+.cabecera{
+    position: relative;
+    background-color:  #3B8479;
+}
 
 .button{
     margin-bottom: 20px;
@@ -32,9 +35,11 @@
     font-weight: bold;
     max-width: 350px;
     max-height: 50px;
-    display: block;
+    display: flex;
     margin: auto;
+
 }
+
 .bg-none {
     background-color: transparent;
     border-color: transparent;
@@ -49,9 +54,7 @@
     margin: 0;
 }
 
-#prueba{
-    padding: 0;
-}
+
 
 
 
