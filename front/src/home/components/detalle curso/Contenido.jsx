@@ -1,5 +1,6 @@
 import React from "react";
 import "./style.css";
+import { NavLink } from "react-router-dom";
 
 const Contenido = ({ curso }) => {
   return (
@@ -15,8 +16,11 @@ const Contenido = ({ curso }) => {
                 })
               }
             </ul>
-
-            <button className="button">INSCRIBETE YA</button>
+            <div className=" btn-register">
+            <NavLink to={`/register`} className="nav-link" target="_blank">  
+              <button className="button">INSCRIBETE YA</button>
+            </NavLink>
+            </div>  
         </div>
         <div className="col-md-6 col-xs-12" id="prueba">  
           <img 
