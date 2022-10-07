@@ -1,7 +1,7 @@
 import React from 'react'
 import inscripcion from '../assets/img/inscrip.jpg'
 import {NavbarRedes} from  '../components/navbar/NavbarRedes'
-import { useForm } from "react-hook-form";
+
 
 function RegistroPage() {
   const [page, setPage] = React.useState(1);
@@ -146,7 +146,7 @@ function RegistroPage() {
                   </div>
                   <div className="col-10">
                     
-                    <a href="/terminos" target="_blank">He Leído y Acepto los Términos y Condiciones </a>
+                    <a href="/terminos" target="_blank" rel="noreferrer">He Leído y Acepto los Términos y Condiciones </a>
                     
                   </div>
                 </div>
