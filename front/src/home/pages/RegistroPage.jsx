@@ -17,16 +17,16 @@ function RegistroPage() {
   return (
 
 
-    <div className="row">
+    <div className="row ">
       <div>
         <>
           <NavbarRedes />
         </>
       </div>
-      <div className="col-6" >
+      <div className=" col-md-6 col-xs-12 image-form" >
         <img width="100%" height="100%" src={inscripcion} alt="inscripcion" />
       </div>
-      <div className="col-6">
+      <div className="col-md-6 col-xs-12">
         <form className="form" id="form" >
           <p className="form-titulo">{page}/2 Regístrate</p>
           {
@@ -141,11 +141,13 @@ function RegistroPage() {
                   </div>
                 </div>
                 <div className=" row mb-4 gap-2 ">
-                  <div className="col-2 d-block">
+                  <div className="col-2 d-block form-check">
                     <input type="checkbox" name="terminos" id="terminos" value="Terminos" />
                   </div>
                   <div className="col-10">
-                    <a href="#">He Leído y Acepto los Términos y Condiciones </a>
+                    
+                    <a href="/terminos" target="_blank">He Leído y Acepto los Términos y Condiciones </a>
+                    
                   </div>
                 </div>
                 <div className='d-flex justify-content-between'>
