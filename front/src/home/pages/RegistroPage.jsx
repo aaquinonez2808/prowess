@@ -1,5 +1,7 @@
 import React from 'react'
 import inscripcion from '../assets/img/inscrip.jpg'
+import {NavbarRedes} from  '../components/navbar/NavbarRedes'
+import { useForm } from "react-hook-form";
 
 function RegistroPage() {
   const [page, setPage] = React.useState(1);
@@ -16,6 +18,11 @@ function RegistroPage() {
 
 
     <div className="row">
+      <div>
+        <>
+          <NavbarRedes />
+        </>
+      </div>
       <div className="col-6" >
         <img width="100%" height="100%" src={inscripcion} alt="inscripcion" />
       </div>
