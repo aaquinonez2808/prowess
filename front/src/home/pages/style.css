@@ -81,9 +81,6 @@ body {
   color: var(--cnegro);
 }
 
-
-
-
 .form-boton button {
   background: var(--cnegro);
   color: var(--cblanco);
@@ -134,4 +131,9 @@ body {
   text-align: center;
   font-family: sans-serif;
   font-weight: lighter;
+}
+
+span::before {
+  display: inline;
+  content: "⚠ ";
 }

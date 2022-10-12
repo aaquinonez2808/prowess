@@ -1,10 +1,16 @@
 import React from 'react'
+import { useState } from 'react';
 import inscripcion from '../assets/img/inscrip.jpg'
 import { NavbarRedes } from '../components/navbar/NavbarRedes'
-import { useForm } from "react-hook-form";
+import { formValidations } from '../helpers/getValidation';
+import { useForm } from '../hooks/useForm';
+
+const formData = {nombre:'', apellido:'',email:'',password:'',cedula:'', direccion:'', celular:''}
 
 function RegistroPage() {
   const [page, setPage] = React.useState(1);
+  const validation= formValidations;
+  const [formSubmitted, setFormSubmitted] = useState(false);
 
   const handleNext = () => {
     setPage((prevPage) => prevPage + 1);
@@ -14,14 +20,18 @@ function RegistroPage() {
     setPage((prevPage) => prevPage - 1);
   };
 
+  const{onInputChange, formState, formValidation}=useForm(formData,validation);
+  
   const Registrar = (e) => {
-    console.log(e);
+    e.preventDefault();
+    setFormSubmitted(true);
+console.log(formValidation);
+
   };
 
-  const { register,  handleSubmit, formState: { errors } } = useForm();
+ 
 
-  return (
-
+  return (  
 
     <div className="row ">
       <div>
@@ -33,38 +43,38 @@ function RegistroPage() {
         <img width="100%" height="100%" src={inscripcion} alt="inscripcion" />
       </div>
       <div className="col-md-6 col-xs-12">
-        <form className="form" id="form" onSubmit={handleSubmit(Registrar)}>
+        <form className="form" id="form" onSubmit={Registrar}>
           <p className="form-titulo">{page}/2 Regístrate</p>
           {
             page === 1 && (
               <>
                 <div className="form-input myname">
                   <label htmlFor="myname">Nombres</label>
-                  <input type="text" placeholder="Nombres" {...register("nombre", { required: true })}></input>
+                  <input type="text" placeholder="Nombres" name='nombre' onChange={onInputChange} value={formState.nombre}/>
+                  <p className='mensajeError'>{(!!formValidation.nombreValid && formSubmitted)&& formValidation.nombreValid}</p>
                 </div>
                 <div className="form-input surname">
                   <label htmlFor="surname">Apellidos</label>
-                  <input type="text" name="Apellidos" placeholder="Apellidos" ></input>
+                  <input type="text" placeholder="Apellidos"  name='apellido' onChange={onInputChange}/>
                   <p className="mensajeError"></p>
                 </div>
                 <div className="form-input email">
                   <label htmlFor="email">Correo electrónico</label>
-                  <input type="email" name="Email" placeholder="Email" ></input>
+                  <input type="email" placeholder="Email"  name='email' onChange={onInputChange}/>
                   <p className="mensajeError"></p>
                 </div>
                 <div className="form-input mobile">
                   <label htmlFor="mobile">Cedula</label>
-                  <input type="number" name="Cedula" placeholder="Cedula" ></input>
-                  <p className="mensajeError"></p>
+                  <input type="number" placeholder="Cedula"  name='cedula' onChange={onInputChange}/>
                 </div>
                 <div className="form-input password">
                   <label htmlFor="password">Contraseña</label>
-                  <input type="password" name="Contraseñ" placeholder="Contraseña"  ></input>
+                  <input type="password" name="password" placeholder="Contraseña"  ></input>
                   <p className="mensajeError"></p>
                 </div>
                 <div className="form-input repeatPassword">
                   <label htmlFor="repeatPassword">Repetir Contraseña</label>
-                  <input type="password" name="Contraseña" placeholder="Contraseña" ></input>
+                  <input type="password" name="password" placeholder="Contraseña" ></input>
                   <p className="mensajeError"></p>
                 </div>
                 <div className="form-regist-select mb-4" >
@@ -75,7 +85,7 @@ function RegistroPage() {
                   </select>
                 </div>
                 <div className="form-boton d-flex justify-content-end ">
-                  <button type="button" className="" target="_blank" onClick={handleNext}>Siguiente</button>
+                  <button type="button" onClick={handleNext}>Siguiente</button>
                 </div>
               </>
             )
@@ -109,13 +119,12 @@ function RegistroPage() {
                 </div>
                 <div className="form-input mobile">
                   <label htmlFor="mobile">Direccion</label>
-                  <input type="text"  {...register("direccion", { required: true })} ></input>
-                  {errors.direccion && <span>This field is required</span>}
+                  <input type="text"  placeholder="Direccion"  name='direccion' onChange={onInputChange} value={formState.direccion}/>
+                  <p className='mensajeError'>{(!!formValidation.direccionValid && formSubmitted)&& formValidation.direccionValid}</p>
                 </div>
                 <div className="form-input mobile">
                   <label htmlFor="mobile">Celular</label>
-                  <input type="number" name="Celular" placeholder="Celular" ></input>
-                  <p className="mensajeError"></p>
+                  <input type="number" placeholder="Celular"  name='celular' onChange={onInputChange}/>
                 </div>
                 <div className="form-regist-select mb-4" >
                   <select className="form-select" >
@@ -153,10 +162,10 @@ function RegistroPage() {
                 </div>
                 <div className='d-flex justify-content-between'>
                   <div className="form-boton ">
-                    <button type="button" className="" target="_blank" onClick={handlePrev}>Atras</button>
+                    <button type="button" onClick={handlePrev}>Atras</button>
                   </div>
                   <div className="form-boton ">
-                    <button type="Submit" className="">Registrar</button>
+                    <button type="Submit" >Registrar</button>
                   </div>
                 </div>
 
