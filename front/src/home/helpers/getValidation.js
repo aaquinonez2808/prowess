@@ -4,6 +4,6 @@ export const formValidations = {
     nombre: [ (value) => value.length >= 1, 'El nombre es obligatorio.'],
     apellido: [ (value) => value.length >= 1, 'El nombre es obligatorio.'],
     direccion:[(value)=> value.length>=1,'La direccion es obligatoria'],
-    cedula: [ (value) => value.length >= 1, 'El nombre es obligatorio.'],
-    celular: [ (value) => value.length >= 1, 'El nombre es obligatorio.'],
+    cedula: [ (value) => value.length >= 1, 'El cedula es obligatorio.'],
+    celular: [ (value) => value.length >= 1, 'El celular es obligatorio.'],
 }
