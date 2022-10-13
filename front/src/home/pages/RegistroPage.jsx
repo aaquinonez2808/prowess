@@ -5,7 +5,7 @@ import { NavbarRedes } from '../components/navbar/NavbarRedes'
 import { formValidations } from '../helpers/getValidation';
 import { useForm } from '../hooks/useForm';
 
-const formData = { nombre: '', apellido: '', email: '', password: '', cedula: '', direccion: '', celular: '' }
+const formData = { nombre: '', apellido: '', email: '', password: '', cedula: '', direccion: '', celular: '', password2:'' }
 
 function RegistroPage() {
   const [page, setPage] = React.useState(1);
@@ -75,8 +75,8 @@ function RegistroPage() {
                 </div>
                 <div className="form-input repeatPassword">
                   <label htmlFor="repeatPassword">Repetir Contraseña</label>
-                  <input type="password" name="password" placeholder="Contraseña" onChange={onInputChange} value={formState.password} />
-                  <p className='mensajeError'>{(!!formValidation.passwordValid && formSubmitted) && formValidation.passwordValid}</p>
+                  <input type="password" name="password2" placeholder="Contraseña" onChange={onInputChange} value={formState.password2} />
+                  <p className='mensajeError'>{(!!formValidation.password2Valid && formSubmitted) && formValidation.password2Valid}</p>
                 </div>
                 <div className="form-regist-select mb-4" >
                   <select className="form-select" >

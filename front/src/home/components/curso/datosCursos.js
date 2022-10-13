@@ -12,25 +12,25 @@ import imagen11 from './images/11.png'
 import imagen12 from './images/12.png'
 import imagen13 from './images/13.png'
 //Imagenes de cursos detallados
-import imagecurso1 from "..///detalle curso/image/1.png"
 import imagecurso2 from "..///detalle curso/image/2.png"
 import imagecurso3 from "..///detalle curso/image/3.png"
 import imagecurso4 from "..///detalle curso/image/4.png"
 import imagecurso5 from "..///detalle curso/image/5.png"
 import imagecurso6 from "..///detalle curso/image/6.png"
+import imagecurso7 from "..///detalle curso/image/7.png"
+import imagecurso8 from "..///detalle curso/image/8.png"
+import imagecurso9 from "..///detalle curso/image/9.png"
+import imagecurso10 from "..///detalle curso/image/10.png"
 import imagecurso11 from "..///detalle curso/image/11.png"
 import imagecurso12 from "..///detalle curso/image/12.png"
+import imagecurso13 from "..///detalle curso/image/13.png"
 import imagecurso14 from "..///detalle curso/image/14.png"
-import imagecurso15 from "..///detalle curso/image/15.png"
-import imagecurso16 from "..///detalle curso/image/16.png"
-import imagecurso17 from "..///detalle curso/image/17.png"
-import imagecurso18 from "..///detalle curso/image/18.png"
 
 export const cursos = [
     {
       id: 1,
       nombre: 'CONTABILIDAD BASICA',
-      descripcion: 'Curso de React',
+      descripcion: 'Curso 1',
       imagen: imagen1,
       modalidad:" En linea",
       aprender: [
@@ -43,12 +43,12 @@ export const cursos = [
         "-Cuentas especiales",
         "-Nomina"
       ],
-      imagenCurso: imagecurso3
+      imagenCurso: imagecurso14
     },
     {
       id: 2,
       nombre: 'CONTABILIDAD DE COSTOS',
-      descripcion: 'Curso de Angular',
+      descripcion: 'Curso 2',
       imagen: imagen2,
       modalidad: "En Linea",
       aprender: [
@@ -57,12 +57,12 @@ export const cursos = [
         "-Metodologia",
         "-Metodologia para el calculo de costos: Modelo Organico"
       ],
-      imagenCurso: imagecurso6
+      imagenCurso: imagecurso2
     },
     {
       id: 3,
       nombre: 'COSTOS AVANZADOS',
-      descripcion: 'Curso de Vue',
+      descripcion: 'Curso 3',
       imagen: imagen3,
       modalidad: "En Linea",
       aprender: [
@@ -72,12 +72,12 @@ export const cursos = [
         "-Costeo estandar y produccion conjunta",
         "-Costos Conjuntos",
         "-Subproductos"
-      ],imagenCurso: imagecurso15
+      ],imagenCurso: imagecurso3
     },
     {
       id: 4,
       nombre: 'AUXILIAR CONTABLE',
-      descripcion: 'Curso de Node',
+      descripcion: 'Curso 4',
       imagen: imagen4,
       modalidad: "En linea",
       aprender: [
@@ -89,12 +89,12 @@ export const cursos = [
         "-El ciclo contable",
         "-Cuentas especiales",
         "-Nomina"
-      ],imagenCurso: imagecurso18
+      ],imagenCurso: imagecurso4
     },
     {
       id: 5,
       nombre: 'ACTUALIZACIÓN REFORMA TRIBUTARIA',
-      descripcion: 'Curso de Laravel',
+      descripcion: 'Curso 5',
       imagen: imagen5,
       modalidad: 'En Linea',
       aprender: [
@@ -107,12 +107,12 @@ export const cursos = [
         "-Activos en el exterior",
         "-Salidas de divisas",
         "-Mediacion de deuda"
-      ], imagenCurso: imagecurso14
+      ], imagenCurso: imagecurso5
     },
     {
       id: 6,
       nombre: 'CÓMO CREAR TU PÁGINA WEB',
-      descripcion: 'Curso de PHP',
+      descripcion: 'Curso 6',
       imagen: imagen6,
       modalidad: "En Linea",
       aprender: [
@@ -122,12 +122,12 @@ export const cursos = [
         "-Bloques de Texto",
         "-Bloques de medios",
         "-Estrategias de venta"
-      ], imagenCurso: imagecurso12 
+      ], imagenCurso: imagecurso6 
     },
     {
       id: 7,
       nombre: 'MARKETING DIGITAL BÁSICO',
-      descripcion: 'Curso de Python',
+      descripcion: 'Curso 7',
       imagen: imagen7,
       modalidad: "En Linea",
       aprender: [
@@ -138,12 +138,12 @@ export const cursos = [
         "-Generacion de material digital",
         "-Estrategias de ventas",
         "-Atencion al cliente y negociacion"
-      ],imagenCurso: imagecurso11
+      ],imagenCurso: imagecurso7
     },
     {
       id: 8,
       nombre: 'MARKETING DIGITAL AVANZADO',
-      descripcion: 'Curso de Java',
+      descripcion: 'Curso 8',
       imagen: imagen8,
       modalidad: "En Linea",
       aprender: [
@@ -155,12 +155,12 @@ export const cursos = [
         "-Gestion y Emprendimiento",
         " Estrategia de ventas",
         "Atencion al cliente"
-      ], imagenCurso: imagecurso5
+      ], imagenCurso: imagecurso8
     },
     {
       id: 9,
       nombre: 'LÍDERES COMUNITARIOS',
-      descripcion: 'Curso de C#',
+      descripcion: 'Curso 9',
       imagen: imagen9,
       modalidad: "En Linea",
       aprender: [
@@ -171,12 +171,12 @@ export const cursos = [
         "-Implementacion",
         "-Monitoreo",
         "-Rendicion de Cuenta"
-      ], imagenCurso: imagecurso4
+      ], imagenCurso: imagecurso9
     },
     {
       id: 10,
       nombre: 'DESCUBRE TU POTENCIAL EMPRENDEDOR',
-      descripcion: 'Curso de C++',
+      descripcion: 'Curso 10',
       imagen: imagen10,
       modalidad: "En Linea",
       aprender: [
@@ -188,12 +188,12 @@ export const cursos = [
         "-Plan Financiero",
         "-Plan de Marketing",
         "-Obligaciones Tributarias"
-      ], imagenCurso: imagecurso2
+      ], imagenCurso: imagecurso10
     },
     {
       id: 11,
       nombre: 'FINANZAS PERSONALES',
-      descripcion: 'Curso de C',
+      descripcion: 'Curso 11',
       imagen: imagen11,
       modalidad: "En Linea",
       aprender: [
@@ -207,12 +207,12 @@ export const cursos = [
         "-Paso para elaborar tu presupuesto",
         "-Monitoreo del plan de finanzas personales",
         "-Matematica financiera"
-      ], imagenCurso: imagecurso1
+      ], imagenCurso: imagecurso11
     },
     {
       id: 12,
       nombre: 'E-COMMERCE',
-      descripcion: 'Curso de Ruby',
+      descripcion: 'Curso 12',
       imagen: imagen12,
       modalidad: 'En Linea',
       aprender: [
@@ -225,12 +225,12 @@ export const cursos = [
         "-Introduccion al marketing digital",
         "-Rol de las RRSS en los negocios",
         "-Whatsapp business'"
-      ], imagenCurso: imagecurso17
+      ], imagenCurso: imagecurso12
     },
     {
       id: 13,
       nombre: 'MI NEGOCIO',
-      descripcion: 'Curso de Swift',
+      descripcion: 'Curso 13',
       imagen: imagen13,
       modalidad: "En Linea",
       aprender: [
@@ -239,6 +239,6 @@ export const cursos = [
         "-El mercado",
         "-Administracion",
         "-Calculo de manejo del dinero en el negocio"
-      ], imagenCurso: imagecurso16    
+      ], imagenCurso: imagecurso13    
     }
   ]
