@@ -5,7 +5,11 @@ import { NavbarRedes } from '../components/navbar/NavbarRedes'
 import { formValidations } from '../helpers/getValidation';
 import { useForm } from '../hooks/useForm';
 
-const formData = { nombre: '', apellido: '', email: '', password: '', cedula: '', direccion: '', celular: '', password2:'' }
+const formData = {
+  nombre: '', apellido: '', email: '', password: '', cedula: '', direccion: '',
+  celular: '', password2: '', pais: 'Pais', provincia: 'Provincia', ciudad: 'Ciudad',
+  edad: 'Edad', curso: 'Cursos', entero: '¿Como se entero?', sexo: '', terminos: ''
+}
 
 function RegistroPage() {
   const [page, setPage] = React.useState(1);
@@ -20,13 +24,16 @@ function RegistroPage() {
     setPage((prevPage) => prevPage - 1);
   };
 
-  const { onInputChange, formState, formValidation } = useForm(formData, validation);
+  const { onInputChange, formState, formValidation, onResetForm, isFormValid } = useForm(formData, validation);
 
   const Registrar = (e) => {
     e.preventDefault();
     setFormSubmitted(true);
-    console.log(formValidation);
-
+    if (isFormValid) {
+      console.log(formState);
+      onResetForm();
+      setFormSubmitted(false);
+    }
   };
 
 
@@ -49,7 +56,7 @@ function RegistroPage() {
             page === 1 && (
               <>
                 <div className="form-input myname">
-                  <label htmlFor="myname">Nombres</label>
+                  {/*<label htmlFor="myname">Nombres</label>*/}
                   <input type="text" placeholder="Nombres" name='nombre' onChange={onInputChange} value={formState.nombre} />
                   <p className='mensajeError'>{(!!formValidation.nombreValid && formSubmitted) && formValidation.nombreValid}</p>
                 </div>
@@ -60,7 +67,7 @@ function RegistroPage() {
                 </div>
                 <div className="form-input email">
                   <label htmlFor="email">Correo electrónico</label>
-                  <input type="email" placeholder="Email" name='email' onChange={onInputChange} value={formState.email} />
+                  <input type="email" placeholder="email@example.com" name='email' onChange={onInputChange} value={formState.email} />
                   <p className='mensajeError'>{(!!formValidation.emailValid && formSubmitted) && formValidation.emailValid}</p>
                 </div>
                 <div className="form-input mobile">
@@ -79,11 +86,12 @@ function RegistroPage() {
                   <p className='mensajeError'>{(!!formValidation.password2Valid && formSubmitted) && formValidation.password2Valid}</p>
                 </div>
                 <div className="form-regist-select mb-4" >
-                  <select className="form-select" >
-                    <option value="">Pais</option>
+                  <select className="form-select" name="pais" onChange={onInputChange}>
+                    <option value="Pais">Pais</option>
                     <option value="A">Category A</option>
                     <option value="B">Category B</option>
                   </select>
+                  <p className='mensajeError'>{(!!formValidation.paisValid && formSubmitted) && formValidation.paisValid}</p>
                 </div>
                 <div className="form-boton d-flex justify-content-end ">
                   <button type="button" onClick={handleNext}>Siguiente</button>
@@ -95,28 +103,31 @@ function RegistroPage() {
             page === 2 && (
               <>
                 <div className="form-regist-select mb-4" >
-                  <select className="form-select" >
-                    <option value="">Provincia</option>
+                  <select className="form-select" name="provincia" onChange={onInputChange} >
+                    <option value="Provincia">Provincia</option>
                     <option value="A">Category A</option>
                     <option value="B">Category B</option>
                   </select>
+                  <p className='mensajeError'>{(!!formValidation.provinciaValid && formSubmitted) && formValidation.provinciaValid}</p>
                 </div>
                 <div className="form-regist-select mb-4" >
-                  <select className="form-select" >
-                    <option value="">Cuidad</option>
+                  <select className="form-select" name="ciudad" onChange={onInputChange} >
+                    <option value="Ciudad">Ciudad</option>
                     <option value="A">Category A</option>
                     <option value="B">Category B</option>
                   </select>
+                  <p className='mensajeError'>{(!!formValidation.ciudadValid && formSubmitted) && formValidation.ciudadValid}</p>
                 </div>
                 <div className="form-regist-select mb-4" >
-                  <select className="form-select" >
-                    <option value="">Edad</option>
+                  <select className="form-select" name="edad" onChange={onInputChange} >
+                    <option value="Edad">Edad</option>
                     <option value="18">Menos a 18 </option>
                     <option value="25">18 a 25</option>
                     <option value="35">26 a 35</option>
                     <option value="45">36 a 45</option>
                     <option value="100">Mayor a 45</option>
                   </select>
+                  <p className='mensajeError'>{(!!formValidation.edadValid && formSubmitted) && formValidation.edadValid}</p>
                 </div>
                 <div className="form-input mobile">
                   <label htmlFor="mobile">Direccion</label>
@@ -129,39 +140,41 @@ function RegistroPage() {
                   <p className='mensajeError'>{(!!formValidation.celularValid && formSubmitted) && formValidation.celularValid}</p>
                 </div>
                 <div className="form-regist-select mb-4" >
-                  <select className="form-select" >
-                    <option value="">Diplomado</option>
+                  <select className="form-select" name="curso" onChange={onInputChange} >
+                    <option value="Cursos">Cursos</option>
                     <option value="A">Category A</option>
                     <option value="B">Category B</option>
                   </select>
+                  <p className='mensajeError'>{(!!formValidation.cursoValid && formSubmitted) && formValidation.cursoValid}</p>
                 </div>
                 <div className="form-regist-select mb-4">
-                  <select className="form-select" >
-                    <option value="">¿Como se entero?</option>
-                    <option value="">Facebook</option>
-                    <option value="">Instagram</option>
-                    <option value="">Anuncio</option>
-                    <option value="">Twitter</option>
-                    <option value="">Volante</option>
-                    <option value="">Youtube</option>
+                  <select className="form-select" name="entero" onChange={onInputChange} >
+                    <option value="¿Como se entero?">¿Como se entero?</option>
+                    <option value="Facebook">Facebook</option>
+                    <option value="Instagram">Instagram</option>
+                    <option value="Anuncio">Anuncio</option>
+                    <option value="Twitter">Twitter</option>
+                    <option value="Volante">Volante</option>
+                    <option value="Youtube">Youtube</option>
                   </select>
+                  <p className='mensajeError'>{(!!formValidation.enteroValid && formSubmitted) && formValidation.enteroValid}</p>
                 </div>
                 <div className="form-regist-radio mb-4 row">
                   <div className="col-6">
-                    <input type="radio" id="Masculino" value="Masculino" name='sexo' />
+                    <input type="radio" id="Masculino" value="Masculino" name='sexo' onChange={onInputChange} />
                     <label htmlFor="Masculino">Masculino</label>
-                    
                   </div>
                   <div className="col-6" >
-                    <input type="radio" id="Femenino" value="Femenino" name='sexo' />
+                    <input type="radio" id="Femenino" value="Femenino" name='sexo' onChange={onInputChange} />
                     <label htmlFor="Femenino">Femenino</label>
-                    
                   </div>
+                  <p className='mensajeError'>{(!!formValidation.sexoValid && formSubmitted) && formValidation.sexoValid}</p>
                 </div>
                 <div className=" row mb-4 gap-2 ">
                   <div className="">
-                    <input type="checkbox" name="terminos" id="terminos" value="Terminos" />
+                    <input type="checkbox" name="terminos" id="terminos" value="Terminos" onChange={onInputChange} />
                     <a href="/terminos" target="_blank" rel="noreferrer">He Leído y Acepto los Términos y Condiciones </a>
+                    <p className='mensajeError'>{(!!formValidation.terminosValid && formSubmitted) && formValidation.terminosValid}</p>
                   </div>
                 </div>
                 <div className='d-flex justify-content-between'>
