@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
+import { getAuthentication, getCiudad, getPais, getProvincia } from '../../services/getPais';
 import inscripcion from '../assets/img/inscrip.jpg'
 import { NavbarRedes } from '../components/navbar/NavbarRedes'
 import { formValidations } from '../helpers/getValidation';
@@ -29,11 +30,16 @@ function RegistroPage() {
   const Registrar = (e) => {
     e.preventDefault();
     setFormSubmitted(true);
+    setFormSubmitted(false);
+    getCiudad('Esmeraldas').then((response) => {
+        console.log(response);
+    }
+    ) 
     if (isFormValid) {
       console.log(formState);
       onResetForm();
-      setFormSubmitted(false);
-    }
+      
+    } 
   };
 
 
