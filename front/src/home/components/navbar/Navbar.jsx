@@ -42,6 +42,7 @@ export const Navbar = () => {
               href="https://prowessmooc.milaulas.com/login/index.php"
               target="_blank"
               className="nav-link"
+              rel="noreferrer"
             >
               Campus Virtual
             </a>

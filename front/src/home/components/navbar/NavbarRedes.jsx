@@ -24,24 +24,24 @@ export const NavbarRedes = () => {
       <nav className="navbar navbar-expand-md navbar-light bgnavbar2 justify-content-end">
         <ul className="navbar-nav gap-2 mx-4">
           <li className="nav-item">
-            <a href="https://www.facebook.com/prowess.ec" target={"_blank"} className="nav-link py-0">
+            <a href="https://www.facebook.com/prowess.ec" target={"_blank"} className="nav-link py-0" rel="noreferrer">
               <FacebookIcon />
             </a>
           </li>
           <li className="nav-item ">
-            <a href="https://www.facebook.com/prowess.ec" target={"_blank"} className="nav-link py-0">
+            <a href="https://www.facebook.com/prowess.ec" target={"_blank"} className="nav-link py-0" rel="noreferrer">
               <InstagramIcon />
             </a>
           </li>
           <li className="nav-item">
-            <a href="/" target={"_blank"} className="nav-link py-0">
+            <a href="/" target={"_blank"} className="nav-link py-0" rel="noreferrer">
               <div style={{ width: "25px" }}>
                 <TikTokIcon />
               </div>
             </a>
           </li>
           <li className="nav-item">
-            <a href="https://twitter.com/ProwessEc" target={"_blank"} className="nav-link py-0">
+            <a href="https://twitter.com/ProwessEc" target={"_blank"} className="nav-link py-0" rel="noreferrer">
               <TwitterIcon />
             </a>
           </li>
