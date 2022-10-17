@@ -49,9 +49,6 @@ function RegistroPage() {
   const Registrar = (e) => {
     e.preventDefault();
     setFormSubmitted(true);
-    getCiudad("Esmeraldas").then((response) => {
-      console.log(response);
-    });
     if (isFormValid) {
       console.log(formState);
       setFormSubmitted(false);
