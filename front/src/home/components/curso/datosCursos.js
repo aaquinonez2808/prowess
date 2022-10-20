@@ -29,19 +29,19 @@ import imagecurso14 from "..///detalle curso/image/14.png"
 export const cursos = [
     {
       id: 1,
-      nombre: 'CONTABILIDAD BASICA',
+      nombre: 'CONTABILIDAD BÁSICA',
       descripcion: 'Curso 1',
       imagen: imagen1,
-      modalidad:" En linea",
+      modalidad:" En línea",
       aprender: [
-        "Aprenderas:",
-        "-Conceptos basicos contables",
+        "Aprenderás:",
+        "-Conceptos básicos contables",
         "-Estudio de las cuentas",
-        "-Clasificacion de empresas y sociedades",
+        "-Clasificación de empresas y sociedades",
         "-Principios fundamentales contables",
         "-El ciclo contable",
         "-Cuentas especiales",
-        "-Nomina"
+        "-Nómina"
       ],
       imagenCurso: imagecurso14
     },
@@ -50,12 +50,12 @@ export const cursos = [
       nombre: 'CONTABILIDAD DE COSTOS',
       descripcion: 'Curso 2',
       imagen: imagen2,
-      modalidad: "En Linea",
+      modalidad: "En Línea",
       aprender: [
-        "Aprenderas: ",
-        "-Introduccion a la contabilidad de costos y presupuestos",
-        "-Metodologia",
-        "-Metodologia para el calculo de costos: Modelo Organico"
+        "Aprenderás: ",
+        "-Introducción a la contabilidad de costos y presupuestos",
+        "-Metodología",
+        "-Metodología para el cálculo de costos: Modelo Orgánico"
       ],
       imagenCurso: imagecurso2
     },
@@ -64,12 +64,12 @@ export const cursos = [
       nombre: 'COSTOS AVANZADOS',
       descripcion: 'Curso 3',
       imagen: imagen3,
-      modalidad: "En Linea",
+      modalidad: "En Línea",
       aprender: [
-        "Aprenderas: ",
+        "Aprenderás: ",
         "-Sistema de costo por procesos",
         "-Presupuesto",
-        "-Costeo estandar y produccion conjunta",
+        "-Costeo estándar y producción conjunta",
         "-Costos Conjuntos",
         "-Subproductos"
       ],imagenCurso: imagecurso3
@@ -79,16 +79,16 @@ export const cursos = [
       nombre: 'AUXILIAR CONTABLE',
       descripcion: 'Curso 4',
       imagen: imagen4,
-      modalidad: "En linea",
+      modalidad: "En línea",
       aprender: [
-        "Aprenderas: ",
-        "-Sistema de informacion contable",
+        "Aprenderás: ",
+        "-Sistema de información contable",
         "-Principios fundamentales",
-        "-Clasificacion de empresas y sociedades",
+        "-Clasificación de empresas y sociedades",
         "-Principios fundamentales contables",
         "-El ciclo contable",
         "-Cuentas especiales",
-        "-Nomina"
+        "-Nómina"
       ],imagenCurso: imagecurso4
     },
     {
@@ -96,29 +96,29 @@ export const cursos = [
       nombre: 'ACTUALIZACIÓN REFORMA TRIBUTARIA',
       descripcion: 'Curso 5',
       imagen: imagen5,
-      modalidad: 'En Linea',
+      modalidad: 'En Línea',
       aprender: [
-        "Aprenderas: ",
+        "Aprenderás: ",
         "-Impuesto a la renta",
-        "-Reduccion de IVA e ICE",
+        "-Reducción de IVA e ICE",
         "-Emprendimiento",
         "-Patrimonio",
         "-Utilidades",
         "-Activos en el exterior",
         "-Salidas de divisas",
-        "-Mediacion de deuda"
+        "-Mediación de deuda"
       ], imagenCurso: imagecurso5
     },
     {
       id: 6,
-      nombre: 'CÓMO CREAR TU PÁGINA WEB',
+      nombre: '¿CÓMO CREAR TU PÁGINA WEB?',
       descripcion: 'Curso 6',
       imagen: imagen6,
-      modalidad: "En Linea",
+      modalidad: "En Línea",
       aprender: [
-        "Aprenderas: ",
-        "-Introduccion",
-        "-El plan estrategico de marketing",
+        "Aprenderás: ",
+        "-Introducción",
+        "-El plan estratégico de marketing",
         "-Bloques de Texto",
         "-Bloques de medios",
         "-Estrategias de venta"
@@ -129,15 +129,15 @@ export const cursos = [
       nombre: 'MARKETING DIGITAL BÁSICO',
       descripcion: 'Curso 7',
       imagen: imagen7,
-      modalidad: "En Linea",
+      modalidad: "En Línea",
       aprender: [
-        "Aprenderas: ",
+        "Aprenderás: ",
         "-Identidad de marca",
-        "-Utilizacion de canva",
-        "-Creacion y manejo de redes sociales",
-        "-Generacion de material digital",
+        "-Utilización de canva",
+        "-Creación y manejo de redes sociales",
+        "-Generación de material digital",
         "-Estrategias de ventas",
-        "-Atencion al cliente y negociacion"
+        "-Atención al cliente y negociación"
       ],imagenCurso: imagecurso7
     },
     {
@@ -145,16 +145,16 @@ export const cursos = [
       nombre: 'MARKETING DIGITAL AVANZADO',
       descripcion: 'Curso 8',
       imagen: imagen8,
-      modalidad: "En Linea",
+      modalidad: "En Línea",
       aprender: [
-        "Aprenderas: ",
+        "Aprenderás: ",
         "-Funciones del marketing de la empresa",
-        "-Plan estrategico de marketing",
-        "-Analisis interno",
-        "-Analisis Externo",
-        "-Gestion y Emprendimiento",
+        "-Plan estratégico de marketing",
+        "-Análisis Interno",
+        "-Análisis Externo",
+        "-Gestión y Emprendimiento",
         " Estrategia de ventas",
-        "Atencion al cliente"
+        "Atención al cliente"
       ], imagenCurso: imagecurso8
     },
     {
@@ -162,15 +162,15 @@ export const cursos = [
       nombre: 'LÍDERES COMUNITARIOS',
       descripcion: 'Curso 9',
       imagen: imagen9,
-      modalidad: "En Linea",
+      modalidad: "En Línea",
       aprender: [
-        "Aprenderas: ",
+        "Aprenderás: ",
         "-Liderazgo",
-        "-Diagnostico comunitario",
-        "-Planificacion",
-        "-Implementacion",
+        "-Diagnóstico comunitario",
+        "-Planificación",
+        "-Implementación",
         "-Monitoreo",
-        "-Rendicion de Cuenta"
+        "-Rendición de Cuenta"
       ], imagenCurso: imagecurso9
     },
     {
@@ -178,13 +178,13 @@ export const cursos = [
       nombre: 'DESCUBRE TU POTENCIAL EMPRENDEDOR',
       descripcion: 'Curso 10',
       imagen: imagen10,
-      modalidad: "En Linea",
+      modalidad: "En Línea",
       aprender: [
-        "Aprenderas: ",
-        "-Conceptos basicos de emprendimiento",
-        "-Tecnicas y herramientas para generar ideas de negocios",
-        "-Tecnicas para el desarrollo de un emprendimiento",
-        "-Metodo Canvas",
+        "Aprenderás: ",
+        "-Conceptos básicos de emprendimiento",
+        "-Técnicas y herramientas para generar ideas de negocios",
+        "-Técnicas para el desarrollo de un emprendimiento",
+        "-Método Canvas",
         "-Plan Financiero",
         "-Plan de Marketing",
         "-Obligaciones Tributarias"
@@ -195,18 +195,18 @@ export const cursos = [
       nombre: 'FINANZAS PERSONALES',
       descripcion: 'Curso 11',
       imagen: imagen11,
-      modalidad: "En Linea",
+      modalidad: "En Línea",
       aprender: [
-        "Aprenderas: ",
-        "-Concepto basico de finanzas",
+        "Aprenderás: ",
+        "-Concepto básico de finanzas",
         "-Herramientas utiles para mejorar el uso de recursos",
-        "-Revisa tu situacion financiera",
+        "-Revisa tu situación financiera",
         "-Plan con base en objetivos",
         "-Flujo de caja",
         "-Desarrollo del plan financiero",
         "-Paso para elaborar tu presupuesto",
         "-Monitoreo del plan de finanzas personales",
-        "-Matematica financiera"
+        "-Matemática financiera"
       ], imagenCurso: imagecurso11
     },
     {
@@ -214,17 +214,17 @@ export const cursos = [
       nombre: 'E-COMMERCE',
       descripcion: 'Curso 12',
       imagen: imagen12,
-      modalidad: 'En Linea',
+      modalidad: 'En Línea',
       aprender: [
-        "Aprenderas: ",
-        "-Fundamentos de la transformacion digital",
-        "-Modelos de negocios digitales y cascs de exito",
+        "Aprenderás: ",
+        "-Fundamentos de la transformación digital",
+        "-Modelos de negocios digitales y cascs de éxito",
         "-Herramientas digitales para emprendimientos, pequeñas, medianas y grandes empresas",
         "-Marketplace vs E-Commerce",
         "-Construir en la era digital",
-        "-Introduccion al marketing digital",
+        "-Introducción al marketing digital",
         "-Rol de las RRSS en los negocios",
-        "-Whatsapp business'"
+        "-WhatsApp Business"
       ], imagenCurso: imagecurso12
     },
     {
@@ -232,13 +232,13 @@ export const cursos = [
       nombre: 'MI NEGOCIO',
       descripcion: 'Curso 13',
       imagen: imagen13,
-      modalidad: "En Linea",
+      modalidad: "En Línea",
       aprender: [
-        "Aprenderas: ",
+        "Aprenderás: ",
         "-Desarrollo de la idea de negocio",
         "-El mercado",
-        "-Administracion",
-        "-Calculo de manejo del dinero en el negocio"
+        "-Administración",
+        "-Cálculo de manejo del dinero en el negocio"
       ], imagenCurso: imagecurso13    
     }
   ]

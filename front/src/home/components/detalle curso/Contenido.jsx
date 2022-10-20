@@ -18,7 +18,7 @@ const Contenido = ({ curso }) => {
             </ul>
             <div className=" btn-register">
             <NavLink to={`/register`} className="nav-link" target="_blank" rel="noreferrer">  
-              <button className="button">INSCRIBETE YA</button>
+              <button className="button">INSCRÍBETE YA</button>
             </NavLink>
             </div>  
         </div>
