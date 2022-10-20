@@ -1,3 +1,16 @@
 .titulo{
-    
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bg-footer{
+    background-color: black;
+    margin: auto;
+    padding: auto;
+    font-size: large;
+}
+
+.fot-link{
+    color:white;
+    font-family: 'Montserrat', sans-serif;
 }
