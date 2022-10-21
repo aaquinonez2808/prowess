@@ -8,7 +8,7 @@ const TikTokIcon = ({ color = "#000000" }) => {
   return (
     <svg
       fill={color}
-      xmlns="http://www.w3.org/2000/svg"
+      xmlns="https://www.tiktok.com/@totalprowess_ec?_t=8WfSUUREkkf&_r=1"
       viewBox="0 0 50 50"
       width="100%"
       height="100%"
@@ -29,7 +29,7 @@ export const NavbarRedes = () => {
             </a>
           </li>
           <li className="nav-item ">
-            <a href="https://www.facebook.com/prowess.ec" target={"_blank"} className="nav-link py-0" rel="noreferrer">
+            <a href="https://instagram.com/prowess_ec?igshid=YmMyMTA2M2Y=" target={"_blank"} className="nav-link py-0" rel="noreferrer">
               <InstagramIcon />
             </a>
           </li>
@@ -46,7 +46,7 @@ export const NavbarRedes = () => {
             </a>
           </li>
         </ul>
-    </nav>
+      </nav>
     </>
   );
 };
