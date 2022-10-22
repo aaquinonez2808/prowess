@@ -34,7 +34,7 @@ export const NavbarRedes = () => {
             </a>
           </li>
           <li className="nav-item">
-            <a href="/" target={"_blank"} className="nav-link py-0" rel="noreferrer">
+            <a href="https://www.tiktok.com/@totalprowess_ec?_t=8WfSUUREkkf&_r=1" target={"_blank"} className="nav-link py-0" rel="noreferrer">
               <div style={{ width: "25px" }}>
                 <TikTokIcon />
               </div>
