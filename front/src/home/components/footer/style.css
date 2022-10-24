@@ -1,6 +1,8 @@
 .titulo{
     color: white;
     font-family: 'Montserrat', sans-serif;
+    padding: 10px;
+    margin: 10px;
 }
 
 .bg-footer{
@@ -8,6 +10,7 @@
     margin: auto;
     padding: auto;
     font-size: large;
+    height: 150px;
 }
 
 .fot-link{
