@@ -1,10 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import {
-  getAuthentication,
-  getCiudad,
   getPais,
-  getProvincia,
 } from "../../services/getPais";
 import inscripcion from "../assets/img/inscrip.jpg";
 import { NavbarRedes } from "../components/navbar/NavbarRedes";
@@ -48,21 +45,22 @@ function RegistroPage() {
 
   const Registrar = (e) => {
     e.preventDefault();
+    getPais().then((data) => {
+      console.log(data);
+    });
     setFormSubmitted(true);
+    
     if (isFormValid) {
       console.log(formState);
       setFormSubmitted(false);
       onResetForm();
     }
+    
   };
 
   return (
     <div className="row ">
-      <div>
-        <>
-          <NavbarRedes />
-        </>
-      </div>
+      <NavbarRedes />
       <div className=" col-md-6 col-xs-12 image-form">
         <img width="100%" height="100%" src={inscripcion} alt="inscripcion" />
       </div>
