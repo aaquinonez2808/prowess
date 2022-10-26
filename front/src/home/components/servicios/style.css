@@ -21,3 +21,140 @@
     line-height: 10px;
     font-size: 20px;
 }
+.img1{
+    
+    font-size: 2.6rem;
+    color: white;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 1600px;
+    left: 10%;
+    transform: translate(-50%, -50%);
+}
+.cards-list {
+  z-index: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+
+
+.card .card_image {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+}
+
+.card .card_image img {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+  object-fit: cover;
+}
+
+.card .card_title {
+  text-align: center;
+  border-radius: 0px 0px 40px 40px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: -80px;
+  height: 40px;
+}
+
+.img3:hover {
+  transform: scale(0.9, 0.9);
+
+
+}
+
+  
+  
+  
+  .card .card_image {
+    width: inherit;
+    height: inherit;
+    border-radius: 40px;
+  }
+  
+  .card .card_image img {
+    width: inherit;
+    height: inherit;
+    border-radius: 40px;
+    object-fit: cover;
+  }
+  
+  .card .card_title {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 1000;
+    font-size: 30px;
+    margin-top: -210px;
+    height: 40px;
+
+  }
+  .card_icon{
+    position: center;
+    margin-top: -310px;
+    margin-left: 85px;
+    height: -80px;
+    width: 150px;
+
+  }
+  .card_but{
+    margin-top: 130px;
+    margin-left: 20px;
+    
+  }
+  .card_color {
+    background-color: #dcece4;
+    
+
+}
+.card1 {
+  margin: 30px auto;
+  border-radius: 10px;
+  border-bottom: #3B8479;
+  background-color: #3B8479;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.card2 {
+  margin: 30px auto;
+  border-radius: 10px;
+  border-bottom: #dde9da;
+  background-color: #c9dac6;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.titleC {
+  margin-top: 18px;
+  margin-left: -2px;
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+}
+
+  .title-white {
+    color: white;
+  }
+  
+  .title-black {
+    color: black;
+    margin-top: -5px;
+    margin-left: -40px;
+  }
+  
+  @media all and (max-width: 500px) {
+    .card-list {
+      /* On small screens, we are no longer using row direction but column */
+      flex-direction: column;
+    }
+  }
+  
+  
