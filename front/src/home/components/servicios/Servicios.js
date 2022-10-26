@@ -5,6 +5,7 @@ import icon3 from "../../assets/img/icon-pay.png";
 import { NavLink } from "react-router-dom";
 import "./style.css";
 
+
 export const Servicios = () => {
   return (
     <div className="d-flex h-100 justify-content-center gap-5">
