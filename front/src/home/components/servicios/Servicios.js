@@ -18,6 +18,7 @@ import icon12 from "../../assets/img/i5.png";
 import img9 from "../../assets/img/9.png";
 import img10 from "../../assets/img/10.png";
 import img11 from "../../assets/img/11.png";
+import img12 from "../../assets/img/15.png";
 import img13 from "../../assets/img/16.png";
 import img14 from "../../assets/img/17.png";
 import icon9 from "../../assets/img/informa.jpg";
@@ -38,7 +39,8 @@ export const Servicios = () => {
       <div className="col-4 d-flex justify-content-center align-items-center servicio">
         <img className="icon " src={icon2} alt="" />
         <NavLink to="/">
-          CURSOS PERSONALIZADOS
+          CURSOS
+          PERSONALIZADOS
         </NavLink>
       </div>
 
@@ -57,7 +59,7 @@ export const Servicios = () => {
         <p>
           <div class="row gx-0 ">
 
-              <div class="col-3 card img2 ">
+              <div class="col-3 card img3 ">
                 <div>
                    <img className="img-fluid " src={ini1}   alt="" /> 
                 </div>
@@ -85,7 +87,7 @@ export const Servicios = () => {
                 </div>
               </div>
 
-              <div class="col-3 card img2">
+              <div class="col-3 card img3">
                 <div>
                    <img className="img-fluid " src={ini2}   alt="" /> 
                 </div>
@@ -113,7 +115,7 @@ export const Servicios = () => {
                 </div>
               </div>
 
-              <div class="col-3 card img2">
+              <div class="col-3 card img3">
                 <div>
                    <img className="img-fluid " src={ini3}   alt="" /> 
                 </div>
@@ -143,7 +145,7 @@ export const Servicios = () => {
                 </div>
               </div>
 
-              <div class="col-3 card img2">
+              <div class="col-3 card img3">
                 <div >
                    <img className="img-fluid " src={ini4}   alt="" /> 
                 </div>
@@ -203,18 +205,18 @@ export const Servicios = () => {
       <div class="row gx-3  container-xxl ">
         <div class="col-4 ">
           <div >
-            <img className="img-fluid " src={img9}   alt="" /> 
+            <img className="img-fluid img3 " src={img9}   alt="" /> 
           </div>  
         </div>
 
         <div class="col-4 ">
           <div >
-            <img className="img-fluid " src={img10}   alt="" /> 
+            <img className="img-fluid img3" src={img10}   alt="" /> 
           </div>  
         </div>  
         <div class="col-4 ">
           <div >
-            <img className="img-fluid " src={img11}   alt="" /> 
+            <img className="img-fluid img3 " src={img11}   alt="" /> 
           </div>  
         </div>
         
@@ -232,7 +234,7 @@ export const Servicios = () => {
                 
                 <div class="col text-center titleC  title-white">
                   <p>Administracíon</p>
-                  <div class="">
+                  <div class="card_cert">
                     <img className="img-fluid " src={icon10}   alt="" /> 
                   </div>
                   <p></p>
@@ -248,7 +250,7 @@ export const Servicios = () => {
               <div class="col">
                 <div class="col text-center titleC title-white ">
                   <p>Creación de páginas web</p>
-                  <div class="">
+                  <div class="card_cert">
                     <img className="img-fluid " src={icon11}   alt="" /> 
                   </div>
                   <p></p>
@@ -266,7 +268,7 @@ export const Servicios = () => {
               <div class="col">
                 <div class="col text-center titleC  title-white">
                     <p>Marketing digital</p>
-                    <div class="">
+                    <div class="card_cert">
                       <img className="img-fluid " src={icon12}   alt="" /> 
                     </div>
                   <p></p>
@@ -284,42 +286,46 @@ export const Servicios = () => {
            </div>
            <p className='text-center mt-5 title-curso   text-black'>CERTIFICADOS DE CALIDAD</p>
            <div class="row  card1 p-3  ">
-            <div class="col text-center    text-white">
-              <h1 className="title-curso text-white ">
-                <h1>
-                ¿POR QUÉ ESTUDIAR CON NOSOSTROS?
+              <div class="col text-center    text-white">
+                <h1 className="title-curso text-white ">
+                  <h1>
+                  ¿POR QUÉ ESTUDIAR CON NOSOSTROS?
+                  </h1>
                 </h1>
-              </h1>
-              <h5 className="text-white text-center titleC">
-                Te ofrecemos cursos
-                con tutores capacitados,
-                y certificados avalados
-                por la universidad de las
-                fuerzas armadas "ESPE
-              </h5>
-            </div>
+                <p className="text-white text-center titleC">
+                  Te ofrecemos cursos
+                  con tutores capacitados,
+                  y certificados avalados
+                  por la universidad de las
+                  fuerzas armadas "ESPE"
+                </p>
+              </div>
             
-            <div class="col">
-                <div class="row gx-2  container-xxl ">
-                  <div class="col-8">
+              <div class="col">
+                  <div class="card_cert">
                     <div className="col">
                       <img className="img-fluid " src={img13}   alt="" /> 
                     </div> 
                   </div>
 
-                  <div className="col-8">
+                  <div className="card_cert">
                     <div className="col">
-                      <img className="img-fluid " src={img14}   alt="" /> 
+                      <img className="img-fluid " src={img12}   alt="" /> 
                     </div>  
                   </div>  
 
-                  <div className="col-8">
+                  <div className="card_cert">
                     <div className="col">
+                      <img className="img-fluid " src={img14}   alt="" /> 
                     </div>  
-                  </div>  
-                  
-                </div>            
-            </div>
+                  </div> 
+
+                  <div className="card_cert">
+                    <div className="col">
+                     <img className="img-fluid " src={img11}   alt="" /> 
+                    </div>  
+                  </div>                
+               </div>
           </div>
             
         </div>        
