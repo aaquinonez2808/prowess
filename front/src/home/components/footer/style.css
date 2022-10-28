@@ -17,3 +17,7 @@
     color:white;
     font-family: 'Montserrat', sans-serif;
 }
+
+.fot-link:hover{
+    color: green;
+}
