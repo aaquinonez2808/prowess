@@ -2,17 +2,28 @@ import React from "react";
 
 import {Jumbotron} from "./jumbotron/Jumbotron";
 import {Detalles} from "./detalles/Detalles";
-import Footer from "../footer/Footer";
+ import {Footer} from "../footer/Footer";
 
 export const Nosotros = () => {
   return (
     <>
       <main role="main" className="flex-shrink-0 mt-5">
-        <Jumbotron />
-        <Detalles />
+
+      <div class="container-xl">
+      <div class="row align-items-start">
+    <div class="col">
+    <Jumbotron />
+    </div>
+    <div class="col">
+    <Detalles />
+    </div>
+    
+  </div>
+</div>
+
       </main>
 
-      <Footer />
+      
     </>
   );
 }
