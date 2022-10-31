@@ -31,45 +31,45 @@ export const Jumbotron = () => {
           Licenciatura en Turismo.
         </p>
 
-        <div class="cont-menu">
-          <div class="cont-enlace">
-            <div class="opcion">
+        <div className="cont-menu">
+          <div className="cont-enlace">
+            <div className="opcion">
               <p>Opcion 1</p>
               
-              <p class="icono">+</p>
+              <p className="icono">+</p>
             </div>
-            <div class="enlace">
+            <div className="enlace">
               <p>Opcion</p>
               <a href="#">enlase1</a>
             </div>
           </div>
 
-          <div class="cont-enlace">
-            <div class="opcion">
+          <div className="cont-enlace">
+            <div className="opcion">
               <p>OPCIOPN2</p>
-              <p class="icono">+</p>
+              <p className="icono">+</p>
             </div>
-            <div class="enlace">
+            <div className="enlace">
               <a href="#">enlase</a>
             </div>
           </div>
 
-          <div class="cont-enlace">
-            <div class="opcion">
+          <div className="cont-enlace">
+            <div className="opcion">
               <p>OPCIOPN3</p>
-              <p class="icono">+</p>
+              <p className="icono">+</p>
             </div>
-            <div class="enlace">
+            <div className="enlace">
               <a href="#">enlase</a>
             </div>
           </div>
 
-          <div class="cont-enlace">
-            <div class="opcion">
+          <div className="cont-enlace">
+            <div className="opcion">
               <p>OPCIOPN4</p>
-              <p class="icono">+</p>
+              <p className="icono">+</p>
             </div>
-            <div class="enlace">
+            <div className="enlace">
               <a href="#">enlase</a>
             </div>
           </div>
