@@ -2,7 +2,6 @@ import React from "react";
 import icon1 from "../../assets/img/icon-curse.png";
 import icon2 from "../../assets/img/icon-curseM.png";
 import icon3 from "../../assets/img/icon-pay.png";
-
 import { NavLink } from "react-router-dom";
 
 import "./style.css";
