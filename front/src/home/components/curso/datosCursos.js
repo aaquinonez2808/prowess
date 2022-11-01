@@ -29,7 +29,7 @@ import imagecurso14 from "..///detalle curso/image/14.png"
 export const cursos = [
     {
       id: 1,
-      nombre: 'CONTABILIDAD BÁSICA',
+      nombre: 'CONTABILIDAD BÁSICA superior',
       descripcion: 'Curso 1',
       imagen: imagen1,
       modalidad:" En línea",

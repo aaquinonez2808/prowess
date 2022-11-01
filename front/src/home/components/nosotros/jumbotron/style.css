@@ -26,19 +26,27 @@ box-sizing: 0;
     background-color: #62e268;
     color: white;
     padding: 13px 15px;
-    font-size: 22px;
+    font-size: 5px;
     cursor: pointer;
     user-select: none;
 
 
 }
+.accordion-button{
+
+    position: relative;
+    background-color: #b3e6a9;
+    border-radius: 5px;
+    
+}
+
 
 .cont-menu .cont-enlace .opcion .icono{
 
     background-color: white;
     color: #009688;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 10px;
     text-align: center;
     width: 26px;
     border-radius: 10px;

@@ -27,7 +27,7 @@ export const Detalles = () => {
         Fuerzas Armadas ESPE de la mano de las herramientas tecnológicas
       </p>
       
-      <img className="image" src={boton} alt="" width="400" height="200" />
+      <img className="image" src={boton} alt="" width="400" height="300" />
 
     </div>
   );

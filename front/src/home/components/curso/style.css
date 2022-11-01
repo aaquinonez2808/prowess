@@ -1,7 +1,7 @@
 .card-title {
     font-size: 1rem;
     font-weight: bold;
-    color:  #3B8479;
+    color:  #2A804F;
     font-family: 'Gagalin', sans-serif;
     text-align: center;
 }
@@ -11,6 +11,10 @@
     background-color: #3B8479;
     border-radius: 10px;
 }
+
+
+
+
 
 .imagen-curso{
     position: relative;
