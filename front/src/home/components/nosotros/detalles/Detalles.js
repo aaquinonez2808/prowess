@@ -24,7 +24,7 @@ export const Detalles = () => {
         Al 2024 potenciar el alcance de los emprendimientos desarrollados dentro
         del proyecto, brindándoles soporte mediante conocimientos dictados en
         los cursos de capacitación por los estudiantes por la Universidad de las
-        Fuerzas Armadas ESPE de la mano de las herramientas tecnológicas...s
+        Fuerzas Armadas ESPE de la mano de las herramientas tecnológicas.
       </p>
       
       <img className="image" src={boton} alt="" width="400" height="300" />
