@@ -9,7 +9,7 @@ const Footer = () => {
     return (
 
         <footer className="bg-footer">
-            <h3 className="titulo"><center> Todos los derechos reservados - Prowess Ecuador 2021</center></h3>
+            <h3 className="titulo-footer"><center> Todos los derechos reservados - Prowess Ecuador 2021</center></h3>
 
             <div className='row '>
                 <div className='col-lg-3 col-md-6 mb-4 mb-md-0'>
@@ -24,9 +24,7 @@ const Footer = () => {
                     <center>
                         <a href="https://instagram.com/prowess_ec?igshid=YmMyMTA2M2Y=" target={"_blank"} className="fot-link" rel="noreferrer">
                             <InstagramIcon style={{ fontSize: 50 }} />
-
                             @Prowess Ec
-
                         </a>
                     </center>
                 </div>

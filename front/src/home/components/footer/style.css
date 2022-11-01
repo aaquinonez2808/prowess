@@ -1,4 +1,4 @@
-.titulo{
+.titulo-footer{
     color: white;
     font-family: 'Montserrat', sans-serif;
     padding: 10px;
@@ -16,4 +16,8 @@
 .fot-link{
     color:white;
     font-family: 'Montserrat', sans-serif;
+}
+
+.fot-link:hover{
+    color: green;
 }
