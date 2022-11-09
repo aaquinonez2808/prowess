@@ -1,23 +1,36 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import "./styles.css";
-const Cursop = ({ cursop }) => {
+
+const Contenidop = ({ cursop }) => {
   return (
-    <div className="col-lg-4 col-sm-6 col-xs-12">
-      <NavLink to={`/cursosp/${cursop.id}`} className="nav-link">
-        <div className="card-body">
-          <h5 className="card-title mb-0">{cursop.nombre}</h5>
+    <>
+    <div className="row " id="principal">
+        <div className="col-md-6 col-xs-12 p-4 cabecera" >
+            <h1 className="title-nombre"> CURSO DE {cursop.nombre}</h1>
+            <h4 align="left" className="text-modalidad "> Modalidad del Curso: {cursop.modalidad}</h4>
+            <ul className="list-group"> 
+              {
+                cursop.aprender && cursop.aprender.map((aprend, index) => {
+                  return <li className="list-group-item text-start bg-none" key={index}>{aprend}</li>
+                })
+              }
+            </ul>
+            <div className=" btn-register">
+            <NavLink to={`/register`} className="nav-link" target="_blank" rel="noreferrer">  
+              <button className="button">INSCRÍBETE YA</button>
+            </NavLink>
+            </div>  
         </div>
-        <div className="imagen-contenido-curso">  
-          <img
-            src={cursop.image}
-            className="card-img-top imagen-curso"
+        <div className="col-md-6 col-xs-12" id="prueba">  
+          <img 
+            src={cursop.imagenCurso}
+            className=" p-0 w-100 h-100 "
             alt="..."
           />
         </div>
-      </NavLink>
     </div>
+    </>
   );
 };
 
-export default Cursop;
+export default Contenidop;

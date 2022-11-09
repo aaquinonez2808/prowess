@@ -1,5 +1,5 @@
 import React from "react";
-import Contenidop from "./Contenidop";
+import CursoPersonalizado from "./CursoPersonalizado";
 import { cursosper } from "./datosCP";
 
 const ListCursoP = () => {
@@ -8,11 +8,11 @@ const ListCursoP = () => {
     <div className="row g-5 mx-auto">
       {
         cursosper.map(cursop => {
-        return <Contenidop key={cursop.id} curso={cursop} />;
+        return <CursoPersonalizado key={cursop.id} cursop={cursop} />;
       })
       }
     </div>
   );
 };
-
+ 
 export default ListCursoP;
