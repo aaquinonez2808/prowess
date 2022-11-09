@@ -5,7 +5,7 @@ export const cursosper = [
     {
       id: 1,
       nombre: 'CURSOS DE SERVICIO DE VENTAS',
-      descripcion: 'Curso 1',
+      descripcion: 'Curso 1 ',
       image: imagenen1,
       modalidad:" En línea",
       aprender: [
@@ -20,19 +20,19 @@ export const cursosper = [
         "-TIC´S aplicadas al marketing y ventas ",
         "-Estrategias de comunicacion en ventas",
         "-Tecnicas efectivas aplicadas al proceso de ventas"
-      ],
+      ],imagenCurso: imagenen1
     },
     {
       id: 2,
       nombre: 'CURSO DE ATENCIÓN AL CLIENTE',
       descripcion: 'Curso 2',
-      imagen: imagenen2,
+      image: imagenen2,
       modalidad: "En Línea",
       aprender: [
         "Aprenderás: ",
         "-Introducción a la contabilidad de costos y presupuestos",
         "-Metodología",
         "-Metodología para el cálculo de costos: Modelo Orgánico"
-      ],
+      ], imagenCurso: imagenen2
     }
   ]
