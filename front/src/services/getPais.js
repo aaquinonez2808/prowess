@@ -20,8 +20,15 @@ const API_KEY = 'be4ec1babbf8191eccb86d8f5ef8eb1b';
 
 //usar get con el token obtenido de la funcion anterior
 export const getPais = async () => {
-    const url = `http://battuta.medunes.net/api/country/all/?key=${API_KEY}`;
-    const response = await axios.get(url);
+    const url = `http://battuta.medunes.net/api/country/code/kr/?key=${API_KEY}`;
+    const options = {
+        headers: {
+            'Access-Control-Allow-Origin': 'http://localhost:3000',
+            'Access-Control-Allow-Credentials': 'true',
+        }
+    }
+    const data = await axios.get(url, options);
+    const response = await data.json();
     return response.data;
 }
 
