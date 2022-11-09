@@ -1,6 +1,7 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 import "./styles.css";
+import { NavLink } from "react-router-dom";
+
 const CursoPersonalizado = ({ cursop }) => {
   return (
     <div className="col-lg-4 col-sm-6 col-xs-12">
