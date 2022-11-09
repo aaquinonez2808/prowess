@@ -1,7 +1,7 @@
 import React from 'react'
 import './style.css'
 import Footer from '../components/footer/Footer'
-import ListCursoP from '../components/cursospe/ListCursoP'
+import ListCursoP from '../components/cursospe/Listcursop'
 
 const CursosP = () => {
   return (
