@@ -1,5 +1,5 @@
-import imagenen1 from './image/1.png'
-import imagenen2 from './image/2.png'
+import imagenen1 from './image/22.png'
+import imagenen2 from './image/23.png'
 
 export const cursosper = [
     {
