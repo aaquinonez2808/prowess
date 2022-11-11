@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import {
-  getPais,
+  getPais, getProvincia,
 } from "../../services/getPais";
 import inscripcion from "../assets/img/inscrip.jpg";
 import { NavbarRedes } from "../components/navbar/NavbarRedes";
@@ -45,7 +45,7 @@ function RegistroPage() {
 
   const Registrar = (e) => {
     e.preventDefault();
-    getPais().then((data) => {
+    getProvincia('EC').then((data) => {
       console.log(data);
     });
     setFormSubmitted(true);
