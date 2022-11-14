@@ -2,17 +2,16 @@ import React from "react";
 import Curso from "./Curso";
 import { cursos } from "./datosCursos";
 
-const ListCurso = () => {
-  
+const ListCurso = ({tipos}) => {
+  const cursosD = cursos.filter((curso) => curso.tipo === tipos);
   return (
     <div className="row g-5 mx-auto">
       {
-        cursos.map(curso => {
-        return <Curso key={curso.id} curso={curso} />;
+        cursosD.map(curso => { 
+            return <Curso key={curso.id} curso={curso} />;  
       })
       }
-    </div>
-  );
+    </div>
+  );
 };
-
 export default ListCurso;

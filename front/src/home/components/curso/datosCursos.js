@@ -11,6 +11,8 @@ import imagen10 from './images/10.png'
 import imagen11 from './images/11.png'
 import imagen12 from './images/12.png'
 import imagen13 from './images/13.png'
+import imagen14 from './images/14.png'
+import imagen15 from './images/15.png'
 //Imagenes de cursos detallados
 import imagecurso2 from "..///detalle curso/image/2.png"
 import imagecurso3 from "..///detalle curso/image/3.png"
@@ -25,10 +27,14 @@ import imagecurso11 from "..///detalle curso/image/11.png"
 import imagecurso12 from "..///detalle curso/image/12.png"
 import imagecurso13 from "..///detalle curso/image/13.png"
 import imagecurso14 from "..///detalle curso/image/14.png"
+//imagenes de cursos personalizados
+import imagecurso15 from "..///detalle curso/image/15.png"
+import imagecurso16 from "..///detalle curso/image/16.png"
 
 export const cursos = [
     {
       id: 1,
+      tipo: 'general',
       nombre: 'CONTABILIDAD BÁSICA superior',
       descripcion: 'Curso 1',
       imagen: imagen1,
@@ -47,6 +53,7 @@ export const cursos = [
     },
     {
       id: 2,
+      tipo: 'general',
       nombre: 'CONTABILIDAD DE COSTOS',
       descripcion: 'Curso 2',
       imagen: imagen2,
@@ -61,6 +68,7 @@ export const cursos = [
     },
     {
       id: 3,
+      tipo: 'general',
       nombre: 'COSTOS AVANZADOS',
       descripcion: 'Curso 3',
       imagen: imagen3,
@@ -76,6 +84,7 @@ export const cursos = [
     },
     {
       id: 4,
+      tipo: 'general',
       nombre: 'AUXILIAR CONTABLE',
       descripcion: 'Curso 4',
       imagen: imagen4,
@@ -93,6 +102,7 @@ export const cursos = [
     },
     {
       id: 5,
+      tipo: 'general',
       nombre: 'ACTUALIZACIÓN REFORMA TRIBUTARIA',
       descripcion: 'Curso 5',
       imagen: imagen5,
@@ -111,6 +121,7 @@ export const cursos = [
     },
     {
       id: 6,
+      tipo: 'general',
       nombre: '¿CÓMO CREAR TU PÁGINA WEB?',
       descripcion: 'Curso 6',
       imagen: imagen6,
@@ -126,6 +137,7 @@ export const cursos = [
     },
     {
       id: 7,
+      tipo: 'general',
       nombre: 'MARKETING DIGITAL BÁSICO',
       descripcion: 'Curso 7',
       imagen: imagen7,
@@ -142,6 +154,7 @@ export const cursos = [
     },
     {
       id: 8,
+      tipo: 'general',
       nombre: 'MARKETING DIGITAL AVANZADO',
       descripcion: 'Curso 8',
       imagen: imagen8,
@@ -159,6 +172,7 @@ export const cursos = [
     },
     {
       id: 9,
+      tipo: 'general',
       nombre: 'LÍDERES COMUNITARIOS',
       descripcion: 'Curso 9',
       imagen: imagen9,
@@ -175,6 +189,7 @@ export const cursos = [
     },
     {
       id: 10,
+      tipo: 'general',
       nombre: 'DESCUBRE TU POTENCIAL EMPRENDEDOR',
       descripcion: 'Curso 10',
       imagen: imagen10,
@@ -192,6 +207,7 @@ export const cursos = [
     },
     {
       id: 11,
+      tipo: 'general',
       nombre: 'FINANZAS PERSONALES',
       descripcion: 'Curso 11',
       imagen: imagen11,
@@ -211,6 +227,7 @@ export const cursos = [
     },
     {
       id: 12,
+      tipo: 'general',
       nombre: 'E-COMMERCE',
       descripcion: 'Curso 12',
       imagen: imagen12,
@@ -229,6 +246,7 @@ export const cursos = [
     },
     {
       id: 13,
+      tipo: 'general',
       nombre: 'MI NEGOCIO',
       descripcion: 'Curso 13',
       imagen: imagen13,
@@ -240,5 +258,40 @@ export const cursos = [
         "-Administración",
         "-Cálculo de manejo del dinero en el negocio"
       ], imagenCurso: imagecurso13    
-    }
-  ]
+    },
+    {
+      id: 14,
+      tipo: 'personalizados',
+      nombre: 'SERVICIO DE VENTAS',
+      descripcion: 'Curso 14 ',
+      imagen: imagen14,
+      modalidad:" En línea",
+      aprender: [
+        "Aprenderás:",
+        "-Servicio de ventas",
+        "-Tipos de ventas",
+        "-Embudo de ventas",
+        "-Cómo prospectar clientes",
+        "-Cómo vender por internet",
+        "-Tipos de estrategias de ventas",
+        "-Qué es un vendedor",
+        "-TIC´S aplicadas al marketing y ventas ",
+        "-Estrategias de comunicación en ventas",
+        "-Técnicas efectivas aplicadas al proceso de ventas"
+      ],imagenCurso: imagecurso15
+    },
+    {
+      id: 15,
+      tipo: 'personalizados',
+      nombre: 'ATENCIÓN AL CLIENTE',
+      descripcion: 'Curso 15',
+      imagen: imagen15,
+      modalidad: "En Línea",
+      aprender: [
+        "Aprenderás: ",
+        "-Introducción a la contabilidad de costos y presupuestos",
+        "-Metodología",
+        "-Metodología para el cálculo de costos: Modelo Orgánico"
+      ], imagenCurso: imagecurso16
+    }
+  ]

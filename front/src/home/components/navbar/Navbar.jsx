@@ -23,7 +23,7 @@ export const Navbar = () => {
             </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink to="/cursos" className="nav-link">
+            <NavLink to="/cursos/general" className="nav-link">
               Cursos Generales
             </NavLink>
           </li>
@@ -33,7 +33,7 @@ export const Navbar = () => {
             </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink to="/cursospersonalizados" className="nav-link">
+            <NavLink to="/cursos/personalizados" className="nav-link">
               Cursos Personalizados
             </NavLink>
           </li>
