@@ -1,6 +1,6 @@
 const AyudaPage=()=>{
     return(<>
-    <h1>Hola javier</h1>
+    <h1>Hola javier aqui presente</h1>
     
     
     
