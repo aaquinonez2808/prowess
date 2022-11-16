@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 import {
+  getCiudad,
   getPais, getProvincia,
 } from "../../services/getPais";
 import inscripcion from "../assets/img/inscrip.jpg";
@@ -31,6 +32,43 @@ function RegistroPage() {
   const [page, setPage] = React.useState(1);
   const validation = formValidations;
   const [formSubmitted, setFormSubmitted] = useState(false);
+  const [pais, setPais] = useState('');
+  const [estado, setEstado] = useState('');
+  const [ciudad, setCiudad] = useState('');
+  const [paises, setPaises] = useState([]);
+  const [estados, setEstados] = useState([]);
+  const [ciudades, setCiudades] = useState([]);
+
+  const obtenerPais = async () => {
+    const {data} = await getPais();
+    setPaises(data);
+  };
+
+  const obtenerEstado = async (codigoPais) => {
+    const data = await getProvincia(codigoPais);
+    setEstados(data);
+  };
+
+  const obtenerCiudad = async (codigoPais, codigoEstado) => {
+    const data = await getCiudad(codigoPais, codigoEstado);
+    console.log(data);
+    setCiudades(data);
+  };
+  const handleEstado = (e) => {
+    setEstado(e.target.value);
+    obtenerCiudad(pais, e.target.value);
+  };
+  useEffect(() => {
+    obtenerPais();
+  }, []);
+
+  const handlePaisChange = (e) => {
+    setPais(e.target.value);
+    console.log(e.target.value);
+    obtenerEstado(e.target.value);
+  };
+
+
 
   const handleNext = () => {
     setPage((prevPage) => prevPage + 1);
@@ -45,9 +83,6 @@ function RegistroPage() {
 
   const Registrar = (e) => {
     e.preventDefault();
-    getProvincia('EC').then((data) => {
-      console.log(data);
-    });
     setFormSubmitted(true);
     
     if (isFormValid) {
@@ -163,11 +198,14 @@ function RegistroPage() {
                 <select
                   className="form-select"
                   name="pais"
-                  onChange={onInputChange}
+                  onChange={handlePaisChange}
                 >
                   <option value="Pais">Pais</option>
-                  <option value="A">Category A</option>
-                  <option value="B">Category B</option>
+                  {paises && paises.map((pais) => (
+                    <option key={pais.id} value={pais.iso2}>
+                      {pais.name}
+                    </option> 
+                  ))}
                 </select>
                 <p className="mensajeError">
                   {!!formValidation.paisValid &&
@@ -188,11 +226,14 @@ function RegistroPage() {
                 <select
                   className="form-select"
                   name="provincia"
-                  onChange={onInputChange}
+                  onChange={handleEstado}
                 >
                   <option value="Provincia">Provincia</option>
-                  <option value="A">Category A</option>
-                  <option value="B">Category B</option>
+                  {estados && estados.map((estado) => (
+                    <option key={estado.id} value={estado.iso2}>
+                      {estado.name}
+                    </option>
+                  ))}
                 </select>
                 <p className="mensajeError">
                   {!!formValidation.provinciaValid &&
@@ -207,8 +248,11 @@ function RegistroPage() {
                   onChange={onInputChange}
                 >
                   <option value="Ciudad">Ciudad</option>
-                  <option value="A">Category A</option>
-                  <option value="B">Category B</option>
+                  {ciudades && ciudades.map((ciudad) => (
+                    <option key={ciudad.id} value={ciudad.id}>
+                      {ciudad.name}
+                    </option> 
+                  ))}
                 </select>
                 <p className="mensajeError">
                   {!!formValidation.ciudadValid &&
