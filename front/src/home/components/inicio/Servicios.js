@@ -13,13 +13,13 @@ export const Servicios = () => {
 
       <div className="col-4 d-flex justify-content-center align-items-center servicio">
         <img className="icon " src={icon1} alt="" />
-        <NavLink to="/cursos">
+        <NavLink to="/cursos/general">
           CURSOS GENERALES
         </NavLink>
       </div>
       <div className="col-4 d-flex justify-content-center align-items-center servicio">
         <img className="icon " src={icon2} alt="" />
-        <NavLink to="/">
+        <NavLink to="/cursos/personalizados">
           CURSOS
           PERSONALIZADOS
         </NavLink>
