@@ -1,9 +1,9 @@
 import React from 'react'
-import { Nosotros } from '../components/preguntas/Nosotros'
+import { Preguntas } from '../components/preguntas/Preguntas'
 
 const PreguntasPage = () => {
   return (
-    <div><Nosotros/></div>
+    <div><Preguntas/></div>
   )
 }
 

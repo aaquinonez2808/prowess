@@ -4,7 +4,7 @@ import { Jumbotron } from "./jumbotron/Jumbotron";
 import { Detalles } from "./detalles/Detalles";
 import Footer from "../footer/Footer"
 
-export const Nosotros = () => {
+export const Preguntas = () => {
   return (
     <>
       <main role="main" className="flex-shrink-0 mt-5">
@@ -25,5 +25,5 @@ export const Nosotros = () => {
     </>
   );
 }
-export default Nosotros
+export default Preguntas
 
