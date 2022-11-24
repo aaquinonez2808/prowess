@@ -67,7 +67,7 @@ export const Navbar = () => {
                         </li>
     
                         <li className="nav-item">
-                          <NavLink to="/Contacto" target={"_blank"} className="nav-link">
+                          <NavLink to="/Contacto" className="nav-link">
                             Contacto
                           </NavLink>
                         </li>

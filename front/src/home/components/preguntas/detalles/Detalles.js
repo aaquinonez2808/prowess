@@ -1,43 +1,45 @@
 import React from "react";
 
+import raya from "../imgs/raya.png";
+
 export const Detalles = () => {
   return (
-    <div className="container">
-      <h2>CONTACTO</h2>
-      <br></br>
-      <br></br>
+     <div className="container">
+   <h2 className="display-5">Contactos</h2>
+      <img className="image" src={raya} alt="" width="500" height="50" />
 
-      <h3>RESPONSABLE</h3>
-       <p>
-        BIVIBKBLKBLJB
-        MLKNLKN;KLNK;
-        NKJBLNLNLN
-      </p>
+      <h5 className="display-100">RESPONSABLE</h5>
+      nfdkongkdfgñmdñlgmflñdñmgldfmglfmllñfmdmñlgmdñlf
+      <br />
+      <br />
 
-      <h2>CORREO </h2>
-      <p>
-        BIVIBKBLKBLJB
-        MLKNLKN;KLNK;
-        NKJBLNLNLN
-      </p>
-      <h3>TELEFONO</h3>
-      <p>
-        BIVIBKBLKBLJB
-        MLKNLKN;KLNK;
-        NKJBLNLNLN
-      </p>
-      <h3>CELULAR</h3>
-      <p>
-        BIVIBKBLKBLJB
-        MLKNLKN;KLNK;
-        NKJBLNLNLN
-      </p>
-      <h3>WHATSAAP</h3>
-      <p>
-        BIVIBKBLKBLJB
-        MLKNLKN;KLNK;
-        NKJBLNLNLN
-      </p>
+      <h5 className="display-100">CORREO</h5>
+      nfdkongkdfgñmdñlgmflñdñmgldfmglfmllñfmdmñlgmdñlf
+      <br />
+      <br />
+
+    
+   
+      <h5 className="display-100">TELEFONO</h5>
+      nfdkongkdfgñmdñlgmflñdñmgldfmglfmllñfmdmñlgmdñlf
+      <br />
+      <br />
+
+    
+    
+      <h5 className="display-100">CELULAR</h5>
+      nfdkongkdfgñmdñlgmflñdñmgldfmglfmllñfmdmñlgmdñlf
+      <br />
+      <br />
+
+     
+   
+      <h5 className="display-100">WHATSHAP</h5>
+      nfdkongkdfgñmdñlgmflñdñmgldfmglfmllñfmdmñlgmdñlf
+      <br />
+      <br />
+
+    
       
 
     </div>
