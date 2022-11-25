@@ -1,7 +1,7 @@
 import React from "react";
 
 import raya from "../imgs/raya.png";
-import i1 from "../imgs/carpeta.png";
+import FolderCopyIcon from '@mui/icons-material/FolderCopy';
 import i2 from "../imgs/1.png";
 import i3 from "../imgs/2.png";
 import i4 from "../imgs/3.png";
@@ -49,8 +49,8 @@ export const Jumbotron = () => {
                 aria-expanded="true"
                 aria-controls="collapseOne"
               >  
-              <img className="icon" src={i1} alt=""  width="30" height="30"  />
-                            Opcion 1
+              
+              <FolderCopyIcon  /> Opcion 1
               </button>
             </h2>
             <div
@@ -60,11 +60,7 @@ export const Jumbotron = () => {
               data-bs-parent="#accordionExample"
             >
               <div class="accordion-body">
-                <strong>This is the first item's accordion body.</strong> It is
-                shown by default, until the collapse plugin adds the appropriate
-                 sorry{" "}
-                <code>.accordion-body</code>, though the transition does limit
-                overflow.
+              Certificación del Sistema de Gestión de Calidad con alcance a los programas técnicos y diplomados virtuales
               </div>
             </div>
           </div>
@@ -90,11 +86,7 @@ export const Jumbotron = () => {
               data-bs-parent="#accordionExample"
             >
               <div class="accordion-body">
-                <strong>This is the second item's accordion body.</strong> It is
-                hidden by default, until the collapse plugin adds the
-                 the{" "}
-                <code>.accordion-body</code>, though the transition does limit
-                overflow.
+              Certificación Internacional del Sistema de Gestión de Calidad
               </div>
             </div>
           </div>
@@ -120,11 +112,7 @@ export const Jumbotron = () => {
               data-bs-parent="#accordionExample"
             >
               <div class="accordion-body">
-                <strong>This is the second item's accordion body.</strong> It is
-                hidden by default, until the collapse plugin adds the
-                 the{" "}
-                <code>.accordion-body</code>, though the transition does limit
-                overflow.
+              Certificación de Calidad como Institución de Educación Para el Trabajo y el Desarrollo Humano
               </div>
             </div>
           </div>
@@ -141,7 +129,7 @@ export const Jumbotron = () => {
                 aria-controls="collapseThree"
               >
                 <img className="icon" src={i4} alt=""  width="30" height="30"  />
-                opcion4
+                Opcion4
               </button>
             </h2>
             <div
@@ -151,10 +139,7 @@ export const Jumbotron = () => {
               data-bs-parent="#accordionExample"
             >
               <div class="accordion-body">
-                <strong>This is the third item's accordion body.</strong> It is
-               o within the{" "}
-                <code>.accordion-body</code>, though the transition does limit
-                overflow.
+              Certificación de Calidad de los Programas Técnicos Laborales.
               </div>
             </div>
           </div>
@@ -172,7 +157,7 @@ export const Jumbotron = () => {
 
         <p>
           <a
-            className="btn btn-primary btn-lg"
+            className="btn btn-success"
             href="https://prowessec.com/"
             rel="noopener noreferrer"
             target="_blank"

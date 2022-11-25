@@ -32,9 +32,6 @@ function RegistroPage() {
   const [page, setPage] = React.useState(1);
   const validation = formValidations;
   const [formSubmitted, setFormSubmitted] = useState(false);
-  const [pais, setPais] = useState('');
-  const [estado, setEstado] = useState('');
-  const [ciudad, setCiudad] = useState('');
   const [paises, setPaises] = useState([]);
   const [estados, setEstados] = useState([]);
   const [ciudades, setCiudades] = useState([]);
@@ -54,20 +51,19 @@ function RegistroPage() {
     console.log(data);
     setCiudades(data);
   };
-  const handleEstado = (e) => {
-    setEstado(e.target.value);
-    obtenerCiudad(pais, e.target.value);
-  };
+
+  const { onInputChange, formState, formValidation, onResetForm, isFormValid } =
+    useForm(formData, validation);
+
   useEffect(() => {
     obtenerPais();
-  }, []);
-
-  const handlePaisChange = (e) => {
-    setPais(e.target.value);
-    console.log(e.target.value);
-    obtenerEstado(e.target.value);
-  };
-
+    if (formState.pais !== "Pais") {
+      obtenerEstado(formState.pais);
+    }
+    if (formState.provincia !== "Provincia") {
+      obtenerCiudad(formState.pais, formState.provincia);
+    }
+  }, [formState]);
 
 
   const handleNext = () => {
@@ -78,8 +74,6 @@ function RegistroPage() {
     setPage((prevPage) => prevPage - 1);
   };
 
-  const { onInputChange, formState, formValidation, onResetForm, isFormValid } =
-    useForm(formData, validation);
 
   const Registrar = (e) => {
     e.preventDefault();
@@ -198,7 +192,7 @@ function RegistroPage() {
                 <select
                   className="form-select"
                   name="pais"
-                  onChange={handlePaisChange}
+                  onChange={onInputChange}
                 >
                   <option value="Pais">Pais</option>
                   {paises && paises.map((pais) => (
@@ -226,7 +220,7 @@ function RegistroPage() {
                 <select
                   className="form-select"
                   name="provincia"
-                  onChange={handleEstado}
+                  onChange={onInputChange}
                 >
                   <option value="Provincia">Provincia</option>
                   {estados && estados.map((estado) => (

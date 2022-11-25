@@ -49,9 +49,43 @@ export const Navbar = () => {
           </li>
           <li className="nav-item">
             <NavLink to="/ayuda" className="nav-link">
-              Ayuda
+              <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                    <NavLink class="nav-link dropdown-toggle" to="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Ayuda
+                    </NavLink>
+                    <ul class="dropdown-menu">
+                        <li className="nav-item">
+                          <NavLink to="/ayudados" className="nav-link">
+                            Pagos en linea
+                          </NavLink>
+                        </li>
+    
+                        <li className="nav-item">
+                          <NavLink to="/Contacto" className="nav-link">
+                            Contacto
+                          </NavLink>
+                        </li>
+                        <li class="dropdown-divider"></li>
+                       
+                        <li className="nav-item">
+                          <NavLink to="/preguntas" className="nav-link">
+                            Preguntas Frecuentes
+                          </NavLink>
+                        </li>
+                    </ul>
+                    </li>
+                </ul>
+                </div>
+            </div>
             </NavLink>
           </li>
+          
         </ul>
       </nav>
     </div>

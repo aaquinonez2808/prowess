@@ -6,7 +6,9 @@ import { HomePage } from "../../home/pages/HomePage";
 import NosotrosPage from "../../home/pages/NosotrosPage";
 import CursosPage from "../../home/pages/CursosPage";
 import CursoPage from "../../home/pages/CursoPage";
-import AyudaPage from "../../home/pages/AyudaPage";
+import AyudosP from "../../home/pages/AyudaPage";
+import PreguntasPage from "../../home/pages/PreguntasPage";
+
 
 const ClientRoutes = () => {
   return (
@@ -16,9 +18,10 @@ const ClientRoutes = () => {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/nosotros" element={<NosotrosPage />} />
-        <Route path="/ayuda" element={<AyudaPage />} />
         <Route path="/cursos/:tipos" element={<CursosPage />} />
         <Route path="/cursos/:tipos/:id" element={<CursoPage/>}/>
+        <Route path="/ayudados" element={<AyudosP/>} />
+        <Route path="/preguntas" element={<PreguntasPage/>}/>
         <Route path="/terminos"></Route>
       </Routes>
     </>
