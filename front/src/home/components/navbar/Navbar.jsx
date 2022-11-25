@@ -48,7 +48,7 @@ export const Navbar = () => {
             </a>
           </li>
           <li className="nav-item">
-            <NavLink to="/ayuda" className="nav-link">
+            <div to="/ayuda" className="nav-link">
               <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -67,7 +67,7 @@ export const Navbar = () => {
                         </li>
     
                         <li className="nav-item">
-                          <NavLink to="/Contacto" className="nav-link">
+                          <NavLink to="/contactos" className="nav-link">
                             Contacto
                           </NavLink>
                         </li>
@@ -83,7 +83,7 @@ export const Navbar = () => {
                 </ul>
                 </div>
             </div>
-            </NavLink>
+            </div>
           </li>
           
         </ul>
