@@ -48,7 +48,7 @@ export const Navbar = () => {
             </a>
           </li>
           <li className="nav-item">
-            <div to="/ayuda" className="nav-link">
+          <div to="/ayuda" className="nav-link">
               <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
