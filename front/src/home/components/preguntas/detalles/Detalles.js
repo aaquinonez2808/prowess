@@ -25,15 +25,14 @@ export const Detalles = () => {
       <br />
       <br />
 
-    
-    
       <h5 className="display-100">CELULAR</h5>
-      nfdkongkdfgñmdñlgmflñdñmgldfmglfmllñfmdmñlgmdñlf
+      <p>
+      (593)992847677
+     </p>
       <br />
       <br />
 
-     
-   
+  
       <h5 className="display-100">WHATSHAP</h5>
       nfdkongkdfgñmdñlgmflñdñmgldfmglfmllñfmdmñlgmdñlf
       <br />

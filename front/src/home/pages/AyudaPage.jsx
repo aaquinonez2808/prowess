@@ -14,11 +14,14 @@ const AyudosP = () => {
         </div>
         <div className='col-6'>
               <h1 className='text-center'>PAGOS EN LINEA</h1>
-              <p>Estimad@ estudiante, somos Politécnico de Colombia, por favor verifique que el pago a realizar si sea para nuestra institución, ya que por ningún motivo se realizan devoluciones de dinero.
+              <p>
+              Estimad@ estudiantes, por favor verifique que el pago a realizar si corresponda para nuestra institución, ya que por ningún motivo se realizan devoluciones de dinero.
+              <br />
+              <br />
+Al iniciar el pago, acepto los términos y políticas.
+<br /><br />
+Para iniciar el proceso de pago debe digitar su número de documento (sin espacios, puntos y comas) y luego dar clic en el botón "Continuar".
 
-Al iniciar el pago, acepto los términos y políticas de pago del Politécnico de Colombia.
-
-Para iniciar el proceso de pago debe digitar su número de documento (sin espacios, puntos y comas) y luego dar clic en el botón "Iniciar".
 
               </p>
               <br />
