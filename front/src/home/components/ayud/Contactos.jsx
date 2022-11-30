@@ -3,7 +3,8 @@ import raya from "./imgs/raya.png";
 import cel from "./imgs/15.png";
 import boli from "./imgs/16.png";
 import "./estilo.css";
-const Contacto = () => {
+
+const Contactos = () => {
   return (
     <>
       <div className="container-md">
@@ -243,4 +244,4 @@ const Contacto = () => {
 
 };
 
-export default Contacto;//exporta el archivo
+export default Contactos
