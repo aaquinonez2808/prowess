@@ -1,35 +1,3 @@
-//import imagen1 from './images/1.png'
-/*import imagen2 from './images/2.png'
-import imagen3 from './images/3.png'
-import imagen4 from './images/4.png'
-import imagen5 from './images/5.png'
-import imagen6 from './images/6.png'
-import imagen7 from './images/7.png'
-import imagen8 from './images/8.png'
-import imagen9 from './images/9.png'
-import imagen10 from './images/10.png'
-import imagen11 from './images/11.png'
-import imagen12 from './images/12.png'
-import imagen13 from './images/13.png'
-import imagen14 from './images/14.png'
-import imagen15 from './images/15.png'*/
-//Imagenes de cursos detallados
-/*import imagecurso2 from "..///detalle curso/image/2.png"
-import imagecurso3 from "..///detalle curso/image/3.png"
-import imagecurso4 from "..///detalle curso/image/4.png"
-import imagecurso5 from "..///detalle curso/image/5.png"
-import imagecurso6 from "..///detalle curso/image/6.png"
-import imagecurso7 from "..///detalle curso/image/7.png"
-import imagecurso8 from "..///detalle curso/image/8.png"
-import imagecurso9 from "..///detalle curso/image/9.png"
-import imagecurso10 from "..///detalle curso/image/10.png"
-import imagecurso11 from "..///detalle curso/image/11.png"
-import imagecurso12 from "..///detalle curso/image/12.png"
-import imagecurso13 from "..///detalle curso/image/13.png"
-import imagecurso14 from "..///detalle curso/image/14.png"*/
-//imagenes de cursos personalizados
-/*import imagecurso15 from "..///detalle curso/image/15.png"
-import imagecurso16 from "..///detalle curso/image/16.png"*/
 
 export const cursos = [
     {

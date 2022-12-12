@@ -1,7 +1,4 @@
 import React from "react";
-import icon1 from "../../assets/img/icon-curse.png";
-import icon2 from "../../assets/img/icon-curseM.png";
-import icon3 from "../../assets/img/icon-pay.png";
 import { NavLink } from "react-router-dom";
 
 import "./style.css";
@@ -12,13 +9,13 @@ export const Servicios = () => {
     <div className="d-flex h-100 justify-content-center gap-5  nav ">
 
       <div className="col-4 d-flex justify-content-center align-items-center servicio">
-        <img className="icon " src={icon1} alt="" />
+        <img className="icon " src="https://res.cloudinary.com/dena7lqj3/image/upload/v1670622564/modulomocc/home/icon_curse.png" alt="" />
         <NavLink to="/cursos/general">
           CURSOS GENERALES
         </NavLink>
       </div>
       <div className="col-4 d-flex justify-content-center align-items-center servicio">
-        <img className="icon " src={icon2} alt="" />
+        <img className="icon " src="https://res.cloudinary.com/dena7lqj3/image/upload/v1670622568/modulomocc/home/icon-curseM.png" alt="" />
         <NavLink to="/cursos/personalizados">
           CURSOS
           PERSONALIZADOS
@@ -26,7 +23,7 @@ export const Servicios = () => {
       </div>
 
       <div className="col-4 d-flex justify-content-center align-items-center servicio">
-        <img className="icon " src={icon3} alt="" />
+        <img className="icon " src="https://res.cloudinary.com/dena7lqj3/image/upload/v1670622568/modulomocc/home/icon-pay.png" alt="" />
         <NavLink to="/">
           EMISIÓN DE CERTIFICADO
         </NavLink>

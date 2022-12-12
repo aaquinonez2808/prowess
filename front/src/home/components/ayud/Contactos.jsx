@@ -1,7 +1,4 @@
 import React from "react";
-import raya from "./imgs/raya.png";
-import cel from "./imgs/15.png";
-import boli from "./imgs/16.png";
 import "./estilo.css";
 
 const Contactos = () => {
@@ -14,7 +11,7 @@ const Contactos = () => {
       <div className="AyudaPage">
         <div className="container">
           <div class="accordion" id="accordionExample">
-            <img className="image" src={raya} alt="" width="500" height="60" />
+            <img className="image" src="https://res.cloudinary.com/dena7lqj3/image/upload/v1670884219/modulomocc/ayudas/raya.png" alt="" width="500" height="60" />
             <h1 className="titu">PROWESS EC</h1>
 
             <div class="accordion-item ">
@@ -29,7 +26,7 @@ const Contactos = () => {
                 >
                   <img
                     className="icon"
-                    src={cel}
+                    src="https://res.cloudinary.com/dena7lqj3/image/upload/v1670884219/modulomocc/ayudas/15.png"
                     alt=""
                     width="50"
                     height="40"
@@ -61,7 +58,7 @@ const Contactos = () => {
                 >
                   <img
                     className="icon"
-                    src={boli}
+                    src="https://res.cloudinary.com/dena7lqj3/image/upload/v1670884219/modulomocc/ayudas/16.png"
                     alt=""
                     width="50"
                     height="40"
@@ -153,7 +150,7 @@ const Contactos = () => {
                     <div class="form-group row">
                       <div class="col-sm-10">
                         <button type="submit" class="btn btn-primary">
-                          Emviar
+                          Enviar
                         </button>
                       </div>
                     </div>
@@ -170,7 +167,7 @@ const Contactos = () => {
 
 
 
-  //esta parte es un cogigo es para si quieren ingresar algun dato con restricciones de todo tipo
+  //esta parte es un codigo es para si quieren ingresar algun dato con restricciones de todo tipo
 
   /*
    <form id="formulario">

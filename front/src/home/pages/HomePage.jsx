@@ -5,30 +5,6 @@ import { Servicios } from "../components/inicio/Servicios";
 import "./style.css";
 import Footer from "../components/footer/Footer";
 import { NavLink } from "react-router-dom";
-/*import linea from "../assets/img/linea.png";
-import linea2 from "../assets/img/linea2.png";
-import ini1 from "../assets/img/ini1.jpg";
-import ini2 from "../assets/img/ini2.jpg";
-import ini3 from "../assets/img/ini3.jpg";
-import ini4 from "../assets/img/ini4.jpg";
-
-import icon5 from "../assets/img/5.png";
-import icon6 from "../assets/img/6.png";
-import icon7 from "../assets/img/7.png";
-import icon8 from "../assets/img/8.png";
-
-import icon10 from "../assets/img/01.png";
-import icon11 from "../assets/img/i4.png";
-import icon12 from "../assets/img/i5.png";
-
-import img9 from "../assets/img/9.png";
-import img10 from "../assets/img/10.png";
-import img11 from "../assets/img/11.png";
-
-import img12 from "../assets/img/15.png";
-import img13 from "../assets/img/16.png";
-import img14 from "../assets/img/17.png";
-import icon9 from "../assets/img/informa.jpg";*/
 
 export const HomePage = () => {
   return (
