@@ -9,17 +9,15 @@ export const Detalles = () => {
       <img className="image" src={raya} alt="" width="500" height="50" />
 
       <h5 className="display-100">RESPONSABLE</h5>
-      nfdkongkdfgñmdñlgmflñdñmgldfmglfmllñfmdmñlgmdñlf
+      Ing. Luis Enrique Simbaña PhD
       <br />
       <br />
 
       <h5 className="display-100">CORREO</h5>
-      nfdkongkdfgñmdñlgmflñdñmgldfmglfmllñfmdmñlgmdñlf
+      lesimbania@espe.edu.ec
       <br />
       <br />
 
-    
-   
       <h5 className="display-100">TELEFONO</h5>
       nfdkongkdfgñmdñlgmflñdñmgldfmglfmllñfmdmñlgmdñlf
       <br />
@@ -27,14 +25,14 @@ export const Detalles = () => {
 
       <h5 className="display-100">CELULAR</h5>
       <p>
-      (593)992847677
+      09981602933
      </p>
       <br />
       <br />
 
   
       <h5 className="display-100">WHATSHAP</h5>
-      nfdkongkdfgñmdñlgmflñdñmgldfmglfmllñfmdmñlgmdñlf
+      (593)981602933
       <br />
       <br />
 
