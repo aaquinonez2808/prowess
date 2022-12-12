@@ -5,26 +5,30 @@ import { Servicios } from "../components/inicio/Servicios";
 import "./style.css";
 import Footer from "../components/footer/Footer";
 import { NavLink } from "react-router-dom";
-import linea from "../assets/img/linea.png";
+/*import linea from "../assets/img/linea.png";
 import linea2 from "../assets/img/linea2.png";
 import ini1 from "../assets/img/ini1.jpg";
 import ini2 from "../assets/img/ini2.jpg";
 import ini3 from "../assets/img/ini3.jpg";
 import ini4 from "../assets/img/ini4.jpg";
+
 import icon5 from "../assets/img/5.png";
 import icon6 from "../assets/img/6.png";
 import icon7 from "../assets/img/7.png";
 import icon8 from "../assets/img/8.png";
+
 import icon10 from "../assets/img/01.png";
 import icon11 from "../assets/img/i4.png";
 import icon12 from "../assets/img/i5.png";
+
 import img9 from "../assets/img/9.png";
 import img10 from "../assets/img/10.png";
 import img11 from "../assets/img/11.png";
+
 import img12 from "../assets/img/15.png";
 import img13 from "../assets/img/16.png";
 import img14 from "../assets/img/17.png";
-import icon9 from "../assets/img/informa.jpg";
+import icon9 from "../assets/img/informa.jpg";*/
 
 export const HomePage = () => {
   return (
@@ -38,13 +42,13 @@ export const HomePage = () => {
           CURSOS GENERALES
         </h1>
         <p className="text-center mb-5 descripcion-curso">
-          <img className=" " src={linea} alt="" />
+          <img className=" " src='https://res.cloudinary.com/dena7lqj3/image/upload/v1670622586/modulomocc/home/linea.png' alt="" />
         </p>
         <p>
           <div class="row gx-0 ">
             <div class="col-3 card img3 ">
               <div>
-                <img className="img-fluid " src={ini1} alt="" />
+                <img className="img-fluid " src="https://res.cloudinary.com/dena7lqj3/image/upload/v1670622578/modulomocc/home/ini1.jpg" alt="" />
               </div>
               <NavLink to="/cursos/1" className="nav-link">
                 <div class="card_title title-white  ">
@@ -55,7 +59,7 @@ export const HomePage = () => {
                 </div>
               </NavLink>
               <div class="card_icon">
-                <img className="img-fluid " src={icon5} alt="" />
+                <img className="img-fluid " src="https://res.cloudinary.com/dena7lqj3/image/upload/v1670622479/modulomocc/home/5.png" alt="" />
               </div>
               <div className="card_but ">
                 <NavLink to={`/cursos/1`} className="nav-link ">
@@ -64,7 +68,7 @@ export const HomePage = () => {
                     className="btn btn-outline-light border border-secondary text-body "
                   >
                     <div class="card ">
-                      <img className="img-fluid card" src={icon9} alt="" />
+                      <img className="img-fluid card" src="https://res.cloudinary.com/dena7lqj3/image/upload/v1670622572/modulomocc/home/informa.jpg" alt="" />
                       <div class="card-img-overlay">
                         <p className="title-black ">Más Información</p>
                       </div>
@@ -76,7 +80,7 @@ export const HomePage = () => {
 
             <div class="col-3 card img3">
               <div>
-                <img className="img-fluid " src={ini2} alt="" />
+                <img className="img-fluid " src="https://res.cloudinary.com/dena7lqj3/image/upload/v1670622580/modulomocc/home/ini2.jpg" alt="" />
               </div>
               <NavLink to="/cursos/1" className="nav-link">
                 <div class="card_title title-white justify-content-center align-items-center">
@@ -87,7 +91,7 @@ export const HomePage = () => {
                 </div>
               </NavLink>
               <div class="card_icon">
-                <img className="img-fluid " src={icon6} alt="" />
+                <img className="img-fluid " src="https://res.cloudinary.com/dena7lqj3/image/upload/v1670622478/modulomocc/home/6.png" alt="" />
               </div>
               <div className="card_but ">
                 <NavLink to={`/cursos/7`} className="nav-link ">
@@ -96,7 +100,7 @@ export const HomePage = () => {
                     className="btn btn-outline-light border border-secondary text-body "
                   >
                     <div class="card ">
-                      <img className="img-fluid card" src={icon9} alt="" />
+                      <img className="img-fluid card" src="https://res.cloudinary.com/dena7lqj3/image/upload/v1670622572/modulomocc/home/informa.jpg" alt="" />
                       <div class="card-img-overlay">
                         <p className="title-black ">Más Información</p>
                       </div>
@@ -108,7 +112,7 @@ export const HomePage = () => {
 
             <div class="col-3 card img3">
               <div>
-                <img className="img-fluid " src={ini3} alt="" />
+                <img className="img-fluid " src="https://res.cloudinary.com/dena7lqj3/image/upload/v1670622585/modulomocc/home/ini3.jpg" alt="" />
               </div>
               <NavLink to="/cursos/1" className="nav-link">
                 <div class="card_title title-white justify-content-center align-items-center">
@@ -118,7 +122,7 @@ export const HomePage = () => {
                 </div>
               </NavLink>
               <div class="card_icon">
-                <img className="img-fluid " src={icon7} alt="" />
+                <img className="img-fluid " src="https://res.cloudinary.com/dena7lqj3/image/upload/v1670622478/modulomocc/home/7.png" alt="" />
               </div>
               <div className="card_but ">
                 <NavLink to={`/cursos/4`} className="nav-link ">
@@ -127,7 +131,7 @@ export const HomePage = () => {
                     className="btn btn-outline-light border border-secondary text-body "
                   >
                     <div class="card ">
-                      <img className="img-fluid card" src={icon9} alt="" />
+                      <img className="img-fluid card" src="https://res.cloudinary.com/dena7lqj3/image/upload/v1670622572/modulomocc/home/informa.jpg" alt="" />
                       <div class="card-img-overlay">
                         <p className="title-black ">Más Información</p>
                       </div>
@@ -139,7 +143,7 @@ export const HomePage = () => {
 
             <div class="col-3 card img3">
               <div>
-                <img className="img-fluid " src={ini4} alt="" />
+                <img className="img-fluid " src="https://res.cloudinary.com/dena7lqj3/image/upload/v1670622586/modulomocc/home/ini4.jpg" alt="" />
               </div>
               <NavLink to="/cursos/1" className="nav-link">
                 <div class="card_title title-white justify-content-center align-items-center">
@@ -150,7 +154,7 @@ export const HomePage = () => {
                 </div>
               </NavLink>
               <div class="card_icon">
-                <img className="img-fluid " src={icon8} alt="" />
+                <img className="img-fluid " src="https://res.cloudinary.com/dena7lqj3/image/upload/v1670622479/modulomocc/home/8.png" alt="" />
               </div>
               <div className="card_but ">
                 <NavLink to={`/cursos`} className="nav-link ">
@@ -159,7 +163,7 @@ export const HomePage = () => {
                     className="btn btn-outline-light border border-secondary text-body "
                   >
                     <div class="card ">
-                      <img className="img-fluid card" src={icon9} alt="" />
+                      <img className="img-fluid card" src="https://res.cloudinary.com/dena7lqj3/image/upload/v1670622572/modulomocc/home/informa.jpg" alt="" />
                       <div class="card-img-overlay">
                         <p className="title-black ">Más Información</p>
                       </div>
@@ -175,7 +179,7 @@ export const HomePage = () => {
       <div class="row gx-3 callout container-xxl text-center">
         <div>
           <p className="text-center mb-5 descripcion-curso">
-            <img className=" " src={linea2} alt="" />
+            <img className=" " src="https://res.cloudinary.com/dena7lqj3/image/upload/v1670622587/modulomocc/home/linea2.png" alt="" />
           </p>
         </div>
 
@@ -193,18 +197,18 @@ export const HomePage = () => {
       <div class="row gx-3  container-xxl ">
         <div class="col-4 ">
           <div>
-            <img className="img-fluid img3 " src={img9} alt="" />
+            <img className="img-fluid img3 " src="https://res.cloudinary.com/dena7lqj3/image/upload/v1670622656/modulomocc/home/9.png" alt="" />
           </div>
         </div>
 
         <div class="col-4 ">
           <div>
-            <img className="img-fluid img3" src={img10} alt="" />
+            <img className="img-fluid img3" src="https://res.cloudinary.com/dena7lqj3/image/upload/v1670622567/modulomocc/home/10.png" alt="" />
           </div>
         </div>
         <div class="col-4 ">
           <div>
-            <img className="img-fluid img3 " src={img11} alt="" />
+            <img className="img-fluid img3 " src="https://res.cloudinary.com/dena7lqj3/image/upload/v1670622553/modulomocc/home/11.png" alt="" />
           </div>
         </div>
       </div>
@@ -212,14 +216,14 @@ export const HomePage = () => {
       <div class="row gx-3 callout container-xxl text-center">
         <div>
           <p className="text-center mb-5 descripcion-curso">
-            <img className=" " src={linea2} alt="" />
+            <img className=" " src="https://res.cloudinary.com/dena7lqj3/image/upload/v1670622587/modulomocc/home/linea2.png" alt="" />
           </p>
           <div class="row  card1 p-3 title-white  ">
             <div class="col ">
               <div class="col text-center titleC  title-white">
                 <p>Administracíon</p>
                 <div class="card_cert">
-                  <img className="img-fluid " src={icon10} alt="" />
+                  <img className="img-fluid " src="https://res.cloudinary.com/dena7lqj3/image/upload/v1670622478/modulomocc/home/01.png" alt="" />
                 </div>
                 <p></p>
               </div>
@@ -233,7 +237,7 @@ export const HomePage = () => {
               <div class="col text-center titleC title-white ">
                 <p>Creación de páginas web</p>
                 <div class="card_cert">
-                  <img className="img-fluid " src={icon11} alt="" />
+                  <img className="img-fluid " src="https://res.cloudinary.com/dena7lqj3/image/upload/v1670622558/modulomocc/home/i4.png" alt="" />
                 </div>
                 <p></p>
               </div>
@@ -248,7 +252,7 @@ export const HomePage = () => {
               <div class="col text-center titleC  title-white">
                 <p>Marketing digital</p>
                 <div class="card_cert">
-                  <img className="img-fluid " src={icon12} alt="" />
+                  <img className="img-fluid " src="https://res.cloudinary.com/dena7lqj3/image/upload/v1670622562/modulomocc/home/i5.png" alt="" />
                 </div>
                 <p></p>
               </div>
@@ -276,25 +280,25 @@ export const HomePage = () => {
             <div class="col">
               <div class="card_cert">
                 <div className="col">
-                  <img className="img-fluid " src={img13} alt="" />
+                  <img className="img-fluid " src="https://res.cloudinary.com/dena7lqj3/image/upload/v1670622601/modulomocc/home/16.png" alt="" />
                 </div>
               </div>
 
               <div className="card_cert">
                 <div className="col">
-                  <img className="img-fluid " src={img12} alt="" />
+                  <img className="img-fluid " src="https://res.cloudinary.com/dena7lqj3/image/upload/v1670622565/modulomocc/home/15.png" alt="" />
                 </div>
               </div>
 
               <div className="card_cert">
                 <div className="col">
-                  <img className="img-fluid " src={img14} alt="" />
+                  <img className="img-fluid " src="https://res.cloudinary.com/dena7lqj3/image/upload/v1670622590/modulomocc/home/17.png" alt="" />
                 </div>
               </div>
 
               <div className="card_cert">
                 <div className="col">
-                  <img className="img-fluid " src={img11} alt="" />
+                  <img className="img-fluid " src="https://res.cloudinary.com/dena7lqj3/image/upload/v1670622553/modulomocc/home/11.png" alt="" />
                 </div>
               </div>
             </div>

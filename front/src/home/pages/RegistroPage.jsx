@@ -4,7 +4,7 @@ import {
   getCiudad,
   getPais, getProvincia,
 } from "../../services/getPais";
-import inscripcion from "../assets/img/inscrip.jpg";
+//import inscripcion from "../assets/img/inscrip.jpg";
 import { NavbarRedes } from "../components/navbar/NavbarRedes";
 import { formValidations } from "../helpers/getValidation";
 import { useForm } from "../hooks/useForm";
@@ -91,7 +91,7 @@ function RegistroPage() {
     <div className="row ">
       <NavbarRedes />
       <div className=" col-md-6 col-xs-12 image-form">
-        <img width="100%" height="100%" src={inscripcion} alt="inscripcion" />
+        <img width="100%" height="100%" src="https://res.cloudinary.com/dena7lqj3/image/upload/v1670622658/modulomocc/home/inscrip.jpg" alt="inscripcion" />
       </div>
       <div className="col-md-6 col-xs-12">
         <form className="form" id="form" onSubmit={Registrar}>

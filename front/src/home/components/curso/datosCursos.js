@@ -1,5 +1,5 @@
-import imagen1 from './images/1.png'
-import imagen2 from './images/2.png'
+//import imagen1 from './images/1.png'
+/*import imagen2 from './images/2.png'
 import imagen3 from './images/3.png'
 import imagen4 from './images/4.png'
 import imagen5 from './images/5.png'
@@ -12,9 +12,9 @@ import imagen11 from './images/11.png'
 import imagen12 from './images/12.png'
 import imagen13 from './images/13.png'
 import imagen14 from './images/14.png'
-import imagen15 from './images/15.png'
+import imagen15 from './images/15.png'*/
 //Imagenes de cursos detallados
-import imagecurso2 from "..///detalle curso/image/2.png"
+/*import imagecurso2 from "..///detalle curso/image/2.png"
 import imagecurso3 from "..///detalle curso/image/3.png"
 import imagecurso4 from "..///detalle curso/image/4.png"
 import imagecurso5 from "..///detalle curso/image/5.png"
@@ -26,10 +26,10 @@ import imagecurso10 from "..///detalle curso/image/10.png"
 import imagecurso11 from "..///detalle curso/image/11.png"
 import imagecurso12 from "..///detalle curso/image/12.png"
 import imagecurso13 from "..///detalle curso/image/13.png"
-import imagecurso14 from "..///detalle curso/image/14.png"
+import imagecurso14 from "..///detalle curso/image/14.png"*/
 //imagenes de cursos personalizados
-import imagecurso15 from "..///detalle curso/image/15.png"
-import imagecurso16 from "..///detalle curso/image/16.png"
+/*import imagecurso15 from "..///detalle curso/image/15.png"
+import imagecurso16 from "..///detalle curso/image/16.png"*/
 
 export const cursos = [
     {
@@ -37,7 +37,7 @@ export const cursos = [
       tipo: 'general',
       nombre: 'CONTABILIDAD BÁSICA superior',
       descripcion: 'Curso 1',
-      imagen: imagen1,
+      imagen: 'https://res.cloudinary.com/dena7lqj3/image/upload/v1670448789/modulomocc/images_cursos/1.png',
       modalidad:" En línea",
       aprender: [
         "Aprenderás:",
@@ -49,14 +49,14 @@ export const cursos = [
         "-Cuentas especiales",
         "-Nómina"
       ],
-      imagenCurso: imagecurso14
+      imagenCurso: 'https://res.cloudinary.com/dena7lqj3/image/upload/v1670620870/modulomocc/images_cursos_detallados/14.png'
     },
     {
       id: 2,
       tipo: 'general',
       nombre: 'CONTABILIDAD DE COSTOS',
       descripcion: 'Curso 2',
-      imagen: imagen2,
+      imagen: 'https://res.cloudinary.com/dena7lqj3/image/upload/v1670448790/modulomocc/images_cursos/2.png',
       modalidad: "En Línea",
       aprender: [
         "Aprenderás: ",
@@ -64,14 +64,14 @@ export const cursos = [
         "-Metodología",
         "-Metodología para el cálculo de costos: Modelo Orgánico"
       ],
-      imagenCurso: imagecurso2
+      imagenCurso: 'https://res.cloudinary.com/dena7lqj3/image/upload/v1670620859/modulomocc/images_cursos_detallados/2.png'
     },
     {
       id: 3,
       tipo: 'general',
       nombre: 'COSTOS AVANZADOS',
       descripcion: 'Curso 3',
-      imagen: imagen3,
+      imagen: 'https://res.cloudinary.com/dena7lqj3/image/upload/v1670448797/modulomocc/images_cursos/3.png',
       modalidad: "En Línea",
       aprender: [
         "Aprenderás: ",
@@ -80,14 +80,14 @@ export const cursos = [
         "-Costeo estándar y producción conjunta",
         "-Costos Conjuntos",
         "-Subproductos"
-      ],imagenCurso: imagecurso3
+      ],imagenCurso: 'https://res.cloudinary.com/dena7lqj3/image/upload/v1670620863/modulomocc/images_cursos_detallados/3.png'
     },
     {
       id: 4,
       tipo: 'general',
       nombre: 'AUXILIAR CONTABLE',
       descripcion: 'Curso 4',
-      imagen: imagen4,
+      imagen: 'https://res.cloudinary.com/dena7lqj3/image/upload/v1670448802/modulomocc/images_cursos/4.png',
       modalidad: "En línea",
       aprender: [
         "Aprenderás: ",
@@ -98,14 +98,14 @@ export const cursos = [
         "-El ciclo contable",
         "-Cuentas especiales",
         "-Nómina"
-      ],imagenCurso: imagecurso4
+      ],imagenCurso: 'https://res.cloudinary.com/dena7lqj3/image/upload/v1670620867/modulomocc/images_cursos_detallados/4.png'
     },
     {
       id: 5,
       tipo: 'general',
       nombre: 'ACTUALIZACIÓN REFORMA TRIBUTARIA',
       descripcion: 'Curso 5',
-      imagen: imagen5,
+      imagen: 'https://res.cloudinary.com/dena7lqj3/image/upload/v1670448800/modulomocc/images_cursos/5.png',
       modalidad: 'En Línea',
       aprender: [
         "Aprenderás: ",
@@ -117,14 +117,14 @@ export const cursos = [
         "-Activos en el exterior",
         "-Salidas de divisas",
         "-Mediación de deuda"
-      ], imagenCurso: imagecurso5
+      ], imagenCurso: 'https://res.cloudinary.com/dena7lqj3/image/upload/v1670620878/modulomocc/images_cursos_detallados/5.png'
     },
     {
       id: 6,
       tipo: 'general',
       nombre: '¿CÓMO CREAR TU PÁGINA WEB?',
       descripcion: 'Curso 6',
-      imagen: imagen6,
+      imagen: 'https://res.cloudinary.com/dena7lqj3/image/upload/v1670448809/modulomocc/images_cursos/6.png',
       modalidad: "En Línea",
       aprender: [
         "Aprenderás: ",
@@ -133,14 +133,14 @@ export const cursos = [
         "-Bloques de Texto",
         "-Bloques de medios",
         "-Estrategias de venta"
-      ], imagenCurso: imagecurso6 
+      ], imagenCurso: 'https://res.cloudinary.com/dena7lqj3/image/upload/v1670620873/modulomocc/images_cursos_detallados/6.png' 
     },
     {
       id: 7,
       tipo: 'general',
       nombre: 'MARKETING DIGITAL BÁSICO',
       descripcion: 'Curso 7',
-      imagen: imagen7,
+      imagen: 'https://res.cloudinary.com/dena7lqj3/image/upload/v1670448796/modulomocc/images_cursos/7.png',
       modalidad: "En Línea",
       aprender: [
         "Aprenderás: ",
@@ -150,14 +150,14 @@ export const cursos = [
         "-Generación de material digital",
         "-Estrategias de ventas",
         "-Atención al cliente y negociación"
-      ],imagenCurso: imagecurso7
+      ],imagenCurso: 'https://res.cloudinary.com/dena7lqj3/image/upload/v1670620866/modulomocc/images_cursos_detallados/7.png'
     },
     {
       id: 8,
       tipo: 'general',
       nombre: 'MARKETING DIGITAL AVANZADO',
       descripcion: 'Curso 8',
-      imagen: imagen8,
+      imagen: 'https://res.cloudinary.com/dena7lqj3/image/upload/v1670448796/modulomocc/images_cursos/8.png',
       modalidad: "En Línea",
       aprender: [
         "Aprenderás: ",
@@ -168,14 +168,14 @@ export const cursos = [
         "-Gestión y Emprendimiento",
         " Estrategia de ventas",
         "Atención al cliente"
-      ], imagenCurso: imagecurso8
+      ], imagenCurso: 'https://res.cloudinary.com/dena7lqj3/image/upload/v1670620873/modulomocc/images_cursos_detallados/8.png'
     },
     {
       id: 9,
       tipo: 'general',
       nombre: 'LÍDERES COMUNITARIOS',
       descripcion: 'Curso 9',
-      imagen: imagen9,
+      imagen: 'https://res.cloudinary.com/dena7lqj3/image/upload/v1670448804/modulomocc/images_cursos/9.png',
       modalidad: "En Línea",
       aprender: [
         "Aprenderás: ",
@@ -185,14 +185,14 @@ export const cursos = [
         "-Implementación",
         "-Monitoreo",
         "-Rendición de Cuenta"
-      ], imagenCurso: imagecurso9
+      ], imagenCurso: 'https://res.cloudinary.com/dena7lqj3/image/upload/v1670620872/modulomocc/images_cursos_detallados/9.png'
     },
     {
       id: 10,
       tipo: 'general',
       nombre: 'DESCUBRE TU POTENCIAL EMPRENDEDOR',
       descripcion: 'Curso 10',
-      imagen: imagen10,
+      imagen: 'https://res.cloudinary.com/dena7lqj3/image/upload/v1670448803/modulomocc/images_cursos/10.png',
       modalidad: "En Línea",
       aprender: [
         "Aprenderás: ",
@@ -203,14 +203,14 @@ export const cursos = [
         "-Plan Financiero",
         "-Plan de Marketing",
         "-Obligaciones Tributarias"
-      ], imagenCurso: imagecurso10
+      ], imagenCurso: 'https://res.cloudinary.com/dena7lqj3/image/upload/v1670620862/modulomocc/images_cursos_detallados/10.png'
     },
     {
       id: 11,
       tipo: 'general',
       nombre: 'FINANZAS PERSONALES',
       descripcion: 'Curso 11',
-      imagen: imagen11,
+      imagen: 'https://res.cloudinary.com/dena7lqj3/image/upload/v1670448802/modulomocc/images_cursos/11.png',
       modalidad: "En Línea",
       aprender: [
         "Aprenderás: ",
@@ -223,14 +223,14 @@ export const cursos = [
         "-Paso para elaborar tu presupuesto",
         "-Monitoreo del plan de finanzas personales",
         "-Matemática financiera"
-      ], imagenCurso: imagecurso11
+      ], imagenCurso: 'https://res.cloudinary.com/dena7lqj3/image/upload/v1670620861/modulomocc/images_cursos_detallados/11.png'
     },
     {
       id: 12,
       tipo: 'general',
       nombre: 'E-COMMERCE',
       descripcion: 'Curso 12',
-      imagen: imagen12,
+      imagen: 'https://res.cloudinary.com/dena7lqj3/image/upload/v1670448806/modulomocc/images_cursos/12.png',
       modalidad: 'En Línea',
       aprender: [
         "Aprenderás: ",
@@ -242,14 +242,14 @@ export const cursos = [
         "-Introducción al marketing digital",
         "-Rol de las RRSS en los negocios",
         "-WhatsApp Business"
-      ], imagenCurso: imagecurso12
+      ], imagenCurso: 'https://res.cloudinary.com/dena7lqj3/image/upload/v1670620883/modulomocc/images_cursos_detallados/12.png'
     },
     {
       id: 13,
       tipo: 'general',
       nombre: 'MI NEGOCIO',
       descripcion: 'Curso 13',
-      imagen: imagen13,
+      imagen: 'https://res.cloudinary.com/dena7lqj3/image/upload/v1670448807/modulomocc/images_cursos/13.png',
       modalidad: "En Línea",
       aprender: [
         "Aprenderás: ",
@@ -257,14 +257,14 @@ export const cursos = [
         "-El mercado",
         "-Administración",
         "-Cálculo de manejo del dinero en el negocio"
-      ], imagenCurso: imagecurso13    
+      ], imagenCurso: 'https://res.cloudinary.com/dena7lqj3/image/upload/v1670620867/modulomocc/images_cursos_detallados/13.png'    
     },
     {
       id: 14,
       tipo: 'personalizados',
       nombre: 'SERVICIO DE VENTAS',
       descripcion: 'Curso 14 ',
-      imagen: imagen14,
+      imagen: 'https://res.cloudinary.com/dena7lqj3/image/upload/v1670448806/modulomocc/images_cursos/14.png',
       modalidad:" En línea",
       aprender: [
         "Aprenderás:",
@@ -278,20 +278,20 @@ export const cursos = [
         "-TIC´S aplicadas al marketing y ventas ",
         "-Estrategias de comunicación en ventas",
         "-Técnicas efectivas aplicadas al proceso de ventas"
-      ],imagenCurso: imagecurso15
+      ],imagenCurso: 'https://res.cloudinary.com/dena7lqj3/image/upload/v1670620874/modulomocc/images_cursos_detallados/15.png'
     },
     {
       id: 15,
       tipo: 'personalizados',
       nombre: 'ATENCIÓN AL CLIENTE',
       descripcion: 'Curso 15',
-      imagen: imagen15,
+      imagen: 'https://res.cloudinary.com/dena7lqj3/image/upload/v1670448806/modulomocc/images_cursos/15.png',
       modalidad: "En Línea",
       aprender: [
         "Aprenderás: ",
         "-Introducción a la contabilidad de costos y presupuestos",
         "-Metodología",
         "-Metodología para el cálculo de costos: Modelo Orgánico"
-      ], imagenCurso: imagecurso16
+      ], imagenCurso: 'https://res.cloudinary.com/dena7lqj3/image/upload/v1670620875/modulomocc/images_cursos_detallados/16.png'
     }
   ]
