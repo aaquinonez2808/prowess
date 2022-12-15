@@ -17,191 +17,189 @@ export const HomePage = () => {
         <h1 className="text-center mt-5 title-curso  text-black">
           CURSOS GENERALES
         </h1>
-        <p className="text-center mb-5 descripcion-curso">
+        <div className="text-center mb-5 descripcion-curso">
           <img
             className=" "
             src="https://res.cloudinary.com/dena7lqj3/image/upload/v1670622586/modulomocc/home/linea.png"
             alt=""
           />
-        </p>
-        <p>
-          <div class="row gx-0 ">
-            <div class="col-3 card img3">
-              <div>
-                <img
-                  className="img-fluid "
-                  src="https://res.cloudinary.com/dena7lqj3/image/upload/v1670622578/modulomocc/home/ini1.jpg"
-                  alt=""
-                />
-              </div>
-              <NavLink to="/cursos/1" className="nav-link">
-                <div class="card_title title-white  ">
-                  <p>
-                    Contabilidad Básica
-                    <h3>Curso Gratuito</h3>
-                  </p>
-                </div>
-              </NavLink>
-              <div class="card_icon">
-                <img
-                  className="img-fluid "
-                  src="https://res.cloudinary.com/dena7lqj3/image/upload/v1670622479/modulomocc/home/5.png"
-                  alt=""
-                />
-              </div>
-              <div className="card_but ">
-                <NavLink to={`/cursos/1`} className="nav-link ">
-                  <button
-                    type="button"
-                    className="btn btn-outline-light border border-secondary text-body "
-                  >
-                    <div class="card ">
-                      <img
-                        className="img-fluid card"
-                        src="https://res.cloudinary.com/dena7lqj3/image/upload/v1670622572/modulomocc/home/informa.jpg"
-                        alt=""
-                      />
-                      <div class="card-img-overlay">
-                        <p className="title-black ">Más Información</p>
-                      </div>
-                    </div>
-                  </button>
-                </NavLink>
-              </div>
+        </div>
+        <div class="row gx-0">
+          <div class="col-3 card img3">
+            <div>
+              <img
+                className="img-fluid "
+                src="https://res.cloudinary.com/dena7lqj3/image/upload/v1670622578/modulomocc/home/ini1.jpg"
+                alt=""
+              />
             </div>
-
-            <div class="col-3 card img3">
-              <div>
-                <img
-                  className="img-fluid "
-                  src="https://res.cloudinary.com/dena7lqj3/image/upload/v1670622580/modulomocc/home/ini2.jpg"
-                  alt=""
-                />
-              </div>
-              <NavLink to="/cursos/1" className="nav-link">
-                <div class="card_title title-white justify-content-center align-items-center">
-                  <p>
-                    Marketing Digital Básico
-                    <h3>Curso Gratuito</h3>
-                  </p>
-                </div>
-              </NavLink>
-              <div class="card_icon">
-                <img
-                  className="img-fluid "
-                  src="https://res.cloudinary.com/dena7lqj3/image/upload/v1670622478/modulomocc/home/6.png"
-                  alt=""
-                />
-              </div>
-              <div className="card_but ">
-                <NavLink to={`/cursos/7`} className="nav-link ">
-                  <button
-                    type="button"
-                    className="btn btn-outline-light border border-secondary text-body "
-                  >
-                    <div class="card ">
-                      <img
-                        className="img-fluid card"
-                        src="https://res.cloudinary.com/dena7lqj3/image/upload/v1670622572/modulomocc/home/informa.jpg"
-                        alt=""
-                      />
-                      <div class="card-img-overlay">
-                        <p className="title-black ">Más Información</p>
-                      </div>
-                    </div>
-                  </button>
-                </NavLink>
-              </div>
-            </div>
-
-            <div class="col-3 card img3">
-              <div>
-                <img
-                  className="img-fluid "
-                  src="https://res.cloudinary.com/dena7lqj3/image/upload/v1670622585/modulomocc/home/ini3.jpg"
-                  alt=""
-                />
-              </div>
-              <NavLink to="/cursos/1" className="nav-link">
-                <div class="card_title title-white justify-content-center align-items-center">
-                  <p className="mb-0">Auxiliar</p>
-                  <p className="mb-0">Contable</p>
+            <NavLink to="/cursos/1" className="nav-link">
+              <div class="card_title title-white  ">
+                <p>
+                  Contabilidad Básica
                   <h3>Curso Gratuito</h3>
-                </div>
-              </NavLink>
-              <div class="card_icon">
-                <img
-                  className="img-fluid "
-                  src="https://res.cloudinary.com/dena7lqj3/image/upload/v1670622478/modulomocc/home/7.png"
-                  alt=""
-                />
+                </p>
               </div>
-              <div className="card_but ">
-                <NavLink to={`/cursos/4`} className="nav-link ">
-                  <button
-                    type="button"
-                    className="btn btn-outline-light border border-secondary text-body "
-                  >
-                    <div class="card ">
-                      <img
-                        className="img-fluid card"
-                        src="https://res.cloudinary.com/dena7lqj3/image/upload/v1670622572/modulomocc/home/informa.jpg"
-                        alt=""
-                      />
-                      <div class="card-img-overlay">
-                        <p className="title-black ">Más Información</p>
-                      </div>
-                    </div>
-                  </button>
-                </NavLink>
-              </div>
+            </NavLink>
+            <div class="card_icon">
+              <img
+                className="img-fluid "
+                src="https://res.cloudinary.com/dena7lqj3/image/upload/v1670622479/modulomocc/home/5.png"
+                alt=""
+              />
             </div>
-
-            <div class="col-3 card img3">
-              <div>
-                <img
-                  className="img-fluid "
-                  src="https://res.cloudinary.com/dena7lqj3/image/upload/v1670622586/modulomocc/home/ini4.jpg"
-                  alt=""
-                />
-              </div>
-              <NavLink to="/cursos/1" className="nav-link">
-                <div class="card_title title-white justify-content-center align-items-center">
-                  <p>
-                    Conoce todos nuestros cursos
-                    <h3>Curso Gratuito</h3>
-                  </p>
-                </div>
-              </NavLink>
-              <div class="card_icon">
-                <img
-                  className="img-fluid "
-                  src="https://res.cloudinary.com/dena7lqj3/image/upload/v1670622479/modulomocc/home/8.png"
-                  alt=""
-                />
-              </div>
-              <div className="card_but ">
-                <NavLink to={`/cursos`} className="nav-link ">
-                  <button
-                    type="button"
-                    className="btn btn-outline-light border border-secondary text-body "
-                  >
-                    <div class="card ">
-                      <img
-                        className="img-fluid card"
-                        src="https://res.cloudinary.com/dena7lqj3/image/upload/v1670622572/modulomocc/home/informa.jpg"
-                        alt=""
-                      />
-                      <div class="card-img-overlay">
-                        <p className="title-black ">Más Información</p>
-                      </div>
+            <div className="card_but ">
+              <NavLink to={`/cursos/1`} className="nav-link ">
+                <button
+                  type="button"
+                  className="btn btn-outline-light border border-secondary text-body "
+                >
+                  <div class="card ">
+                    <img
+                      className="img-fluid card"
+                      src="https://res.cloudinary.com/dena7lqj3/image/upload/v1670622572/modulomocc/home/informa.jpg"
+                      alt=""
+                    />
+                    <div class="card-img-overlay">
+                      <p className="title-black ">Más Información</p>
                     </div>
-                  </button>
-                </NavLink>
-              </div>
+                  </div>
+                </button>
+              </NavLink>
             </div>
           </div>
-        </p>
+
+          <div class="col-3 card img3">
+            <div>
+              <img
+                className="img-fluid "
+                src="https://res.cloudinary.com/dena7lqj3/image/upload/v1670622580/modulomocc/home/ini2.jpg"
+                alt=""
+              />
+            </div>
+            <NavLink to="/cursos/1" className="nav-link">
+              <div class="card_title title-white justify-content-center align-items-center">
+                <p>
+                  Marketing Digital Básico
+                  <h3>Curso Gratuito</h3>
+                </p>
+              </div>
+            </NavLink>
+            <div class="card_icon">
+              <img
+                className="img-fluid "
+                src="https://res.cloudinary.com/dena7lqj3/image/upload/v1670622478/modulomocc/home/6.png"
+                alt=""
+              />
+            </div>
+            <div className="card_but ">
+              <NavLink to={`/cursos/7`} className="nav-link ">
+                <button
+                  type="button"
+                  className="btn btn-outline-light border border-secondary text-body "
+                >
+                  <div class="card ">
+                    <img
+                      className="img-fluid card"
+                      src="https://res.cloudinary.com/dena7lqj3/image/upload/v1670622572/modulomocc/home/informa.jpg"
+                      alt=""
+                    />
+                    <div class="card-img-overlay">
+                      <p className="title-black ">Más Información</p>
+                    </div>
+                  </div>
+                </button>
+              </NavLink>
+            </div>
+          </div>
+
+          <div class="col-3 card img3">
+            <div>
+              <img
+                className="img-fluid "
+                src="https://res.cloudinary.com/dena7lqj3/image/upload/v1670622585/modulomocc/home/ini3.jpg"
+                alt=""
+              />
+            </div>
+            <NavLink to="/cursos/1" className="nav-link">
+              <div class="card_title title-white justify-content-center align-items-center">
+                <p className="mb-0">Auxiliar</p>
+                <p className="mb-0">Contable</p>
+                <h3>Curso Gratuito</h3>
+              </div>
+            </NavLink>
+            <div class="card_icon">
+              <img
+                className="img-fluid "
+                src="https://res.cloudinary.com/dena7lqj3/image/upload/v1670622478/modulomocc/home/7.png"
+                alt=""
+              />
+            </div>
+            <div className="card_but ">
+              <NavLink to={`/cursos/4`} className="nav-link ">
+                <button
+                  type="button"
+                  className="btn btn-outline-light border border-secondary text-body "
+                >
+                  <div class="card ">
+                    <img
+                      className="img-fluid card"
+                      src="https://res.cloudinary.com/dena7lqj3/image/upload/v1670622572/modulomocc/home/informa.jpg"
+                      alt=""
+                    />
+                    <div class="card-img-overlay">
+                      <p className="title-black ">Más Información</p>
+                    </div>
+                  </div>
+                </button>
+              </NavLink>
+            </div>
+          </div>
+
+          <div class="col-3 card img3">
+            <div>
+              <img
+                className="img-fluid "
+                src="https://res.cloudinary.com/dena7lqj3/image/upload/v1670622586/modulomocc/home/ini4.jpg"
+                alt=""
+              />
+            </div>
+            <NavLink to="/cursos/1" className="nav-link">
+              <div class="card_title title-white justify-content-center align-items-center">
+                <p>
+                  Conoce todos nuestros cursos
+                  <h3>Curso Gratuito</h3>
+                </p>
+              </div>
+            </NavLink>
+            <div class="card_icon">
+              <img
+                className="img-fluid "
+                src="https://res.cloudinary.com/dena7lqj3/image/upload/v1670622479/modulomocc/home/8.png"
+                alt=""
+              />
+            </div>
+            <div className="card_but ">
+              <NavLink to={`/cursos`} className="nav-link ">
+                <button
+                  type="button"
+                  className="btn btn-outline-light border border-secondary text-body "
+                >
+                  <div class="card ">
+                    <img
+                      className="img-fluid card"
+                      src="https://res.cloudinary.com/dena7lqj3/image/upload/v1670622572/modulomocc/home/informa.jpg"
+                      alt=""
+                    />
+                    <div class="card-img-overlay">
+                      <p className="title-black ">Más Información</p>
+                    </div>
+                  </div>
+                </button>
+              </NavLink>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div class="row gx-3 callout container-xxl text-center">
