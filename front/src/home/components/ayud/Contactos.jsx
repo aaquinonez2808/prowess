@@ -1,7 +1,36 @@
 import React from "react";
+import raya from "./imgs/raya.png";
+import cel from "./imgs/15.png";
+import boli from "./imgs/16.png";
 import "./estilo.css";
+import { formValidations } from "../../helpers/getValidationContactos";
+import { useForm } from "../../hooks/useForm";
+import { useState } from "react";
+
+const formData = {
+  nombre: "",
+  email: "",
+  telefono: "",
+  mensaje: "",
+};
+
+
 
 const Contactos = () => {
+  const validation = formValidations;
+  const [formSubmitted, setFormSubmitted] = useState(false);
+  const { onInputChange, formState, formValidation,onResetForm, isFormValid, } =
+  useForm(formData, validation);
+  const Registrar = (e) => {
+    e.preventDefault();
+    setFormSubmitted(true);
+
+    if (isFormValid) {
+      console.log(formState);
+      setFormSubmitted(false);
+      onResetForm();
+    }
+  }
   return (
     <>
       <div className="container-md">
@@ -10,8 +39,8 @@ const Contactos = () => {
       </div>
       <div className="AyudaPage">
         <div className="container">
-          <div class="accordion" id="accordionExample">
-            <img className="image" src="https://res.cloudinary.com/dena7lqj3/image/upload/v1670884219/modulomocc/ayudas/raya.png" alt="" width="500" height="60" />
+          <div class="accordion" id="accordionExample" onSubmit={Registrar}>
+            <img className="image" src={raya} alt="" width="500" height="60" />
             <h1 className="titu">PROWESS EC</h1>
 
             <div class="accordion-item ">
@@ -26,7 +55,7 @@ const Contactos = () => {
                 >
                   <img
                     className="icon"
-                    src="https://res.cloudinary.com/dena7lqj3/image/upload/v1670884219/modulomocc/ayudas/15.png"
+                    src={cel}
                     alt=""
                     width="50"
                     height="40"
@@ -58,7 +87,7 @@ const Contactos = () => {
                 >
                   <img
                     className="icon"
-                    src="https://res.cloudinary.com/dena7lqj3/image/upload/v1670884219/modulomocc/ayudas/16.png"
+                    src={boli}
                     alt=""
                     width="50"
                     height="40"
@@ -103,7 +132,14 @@ const Contactos = () => {
                           class="form-control"
                           id="inputEmail3"
                           placeholder="Nombre"
+                          onChange={onInputChange}
+                          value={formState.inputEmail3}
                         ></input>
+                        <p className="mensajeError">
+                          {!!formValidation.nombreValid &&
+                            formSubmitted &&
+                            formValidation.nombreValid}
+                        </p>
                       </div>
                       <p></p>
                     </div>
@@ -114,11 +150,18 @@ const Contactos = () => {
                       </label>
                       <div class="col-sm-10">
                         <input
-                          type="text"
+                          type="email"
                           class="form-control"
                           id="inputEmail5"
                           placeholder="Email"
+                          onChange={onInputChange}
+                          value={formState.inputEmail5}
                         ></input>
+                        <p className="mensajeError">
+                          {!!formValidation.nombreValid &&
+                            formSubmitted &&
+                            formValidation.nombreValid}
+                        </p>
                       </div>
                     </div>
                     <p></p>
@@ -131,11 +174,18 @@ const Contactos = () => {
                       </label>
                       <div class="col-sm-10">
                         <input
-                          type="password"
+                          type="number"
                           class="form-control"
                           id="inputPassword3"
                           placeholder="Teléfono"
+                          onChange={onInputChange}
+                          value={formState.inputPassword3}
                         ></input>
+                        <p className="mensajeError">
+                          {!!formValidation.nombreValid &&
+                            formSubmitted &&
+                            formValidation.nombreValid}
+                        </p>
                       </div>
                     </div>
                     <div class="form-group">
@@ -144,13 +194,20 @@ const Contactos = () => {
                         class="form-control"
                         id="area_texto2"
                         rows="4"
+                        onChange={onInputChange}
+                        value={formState.area_texto2}
                       ></textarea>
+                      <p className="mensajeError">
+                        {!!formValidation.nombreValid &&
+                          formSubmitted &&
+                          formValidation.nombreValid}
+                      </p>
                     </div>
 
                     <div class="form-group row">
                       <div class="col-sm-10">
                         <button type="submit" class="btn btn-primary">
-                          Enviar
+                          Emviar
                         </button>
                       </div>
                     </div>
@@ -167,7 +224,7 @@ const Contactos = () => {
 
 
 
-  //esta parte es un codigo es para si quieren ingresar algun dato con restricciones de todo tipo
+  //esta parte es un cogigo es para si quieren ingresar algun dato con restricciones de todo tipo
 
   /*
    <form id="formulario">
