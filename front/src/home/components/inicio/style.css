@@ -67,6 +67,11 @@
   height: 40px;
 }
 
+.img3 {
+  transition: .3s;
+  transform: rotate(0deg);
+}
+
 .img3:hover {
   position: relative;
   background-color: #3B8479;
