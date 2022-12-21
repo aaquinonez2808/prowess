@@ -19,7 +19,7 @@ export const Detalles = () => {
       <br />
 
       <h5 className="display-100">TELEFONO</h5>
-      nfdkongkdfgñmdñlgmflñdñmgldfmglfmllñfmdmñlgmdñlf
+      02 356 4427
       <br />
       <br />
 
