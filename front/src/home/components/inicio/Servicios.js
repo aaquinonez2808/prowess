@@ -6,7 +6,7 @@ import "./style.css";
 export const Servicios = () => {
   return (
     <>
-      <div className="d-flex h-100 justify-content-center gap-5  nav ">
+      <div className="row d-flex h-100 justify-content-center gap-0 gap-lg-5">
         <Servicio
           img={
             "https://res.cloudinary.com/dena7lqj3/image/upload/v1670622564/modulomocc/home/icon_curse.png"

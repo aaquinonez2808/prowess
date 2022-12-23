@@ -22,26 +22,46 @@ export const NavbarRedes = () => {
   return (
     <>
       <nav className="navbar navbar-expand-md navbar-light bgnavbar2 justify-content-end">
-        <ul className="navbar-nav gap-2 mx-4">
+        <ul className="navbar-nav redesItems">
           <li className="nav-item">
-            <a href="https://www.facebook.com/prowess.ec" target={"_blank"} className="nav-link py-0" rel="noreferrer">
+            <a
+              href="https://www.facebook.com/prowess.ec"
+              target={"_blank"}
+              className="nav-link py-0"
+              rel="noreferrer"
+            >
               <FacebookIcon />
             </a>
           </li>
           <li className="nav-item ">
-            <a href="https://instagram.com/prowess_ec?igshid=YmMyMTA2M2Y=" target={"_blank"} className="nav-link py-0" rel="noreferrer">
+            <a
+              href="https://instagram.com/prowess_ec?igshid=YmMyMTA2M2Y="
+              target={"_blank"}
+              className="nav-link py-0"
+              rel="noreferrer"
+            >
               <InstagramIcon />
             </a>
           </li>
           <li className="nav-item">
-            <a href="https://www.tiktok.com/@totalprowess_ec?_t=8WfSUUREkkf&_r=1" target={"_blank"} className="nav-link py-0" rel="noreferrer">
+            <a
+              href="https://www.tiktok.com/@totalprowess_ec?_t=8WfSUUREkkf&_r=1"
+              target={"_blank"}
+              className="nav-link py-0"
+              rel="noreferrer"
+            >
               <div style={{ width: "25px" }}>
                 <TikTokIcon />
               </div>
             </a>
           </li>
           <li className="nav-item">
-            <a href="https://twitter.com/ProwessEc" target={"_blank"} className="nav-link py-0" rel="noreferrer">
+            <a
+              href="https://twitter.com/ProwessEc"
+              target={"_blank"}
+              className="nav-link py-0"
+              rel="noreferrer"
+            >
               <TwitterIcon />
             </a>
           </li>

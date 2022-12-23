@@ -4,12 +4,9 @@
 }
 
 .servicio {
-  border-radius: 10px;
   background-color: #A3E6A9;
   background: -webkit-linear-gradient(top, #d9d9d9 0%, #ffffff 10%, #57837b 70%) repeat scroll 0 0;
-  width: 350px;
   font-weight: bold;
-
 }
 
 .servicio a {
@@ -63,8 +60,6 @@
   font-family: sans-serif;
   font-weight: bold;
   font-size: 30px;
-  margin-top: -80px;
-  height: 40px;
 }
 
 .img3 {
@@ -98,34 +93,11 @@
   font-family: 'Raleway', sans-serif;
   font-weight: 1000;
   font-size: 30px;
-  margin-top: -210px;
-  height: 40px;
-
+  z-index: 1000;
 }
 
-.card_icon {
-  position: center;
-  margin-top: -310px;
-  margin-left: 85px;
-  height: -80px;
-  width: 150px;
-
-}
-
-.card_but {
-  margin-top: 130px;
-  margin-left: 20px;
-
-}
-
-.card_color {
-  background-color: #dcece4;
-
-
-}
 
 .card1 {
-  margin: 30px auto;
   border-radius: 10px;
   border-bottom: #3B8479;
   background-color: #3B8479;
@@ -134,7 +106,6 @@
 }
 
 .card2 {
-  margin: 30px auto;
   border-radius: 10px;
   border-bottom: #dde9da;
   background-color: #c9dac6;
@@ -158,8 +129,7 @@
 
 .title-black {
   color: black;
-  margin-top: -5px;
-  margin-left: -40px;
+  margin-bottom: 0;
 }
 
 @media all and (max-width: 500px) {
@@ -185,4 +155,87 @@
   margin: 5;
   background-position: center;
   background-size: cover;
+}
+
+/* RESPONSIVE */
+
+.separacion {
+  margin: 157px;
+}
+
+.card_icon {
+  width: 100px;
+  margin-top: 30px;
+}
+
+.card_color {
+  background-color: #dcece4;
+}
+
+.imgCurso {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contenedorCurso {
+  height: 400px;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card_but {
+  margin-bottom: 10px;
+  max-width: 250px;
+}
+
+.nav-link {
+  padding: 0;
+}
+
+.card-img-overlay {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.separador {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .card_but {
+    max-width: 350px;
+  }
+
+  .title-curso {
+    font-size: 35px;
+  }
+
+  .titleC {
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 992px) {
+  .servicio {
+    width: 290px;
+    border-radius: 10px;
+
+  }
+
+  .cursoGeneral {
+    max-width: 350px;
+  }
+
+  .card .card_title {
+    font-size: 25px;
+  }
 }

@@ -11,16 +11,17 @@ import CardInfo from "../components/inicio/CardInfo";
 export const HomePage = () => {
   return (
     <>
+      <div className="separacion"></div>
       <Slider />
-      <div className="servicios mb-3">
+      <section className="container-fluid servicios">
         <Servicios />
-      </div>
-      <div className="container-xxl ">
-        <h1 className="text-center mt-5 title-curso  text-black">
+      </section>
+      <div className="container">
+        <h1 className="text-center mt-5 title-curso text-black">
           CURSOS GENERALES
         </h1>
         <Linea />
-        <div class="row gx-0">
+        <div class="row gx-0 d-flex justify-content-center gx-3 mb-5">
           <CursoGeneral
             title={"Contabilidad Básica"}
             img={
@@ -63,22 +64,22 @@ export const HomePage = () => {
         </div>
       </div>
 
-      <div class="container-xxl">
+      <div class="container">
         <Linea />
         <div class="row  card2 p-3  ">
-          <div class="col text-center title-curso text-black">
+          <div class="col-12  text-center title-curso text-black">
             <p>INFORMACIÓN DE NUESTROS CURSOS</p>
           </div>
 
-          <div class="col text-center  text-body titleC  text-black">
+          <div class="col-12  text-center  text-body titleC  text-black">
             <p>PROWESS OFRECE CURSOS DE CAPACITACIÓN EN LAS SIGUENTES AREAS.</p>
           </div>
         </div>
       </div>
 
-      <div class="container-xxl ">
-        <div className="row gx-3 ">
-          <div class="col-4">
+      <div class="container">
+        <div className="row gx-3 mb-5">
+          <div class="col-12 col-md-4">
             <div>
               <img
                 className="img-fluid img3 "
@@ -87,7 +88,7 @@ export const HomePage = () => {
               />
             </div>
           </div>
-          <div class="col-4 ">
+          <div class="col-12 col-md-4">
             <div>
               <img
                 className="img-fluid img3 "
@@ -96,7 +97,7 @@ export const HomePage = () => {
               />
             </div>
           </div>
-          <div class="col-4 ">
+          <div class="col-12 col-md-4">
             <div>
               <img
                 className="img-fluid img3 "
@@ -108,10 +109,10 @@ export const HomePage = () => {
         </div>
       </div>
 
-      <div class="container-xxl">
+      <div class="container">
         <div>
           <Linea />
-          <div class="row  card1 p-3 title-white  ">
+          <div class="row card1 p-3 title-white">
             <CardInfo
               title={"Administracíon"}
               img={
@@ -146,8 +147,8 @@ export const HomePage = () => {
           <p className="text-center mt-5 title-curso   text-black">
             CERTIFICADOS DE CALIDAD
           </p>
-          <div class="row  card1 p-3  ">
-            <div class="col text-center    text-white">
+          <div class="row card1 p-3 d-flex justify-content-center align-items-center mb-5">
+            <div class="col-12 col-lg-6 text-center text-white">
               <h1 className="title-curso text-white ">
                 <h1>¿POR QUÉ ESTUDIAR CON NOSOSTROS?</h1>
               </h1>
@@ -157,19 +158,19 @@ export const HomePage = () => {
               </p>
             </div>
 
-            <div class="col">
-              <div class="card_cert">
-                <div className="col">
+            <div class="row col-12 col-lg-6 d-flex justify-content-center align-items-center">
+              <div class="card_cert col-12 col-lg-6">
+                <div className="">
                   <img
-                    className="img-fluid "
+                    className="img-fluid"
                     src="https://res.cloudinary.com/dena7lqj3/image/upload/v1670622601/modulomocc/home/16.png"
                     alt=""
                   />
                 </div>
               </div>
 
-              <div className="card_cert">
-                <div className="col">
+              <div className="card_cert col-12 col-lg-6">
+                <div className="">
                   <img
                     className="img-fluid "
                     src="https://res.cloudinary.com/dena7lqj3/image/upload/v1670622565/modulomocc/home/15.png"
@@ -178,8 +179,8 @@ export const HomePage = () => {
                 </div>
               </div>
 
-              <div className="card_cert">
-                <div className="col">
+              <div className="card_cert col-12 col-lg-6">
+                <div className="">
                   <img
                     className="img-fluid "
                     src="https://res.cloudinary.com/dena7lqj3/image/upload/v1670622590/modulomocc/home/17.png"
@@ -188,8 +189,8 @@ export const HomePage = () => {
                 </div>
               </div>
 
-              <div className="card_cert">
-                <div className="col">
+              <div className="card_cert col-12 col-lg-6">
+                <div className="">
                   <img
                     className="img-fluid "
                     src="https://res.cloudinary.com/dena7lqj3/image/upload/v1670622553/modulomocc/home/11.png"
