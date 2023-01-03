@@ -9,13 +9,45 @@
 }
 
 .div1 {
-    text-align:center;
+    text-align: center;
 }
 
-.bgnavbar{
-    background-color: rgb(219,219,219);
-    font-size:large;
+.bgnavbar {
+    position: fixed;
+    width: 100%;
+    z-index: 1030;
+    top: 0;
+    padding: 45px 0 30px 0;
+    background-color: rgb(219, 219, 219);
+    font-size: large;
 }
-.bgnavbar2{
+
+.bgnavbar2 {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1031;
     background-color: #57837b;
+}
+
+.navbar-collapse {
+    flex-grow: 0;
+}
+
+.dropdown-menu[data-bs-popper] {
+    left: -110px;
+}
+
+.redesItems {
+    flex-direction: row;
+}
+
+.navbar-nav.bgnavbar {
+    flex-direction: column;
+}
+
+@media (max-width: 768px) {
+    .justify-content-end {
+        justify-content: center !important;
+    }
 }
