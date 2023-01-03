@@ -9,7 +9,7 @@ export const Detalles = () => {
       <img className="image" src={raya} alt="" width="500" height="50" />
 
       <h5 className="display-100">RESPONSABLE</h5>
-      Ing. Luis Enrique Simbaña PhD
+      Ing. Luis Enrique Simbaña Ph.D
       <br />
       <br />
 
@@ -19,7 +19,7 @@ export const Detalles = () => {
       <br />
 
       <h5 className="display-100">TELEFONO</h5>
-      02 356 4427
+      (02) 356 4427
       <br />
       <br />
 
@@ -31,8 +31,8 @@ export const Detalles = () => {
       <br />
 
   
-      <h5 className="display-100">WHATSHAP</h5>
-      (593)981602933
+      <h5 className="display-100">WHATSAPP</h5>
+      (593) 98 160 2933
       <br />
       <br />
 
