@@ -43,7 +43,9 @@ export const Jumbotron = () => {
 <br />
 <br />
  <h5 className="display-100">FORMAS DE PAGO</h5>
-¿Cuáles son las formas de pago en la Tienda Virtual? ¿Recibiré una factura con mi compra?
+¿Cuáles son las formas de pago en la Tienda Virtual? 
+<br />
+¿Recibiré una factura con mi compra?
 <br />
 <br />
  <h5 className="display-100">SEGURIDAD </h5>
