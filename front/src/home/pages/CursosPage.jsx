@@ -13,14 +13,14 @@ const CursosPage = () => {
 
   return (
     <>
-      <div className="container-md">
+      <div className="container-md container-cursos">
         <h1 className="text-center mt-5 title-curso">CURSOS {titulo}</h1>
         <p className="text-center mb-5 descripcion-curso">
           Cursos completamente gratuitos en modalidad virtual para emprendedores
         </p>
-        <ListCurso tipos={tipos} />
+        <ListCurso tipos={tipos}/>
       </div>
-      <Footer />
+      <Footer/>
     </>
   );
 };
