@@ -1,4 +1,3 @@
-
 @import url('http://fonts.cdnfonts.com/css/gagalin');
 
 .title-nombre {
@@ -8,23 +7,25 @@
     font-family: 'Gagalin', sans-serif;
     text-align: center;
 }
-.text-modalidad, .text-aprender{
+
+.text-modalidad,.text-aprender {
     color: white;
     font-size: 2rem;
 }
 
-#principal{
-    background-color:  #3B8479;
+#principal {
+    background-color: #3B8479;
     height: 100%;
     position: absolute;
     font-family: 'Montserrat', sans-serif;
 }
-.cabecera{
+
+.cabecera {
     position: relative;
-    background-color:  #3B8479;
+    background-color: #3B8479;
 }
 
-.button{
+.button {
     margin-bottom: 20px;
     border-radius: 0.5em;
     border-color: black;
@@ -39,8 +40,8 @@
     margin: auto;
 }
 
-.btn-register{
-    padding: 30px;
+.btn-register {
+    padding: 40px;
 }
 
 .bg-none {
@@ -49,7 +50,8 @@
     font-size: 25px;
     color: white;
 }
-.bg-none:first-child{
+
+.bg-none:first-child {
     color: white;
     font-weight: bold;
     font-size: 25px;
@@ -57,7 +59,6 @@
     margin: 0;
 }
 
-
-
-
-
+.container-cursos {
+    margin-top: 150px;
+}
