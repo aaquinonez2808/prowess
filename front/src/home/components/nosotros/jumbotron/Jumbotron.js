@@ -39,8 +39,6 @@ export const Jumbotron = () => {
           <AccordionItem
             id={"item1"}
             headingId={"heading1"}
-            expanded={"true"}
-            show={"show"}
             icon={<FolderCopyIcon />}
             title={"Opción 1"}
             text={
@@ -50,8 +48,6 @@ export const Jumbotron = () => {
           <AccordionItem
             id={"item2"}
             headingId={"heading2"}
-            expanded={"false"}
-            show={""}
             icon={
               <img className="icon" src={i2} alt="" width="30" height="30" />
             }
@@ -63,8 +59,6 @@ export const Jumbotron = () => {
           <AccordionItem
             id={"item3"}
             headingId={"heading3"}
-            expanded={"false"}
-            show={""}
             icon={
               <img className="icon" src={i3} alt="" width="30" height="30" />
             }
@@ -76,8 +70,6 @@ export const Jumbotron = () => {
           <AccordionItem
             id={"item4"}
             headingId={"heading4"}
-            expanded={"false"}
-            show={""}
             icon={
               <img className="icon" src={i4} alt="" width="30" height="30" />
             }

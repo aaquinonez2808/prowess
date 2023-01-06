@@ -1,16 +1,16 @@
 const AccordionItem = (props) => {
-  const { id, headingId, expanded, show, icon, title, text } = props;
+  const { id, headingId, icon, title, text } = props;
 
   return (
     <>
       <div class="accordion-item">
         <h2 class="accordion-header" id={headingId}>
           <button
-            class="accordion-button"
+            class="accordion-button collapsed"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target={"#" + id}
-            aria-expanded={expanded}
+            aria-expanded="false"
             aria-controls={id}
           >
             {icon} {title}
@@ -18,7 +18,7 @@ const AccordionItem = (props) => {
         </h2>
         <div
           id={id}
-          class={"accordion-collapse collapse " + show}
+          class={"accordion-collapse collapse"}
           aria-labelledby={headingId}
           data-bs-parent="#accordionExample"
         >
