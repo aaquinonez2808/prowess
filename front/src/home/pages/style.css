@@ -121,8 +121,12 @@ body {
   font-family: sans-serif;
   font-weight: lighter;
 }
-/*
+
 span::before {
   display: inline;
   content: "⚠ ";
+}
+
+.container-cursos {
+  margin-top: 150px;
 }
