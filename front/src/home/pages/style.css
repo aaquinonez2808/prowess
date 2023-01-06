@@ -14,14 +14,6 @@ body {
   font-family: sans-serif;
 }
 
-.container {
-  /* border: 3px solid red; */
-  max-width: 90%;
-  margin: auto;
-  margin-top: 20px;
-
-}
-
 :root {
   --cfondo: rgb(207, 211, 212);
   --cfondoForm1: rgba(1, 1, 1, 0.39);
@@ -129,12 +121,8 @@ body {
   font-family: sans-serif;
   font-weight: lighter;
 }
-
+/*
 span::before {
   display: inline;
   content: "⚠ ";
-}
-
-.container-cursos {
-  margin-top: 150px;
 }

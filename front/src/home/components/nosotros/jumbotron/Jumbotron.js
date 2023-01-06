@@ -1,21 +1,20 @@
 import React from "react";
 
 import raya from "../imgs/raya.png";
-import FolderCopyIcon from '@mui/icons-material/FolderCopy';
+import FolderCopyIcon from "@mui/icons-material/FolderCopy";
 import i2 from "../imgs/1.png";
 import i3 from "../imgs/2.png";
 import i4 from "../imgs/3.png";
 
-
 //<link rel="stylesheet" href="style.css">
 import "./style.css";
+import AccordionItem from "./AccordionItem";
 export const Jumbotron = () => {
   return (
     <div className="jumbotron">
       <div className="container">
         <h1 className="display-3">La Institución </h1>
-
-        <img className="image" src={raya} alt="" width="500" height="50" />
+        <img className="image img-fluid" src={raya} alt="" />
         <h1 className="display-6"> PROWESS EC</h1>
         <p>
           Departamento de Ciencias Económicas, Administrativas y de Comercio –
@@ -36,124 +35,53 @@ export const Jumbotron = () => {
           Licenciatura en Turismo.
         </p>
 
-
         <div class="accordion" id="accordionExample">
-          
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingOne">
-              <button
-                class="accordion-button"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseOne"
-                aria-expanded="true"
-                aria-controls="collapseOne"
-              >  
-              
-              <FolderCopyIcon  /> Opcion 1
-              </button>
-            </h2>
-            <div
-              id="collapseOne"
-              class="accordion-collapse collapse show"
-              aria-labelledby="headingOne"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body">
-              Certificación del Sistema de Gestión de Calidad con alcance a los programas técnicos y diplomados virtuales
-              </div>
-            </div>
-          </div>
-          
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingTwo">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseTwo"
-                aria-expanded="false"
-                aria-controls="collapseTwo"
-              >
-               <img className="icon" src={i2} alt=""  width="30" height="30"  />
-               Opcion 2
-              </button>
-            </h2>
-            <div
-              id="collapseTwo"
-              class="accordion-collapse collapse"
-              aria-labelledby="headingTwo"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body">
-              Certificación Internacional del Sistema de Gestión de Calidad
-              </div>
-            </div>
-          </div>
-          
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingtre">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapsetre"
-                aria-expanded="false"
-                aria-controls="collapsetre"
-              >
-               <img className="icon" src={i3} alt=""  width="30" height="30"  />
-               Opcion 3
-              </button>
-            </h2>
-            <div
-              id="collapsetre"
-              class="accordion-collapse collapse"
-              aria-labelledby="headingtre"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body">
-              Certificación de Calidad como Institución de Educación Para el Trabajo y el Desarrollo Humano
-              </div>
-            </div>
-          </div>
-
-
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingThree">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseThree"
-                aria-expanded="false"
-                aria-controls="collapseThree"
-              >
-                <img className="icon" src={i4} alt=""  width="30" height="30"  />
-                Opcion4
-              </button>
-            </h2>
-            <div
-              id="collapseThree"
-              class="accordion-collapse collapse"
-              aria-labelledby="headingThree"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body">
-              Certificación de Calidad de los Programas Técnicos Laborales.
-              </div>
-            </div>
-          </div>
-          
-
-        
+          <AccordionItem
+            id={"item1"}
+            headingId={"heading1"}
+            icon={<FolderCopyIcon />}
+            title={"Opción 1"}
+            text={
+              "Certificación del Sistema de Gestión de Calidad con alcance alos programas técnicos y diplomados virtuales"
+            }
+          />
+          <AccordionItem
+            id={"item2"}
+            headingId={"heading2"}
+            icon={
+              <img className="icon" src={i2} alt="" width="30" height="30" />
+            }
+            title={"Opción 2"}
+            text={
+              "Certificación Internacional del Sistema de Gestión de Calidad"
+            }
+          />
+          <AccordionItem
+            id={"item3"}
+            headingId={"heading3"}
+            icon={
+              <img className="icon" src={i3} alt="" width="30" height="30" />
+            }
+            title={"Opción 3"}
+            text={
+              "Certificación de Calidad como Institución de Educación Para el Trabajo y el Desarrollo Humano"
+            }
+          />
+          <AccordionItem
+            id={"item4"}
+            headingId={"heading4"}
+            icon={
+              <img className="icon" src={i4} alt="" width="30" height="30" />
+            }
+            title={"Opción 4"}
+            text={
+              "Certificación de Calidad de los Programas Técnicos Laborales."
+            }
+          />
         </div>
 
-
-
-
-
-        <h1 className="display-6">OBJETIVOS ESTRATÉGICOS </h1>
-        <img className="image" src={raya} alt="" width="500" height="50" />
+        <h2 className="mt-4">OBJETIVOS ESTRATÉGICOS </h2>
+        <img className="image img-fluid" src={raya} alt="" />
 
         <p>
           <a
@@ -185,48 +113,5 @@ opcion.forEach((e) => {
     padre.parentNode.children[1].classList.toggle("animation");
   });
 });
-/**        <div class="cont-menu">
-          <div class="cont-enlace">
-            <div class="opcion">
-              <p>Opcion 1</p>
-              <p class="icono">+</p>
-            </div>
-            <div class="enlace">
-              <p>Opcion</p>
-              <a href="#">enlase1</a>
-            </div>
-          </div>
-
-          <div class="cont-enlace">
-            <div class="opcion">
-              <p>OPCIOPN2</p>
-              <p class="icono">+</p>
-            </div>
-            <div class="enlace">
-              <a href="#">enlase</a>
-            </div>
-          </div>
-
-          <div class="cont-enlace">
-            <div class="opcion">
-              <p>OPCIOPN3</p>
-              <p class="icono">+</p>
-            </div>
-            <div class="enlace">
-              <a href="#">enlase</a>
-            </div>
-          </div>
-
-          <div class="cont-enlace">
-            <div class="opcion">
-              <p>OPCIOPN4</p>
-              <p class="icono">+</p>
-            </div>
-            <div class="enlace">
-              <a href="#">enlase</a>
-            </div>
-          </div>
-        </div>
- */
 
 export default Jumbotron;

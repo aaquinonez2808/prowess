@@ -5,9 +5,7 @@ export const Detalles = () => {
     <div className="container">
       <h2>Nuestra Filosofía</h2>
       <br></br>
-      <br></br>
-
-      <h3>Misión</h3>
+      <h2>Misión</h2>
       <p>
         Es por consiguiente, la unidad organizacional clave para el cumplimiento
         de la misión de la ESPE y el logro de los objetivos del plan estratégico
@@ -26,9 +24,10 @@ export const Detalles = () => {
         los cursos de capacitación por los estudiantes por la Universidad de las
         Fuerzas Armadas ESPE de la mano de las herramientas tecnológicas.
       </p>
-      
-      <img className="image" src={boton} alt="" width="400" height="300" />
 
+      <div className="img-container d-flex justify-content-center align-items-center">
+        <img className="image img-fluid" src={boton} alt="" />
+      </div>
     </div>
   );
 };

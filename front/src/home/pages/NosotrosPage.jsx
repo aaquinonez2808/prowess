@@ -3,7 +3,7 @@ import { Nosotros } from '../components/nosotros/Nosotros'
 
 const NosotrosPage = () => {
   return (
-    <div><Nosotros/></div>
+    <Nosotros/>
   )
 }
 
