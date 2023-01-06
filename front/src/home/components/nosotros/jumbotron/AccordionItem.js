@@ -1,4 +1,6 @@
-const AccordionItem = ({ id, headingId, icon, title, text }) => {
+const AccordionItem = (props) => {
+  const { id, headingId, expanded, show, icon, title, text } = props;
+
   return (
     <>
       <div class="accordion-item">
@@ -8,7 +10,7 @@ const AccordionItem = ({ id, headingId, icon, title, text }) => {
             type="button"
             data-bs-toggle="collapse"
             data-bs-target={"#" + id}
-            aria-expanded="true"
+            aria-expanded={expanded}
             aria-controls={id}
           >
             {icon} {title}
@@ -16,7 +18,7 @@ const AccordionItem = ({ id, headingId, icon, title, text }) => {
         </h2>
         <div
           id={id}
-          class="accordion-collapse collapse show"
+          class={"accordion-collapse collapse " + show}
           aria-labelledby={headingId}
           data-bs-parent="#accordionExample"
         >
