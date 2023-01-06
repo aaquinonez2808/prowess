@@ -24,13 +24,10 @@ export const Detalles = () => {
       <br />
 
       <h5 className="display-100">CELULAR</h5>
-      <p>
       09981602933
-     </p>
       <br />
-      <br />
+      <br />      
 
-  
       <h5 className="display-100">WHATSAPP</h5>
       (593) 98 160 2933
       <br />
