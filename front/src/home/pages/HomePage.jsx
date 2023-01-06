@@ -159,7 +159,7 @@ export const HomePage = () => {
             </div>
 
             <div class="row col-12 col-lg-6 d-flex justify-content-center align-items-center">
-              <div class="card_cert col-12 col-lg-6">
+              <div class="col-12 col-md-6 p-1">
                 <div className="">
                   <img
                     className="img-fluid"
@@ -169,7 +169,7 @@ export const HomePage = () => {
                 </div>
               </div>
 
-              <div className="card_cert col-12 col-lg-6">
+              <div className="col-12 col-md-6 p-1">
                 <div className="">
                   <img
                     className="img-fluid "
@@ -179,7 +179,7 @@ export const HomePage = () => {
                 </div>
               </div>
 
-              <div className="card_cert col-12 col-lg-6">
+              <div className="col-12 col-md-6 p-1">
                 <div className="">
                   <img
                     className="img-fluid "
@@ -189,10 +189,10 @@ export const HomePage = () => {
                 </div>
               </div>
 
-              <div className="card_cert col-12 col-lg-6">
+              <div className="col-12 col-md-6 p-1">
                 <div className="">
                   <img
-                    className="img-fluid "
+                    className="img-fluid"
                     src="https://res.cloudinary.com/dena7lqj3/image/upload/v1670622553/modulomocc/home/11.png"
                     alt=""
                   />
