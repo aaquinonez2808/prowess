@@ -11,7 +11,6 @@ import CardInfo from "../components/inicio/CardInfo";
 export const HomePage = () => {
   return (
     <>
-      <div className="separacion"></div>
       <Slider />
       <section className="container-fluid servicios">
         <Servicios />
