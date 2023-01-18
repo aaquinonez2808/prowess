@@ -1,11 +1,11 @@
-/*.slider-img {
+.slider-img{
     width: 100%;
-    height: 70vh;
+    height: 56vh;
 }
-
 .slider-img .carousel-item img {
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
     object-fit: cover !important;
     object-position: bottom !important;
-}*/
+}
+
