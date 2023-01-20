@@ -1,87 +1,92 @@
 .logo {
-  max-width: 200px;
-  min-width: 200px;
+    max-width: 195px;
+    min-width: 195px;
 }
 
 .logo2 {
-  max-width: 500px;
-  min-width: 200px;
+    max-width: 500px;
+    min-width: 200px;
 }
 
 .div1 {
-  text-align: center;
+    text-align: center;
 }
 
 .bgnavbar {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  z-index: 1030;
-  background-color: rgb(219, 219, 219);
-  font-size: large;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    z-index: 1030;
+    background-color: #3B8479;
+    font-size: large;
 }
 
 .bgnavbar2 {
-  width: 100%;
-  z-index: 1031;
-  background-color: #57837b;
+    width: 100%;
+    z-index: 1031;
+    background-color: #4D6066;
 }
 
 .navbar-collapse {
-  flex-grow: 0;
+    flex-grow: 0;
 }
 
 .dropdown-menu[data-bs-popper] {
-  left: -110px;
+    left: -110px;
 }
 
 .redesItems {
-  flex-direction: row;
+    flex-direction: row;
 }
 
 .navbar-nav.bgnavbar {
-  flex-direction: column;
+    flex-direction: column;
 }
+
+.nav-link {
+    color: white;
+}
+
 
 .line {
-  display: none;
-  width: 85%;
-  border-bottom: 2px solid rgb(80, 80, 80);
-  margin: auto;
-  transition: 0.4s;
+    display: none;
+    width: 85%;
+    border-bottom: 2px solid rgb(80, 80, 80);
+    margin: auto;
+    transition: 0.4s;
 }
 
-ul li a:hover > .line {
-  width: 100%;
-  border-bottom: 2px solid rgb(0, 0, 0);
-  margin: auto;
+ul li a:hover>.line {
+    width: 100%;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    margin: auto;
 }
 
 .line::after {
-  content: "";
-  display: block;
-  opacity: 0;
-  width: 85%;
-  border-bottom: 2px solid rgb(80, 80, 80);
-  margin: auto;
-  transition: 0.4s;
+    content: "";
+    display: block;
+    opacity: 0;
+    width: 85%;
+    border-bottom: 2px solid rgb(80, 80, 80);
+    margin: auto;
+    transition: 0.4s;
 }
 
-ul li a:hover > .line::after {
-  opacity: 1;
-  width: 100%;
-  transform: translateY(-35px);
-  border-bottom: 2px solid rgb(0, 0, 0);
+ul li a:hover>.line::after {
+    opacity: 1;
+    width: 100%;
+    transform: translateY(-35px);
+    border-bottom: 2px solid rgb(0, 0, 0);
 }
 
 @media (max-width: 768px) {
-  .justify-content-end {
-    justify-content: center !important;
-  }
+    .justify-content-end {
+        justify-content: center !important;
+    }
 }
 
 @media (min-width: 992px) {
-  .line {
-    display: block;
-  }
+    .line {
+        display: block;
+    }
 }
