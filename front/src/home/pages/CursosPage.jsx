@@ -3,12 +3,22 @@ import ListCurso from "../components/curso/ListCurso";
 import "./style.css";
 import Footer from "../components/footer/Footer";
 import { useParams } from "react-router-dom";
+import { getCourses } from "../../services/PruebaMoodle";
 
 const CursosPage = () => {
   const { tipos } = useParams();
   const [titulo, settitulo] = useState("");
+  const [courses, setCourses] = useState([]);
+
+  const _getCourses = async () => {
+    const response = await getCourses();
+    console.log(response);
+
+    setCourses(response.filter((course) => course.id !== 1));
+  };
   useEffect(() => {
     settitulo(tipos === "general" ? "GENERALES" : "PERSONALIZADOS");
+    _getCourses();
   }, [tipos]);
 
   return (
@@ -18,9 +28,9 @@ const CursosPage = () => {
         <p className="text-center mb-5 descripcion-curso">
           Cursos completamente gratuitos en modalidad virtual para emprendedores
         </p>
-        <ListCurso tipos={tipos}/>
+        <ListCurso tipos={tipos} courses={courses} />
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 };
