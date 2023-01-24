@@ -1,6 +1,6 @@
 .logo {
-    max-width: 200px;
-    min-width: 200px;
+    max-width: 195px;
+    min-width: 195px;
 }
 
 .logo2 {
@@ -17,14 +17,14 @@
     flex-direction: column;
     width: 100%;
     z-index: 1030;
-    background-color: rgb(219, 219, 219);
-    font-size: large;;
+    background-color: #3B8479;
+    font-size: large;
 }
 
 .bgnavbar2 {
     width: 100%;
     z-index: 1031;
-    background-color: #57837b;
+    background-color: #4D6066;
 }
 
 .navbar-collapse {
@@ -43,34 +43,38 @@
     flex-direction: column;
 }
 
+.nav-link {
+    color: white;
+}
 
 
-.line{
+.line {
+    display: none;
     width: 85%;
     border-bottom: 2px solid rgb(80, 80, 80);
     margin: auto;
-    transition: .4s;
+    transition: 0.4s;
 }
 
-ul li a:hover > .line{
+ul li a:hover>.line {
     width: 100%;
     border-bottom: 2px solid rgb(0, 0, 0);
     margin: auto;
 }
 
-.line::after{
+.line::after {
     content: "";
     display: block;
-   opacity: 0;
+    opacity: 0;
     width: 85%;
     border-bottom: 2px solid rgb(80, 80, 80);
     margin: auto;
-    transition: .4s;
+    transition: 0.4s;
 }
 
-ul li a:hover > .line::after{
+ul li a:hover>.line::after {
     opacity: 1;
-    width: 100%;    
+    width: 100%;
     transform: translateY(-35px);
     border-bottom: 2px solid rgb(0, 0, 0);
 }
@@ -81,3 +85,8 @@ ul li a:hover > .line::after{
     }
 }
 
+@media (min-width: 992px) {
+    .line {
+        display: block;
+    }
+}
