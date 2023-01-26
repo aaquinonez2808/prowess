@@ -1,11 +1,5 @@
 import React from "react";
-
-import raya from "../imgs/raya.png";
 import FolderCopyIcon from "@mui/icons-material/FolderCopy";
-import i2 from "../imgs/1.png";
-import i3 from "../imgs/2.png";
-import i4 from "../imgs/3.png";
-
 //<link rel="stylesheet" href="style.css">
 import "./style.css";
 import AccordionItem from "./AccordionItem";
@@ -14,7 +8,7 @@ export const Jumbotron = () => {
     <div className="jumbotron">
       <div className="container">
         <h1 className="display-3">La Institución </h1>
-        <img className="image img-fluid" src={raya} alt="" />
+        <img className="image img-fluid" src="https://res.cloudinary.com/dena7lqj3/image/upload/v1673044536/modulomocc/nosotros/raya_uotn89.png" alt="" />
         <h1 className="display-6"> PROWESS EC</h1>
         <p>
           Departamento de Ciencias Económicas, Administrativas y de Comercio –
@@ -49,7 +43,7 @@ export const Jumbotron = () => {
             id={"item2"}
             headingId={"heading2"}
             icon={
-              <img className="icon" src={i2} alt="" width="30" height="30" />
+              <img className="icon" src="https://res.cloudinary.com/dena7lqj3/image/upload/v1673044536/modulomocc/nosotros/1_durytb.png" alt="" width="30" height="30" />
             }
             title={"Opción 2"}
             text={
@@ -60,7 +54,7 @@ export const Jumbotron = () => {
             id={"item3"}
             headingId={"heading3"}
             icon={
-              <img className="icon" src={i3} alt="" width="30" height="30" />
+              <img className="icon" src="https://res.cloudinary.com/dena7lqj3/image/upload/v1673044536/modulomocc/nosotros/2_llsl9k.png" alt="" width="30" height="30" />
             }
             title={"Opción 3"}
             text={
@@ -71,7 +65,7 @@ export const Jumbotron = () => {
             id={"item4"}
             headingId={"heading4"}
             icon={
-              <img className="icon" src={i4} alt="" width="30" height="30" />
+              <img className="icon" src="https://res.cloudinary.com/dena7lqj3/image/upload/v1673044536/modulomocc/nosotros/3_uw0ijj.png" alt="" width="30" height="30" />
             }
             title={"Opción 4"}
             text={
@@ -81,7 +75,7 @@ export const Jumbotron = () => {
         </div>
 
         <h2 className="mt-4">OBJETIVOS ESTRATÉGICOS </h2>
-        <img className="image img-fluid" src={raya} alt="" />
+        <img className="image img-fluid" src="https://res.cloudinary.com/dena7lqj3/image/upload/v1673044536/modulomocc/nosotros/raya_uotn89.png" alt="" />
 
         <p>
           <a

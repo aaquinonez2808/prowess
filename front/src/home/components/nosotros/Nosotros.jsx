@@ -1,5 +1,4 @@
 import React from "react";
-
 import { Jumbotron } from "./jumbotron/Jumbotron";
 import { Detalles } from "./detalles/Detalles";
 import Footer from "../footer/Footer"
