@@ -8,22 +8,28 @@ const Curso = ({ curso }) => {
         <div className="card-body">
           <h5 className="card-title mb-0">{curso.nombre}</h5>
         </div>
-        <div class="imagen-contenido-curso flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
+        <div className="imagen-contenido-curso flip-card">
+          <div className="flip-card-inner">
+            <div className="flip-card-front">
               <img
                 src={curso.imagenCurso}
                 className="img-fluid card-img"
                 alt="..."
               />
             </div>
-            <div class="flip-card-back">
-              <p class="title">{curso.aprender[0]}</p>
-              {curso.aprender.map((item, index) => {
-                if (index < 1 || index > 4) return <></>;
+            <div className="flip-card-back">
+              <p className="title">{curso.aprender[0]}</p>
+              <ul>
+                {curso.aprender.map((item, index) => {
+                  if (index < 1 || index > 5) return null;
 
-                return <p key={index}>{item}</p>;
-              })}
+                  return (
+                    <li key={index} className="text-start">
+                      {item}
+                    </li>
+                  );
+                })}
+              </ul>
             </div>
           </div>
         </div>
