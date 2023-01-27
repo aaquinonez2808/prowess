@@ -1,5 +1,4 @@
 import React from "react";
-import boton from "../imgs/aq.png";
 export const Detalles = () => {
   return (
     <div className="container">
@@ -26,7 +25,7 @@ export const Detalles = () => {
       </p>
 
       <div className="img-container d-flex justify-content-center align-items-center">
-        <img className="image img-fluid" src={boton} alt="" />
+        <img className="image img-fluid" src="https://res.cloudinary.com/dena7lqj3/image/upload/v1673044536/modulomocc/nosotros/aq_g7jxag.png" alt="" />
       </div>
     </div>
   );
