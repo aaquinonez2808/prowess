@@ -1,7 +1,4 @@
 import React from "react";
-import raya from "./imgs/raya.png";
-import cel from "./imgs/15.png";
-import boli from "./imgs/16.png";
 import "./estilo.css";
 import { formValidations } from "../../helpers/getValidationContactos";
 import { useForm } from "../../hooks/useForm";
@@ -13,14 +10,11 @@ const formData = {
   telefono: "",
   mensaje: "",
 };
-
-
-
 const Contactos = () => {
   const validation = formValidations;
   const [formSubmitted, setFormSubmitted] = useState(false);
-  const { onInputChange, formState, formValidation,onResetForm, isFormValid, } =
-  useForm(formData, validation);
+  const { onInputChange, formState, formValidation, onResetForm, isFormValid, } =
+    useForm(formData, validation);
   const Registrar = (e) => {
     e.preventDefault();
     setFormSubmitted(true);
@@ -40,7 +34,7 @@ const Contactos = () => {
       <div className="AyudaPage">
         <div className="container">
           <div class="accordion" id="accordionExample" onSubmit={Registrar}>
-            <img className="image" src={raya} alt="" width="500" height="60" />
+            <img className="image" src="https://res.cloudinary.com/dena7lqj3/image/upload/v1670884219/modulomocc/ayudas/raya.png" alt="" width="500" height="60" />
             <h1 className="titu">PROWESS EC</h1>
 
             <div class="accordion-item ">
@@ -51,11 +45,10 @@ const Contactos = () => {
                   data-bs-toggle="collapse"
                   data-bs-target="#collapseOne"
                   aria-expanded="true"
-                  aria-controls="collapseOne"
-                >
+                  aria-controls="collapseOne">
                   <img
                     className="icon"
-                    src={cel}
+                    src="https://res.cloudinary.com/dena7lqj3/image/upload/v1670884219/modulomocc/ayudas/15.png"
                     alt=""
                     width="50"
                     height="40"
@@ -67,8 +60,7 @@ const Contactos = () => {
                 id="collapseOne"
                 class="accordion-collapse collapse "
                 aria-labelledby="headingOne"
-                data-bs-parent="#accordionExample"
-              >
+                data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                   <strong>(593)992847677</strong>
                 </div>
@@ -83,11 +75,10 @@ const Contactos = () => {
                   data-bs-toggle="collapse"
                   data-bs-target="#collapseTwo"
                   aria-expanded="true"
-                  aria-controls="collapseTwo"
-                >
+                  aria-controls="collapseTwo">
                   <img
                     className="icon"
-                    src={boli}
+                    src="https://res.cloudinary.com/dena7lqj3/image/upload/v1670884219/modulomocc/ayudas/16.png"
                     alt=""
                     width="50"
                     height="40"
@@ -99,11 +90,9 @@ const Contactos = () => {
                 id="collapseTwo"
                 class="accordion-collapse collapse"
                 aria-labelledby="headingTwo"
-                data-bs-parent="#accordionExample"
-              >
+                data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                   <strong>Formulario.</strong>
-
                   <form>
                     <div class="form-group row">
                       <label for="inputEmail4" class="col-sm-2 col-form-label">
@@ -112,8 +101,7 @@ const Contactos = () => {
                       <div class="col-sm-10">
                         <select
                           class="form-select"
-                          aria-label="Default select example"
-                        >
+                          aria-label="Default select example">
                           <option selected>Informacion General</option>
                           <option value="1">Registro de Pago</option>
                           <option value="2">Inscripciones</option>
@@ -121,7 +109,6 @@ const Contactos = () => {
                       </div>
                       <p></p>
                     </div>
-
                     <div class="form-group row">
                       <label for="inputEmail3" class="col-sm-2 col-form-label">
                         Nombre
@@ -203,7 +190,6 @@ const Contactos = () => {
                           formValidation.nombreValid}
                       </p>
                     </div>
-
                     <div class="form-group row">
                       <div class="col-sm-10">
                         <button type="submit" class="btn btn-primary">
@@ -218,7 +204,7 @@ const Contactos = () => {
           </div>
         </div>
       </div>
-       
+
     </>
   );
 
