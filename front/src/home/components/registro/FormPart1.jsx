@@ -71,6 +71,7 @@ const FormPart1 = (props) => {
         options={countries}
         title={"Pais"}
         getOptions={getStates}
+        errors={errors}
       />
 
       <div className="form-boton d-flex justify-content-end ">

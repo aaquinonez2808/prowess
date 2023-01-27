@@ -1,11 +1,13 @@
-const Input = ({ name, validation, register, errors, placeholder, type }) => {
+import { formValidations } from "../../helpers/getValidation";
+
+const Input = ({ name, register, errors, placeholder, type }) => {
   return (
     <div className="form-input">
       <input
         type={type}
         name={name}
         placeholder={placeholder}
-        {...register(name)}
+        {...register(name, { ...formValidations[name] })}
         className="form-control"
       />
       {errors[name] && (

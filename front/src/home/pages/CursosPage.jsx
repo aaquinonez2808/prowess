@@ -23,7 +23,7 @@ const CursosPage = () => {
 
   return (
     <>
-      <div className="container-md container-cursos">
+      <div className="container-md container-cursos mb-5">
         <h1 className="text-center mt-5 title-curso">CURSOS {titulo}</h1>
         <p className="text-center mb-5 descripcion-curso">
           Cursos completamente gratuitos en modalidad virtual para emprendedores

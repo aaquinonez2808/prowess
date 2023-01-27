@@ -14,6 +14,7 @@ const FormPart2 = (props) => {
         options={states}
         title={"Provincia"}
         getOptions={getCities}
+        errors={errors}
       />
 
       <SelectInput
@@ -21,6 +22,7 @@ const FormPart2 = (props) => {
         name={"city"}
         options={cities}
         title={"Ciudad"}
+        errors={errors}
       />
 
       <SelectInput
@@ -34,6 +36,7 @@ const FormPart2 = (props) => {
           { id: "100", name: "Mayor a 45" },
         ]}
         title={"Edad"}
+        errors={errors}
       />
 
       <Input
@@ -61,6 +64,7 @@ const FormPart2 = (props) => {
           { id: "B", name: "Categoria B" },
         ]}
         title={"Cursos"}
+        errors={errors}
       />
 
       <SelectInput
@@ -75,6 +79,7 @@ const FormPart2 = (props) => {
           { id: "Youtube", name: "Youtube" },
         ]}
         title={"¿Como se entero?"}
+        errors={errors}
       />
 
       <div className="d-flex gap-4 ps-4">
@@ -84,6 +89,7 @@ const FormPart2 = (props) => {
           value={"male"}
           label={"Masculino"}
           register={register}
+          errors={errors}
         />
         <RadioInput
           type={"radio"}
@@ -91,6 +97,7 @@ const FormPart2 = (props) => {
           value={"famale"}
           label={"Femenino"}
           register={register}
+          errors={errors}
         />
       </div>
 
@@ -101,6 +108,7 @@ const FormPart2 = (props) => {
           label={"He Leído y Acepto los"}
           value={"true"}
           register={register}
+          errors={errors}
         />
         <a href="/terminos" target="_blank" rel="noreferrer" className="ms-1">
           Términos y Condiciones

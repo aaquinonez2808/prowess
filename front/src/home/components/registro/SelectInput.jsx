@@ -1,12 +1,13 @@
+import { formValidations } from "../../helpers/getValidation";
+
 const SelectInput = (props) => {
-  const { register, name, options, errors, validation, title, getOptions } =
-    props;
+  const { register, name, options, errors, title, getOptions } = props;
   return (
     <div className="form-regist-select">
       <select
         className="form-select"
         name={name}
-        {...register(name)}
+        {...register(name, { ...formValidations[name] })}
         onChange={getOptions}
       >
         <option value={title}>{title}</option>
@@ -17,6 +18,11 @@ const SelectInput = (props) => {
             </option>
           ))}
       </select>
+      {errors[name] && (
+        <span className="mensajeError">
+          {console.log(errors[name].message)}
+        </span>
+      )}
     </div>
   );
 };

@@ -7,11 +7,9 @@ import { postUser } from "../../services/PruebaMoodle";
 //import { NavbarRedes } from "../components/navbar/NavbarRedes";
 import FormPart1 from "../components/registro/FormPart1";
 import FormPart2 from "../components/registro/FormPart2";
-import { formValidations } from "../helpers/getValidation";
 
 function RegistroPage() {
   const [page, setPage] = useState(1);
-  const validation = formValidations;
   const navigate = useNavigate();
 
   const [countries, setCountries] = useState([]);
