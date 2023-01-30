@@ -13,21 +13,12 @@
 }
 
 .bgnavbar {
-<<<<<<< HEAD
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    z-index: 1030;
-    background-color: hsl(171, 38%, 37%);
-    font-size: large;
-=======
   display: flex;
   flex-direction: column;
   width: 100%;
   z-index: 1030;
   background-color: #bfe0c7;
   font-size: large;
->>>>>>> 218d29fee5ccdfd45862362604ca0bcc7c86a6d0
 }
 
 .bgnavbar2 {
