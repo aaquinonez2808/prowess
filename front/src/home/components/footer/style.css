@@ -29,8 +29,10 @@
 
 .bg-footer {
     background-color: rgb(32, 31, 31);
-    margin: auto;
-    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    z-index: 1030;
     font-size: large;
 }
 
@@ -40,15 +42,25 @@
 }
 
 .fot-link:hover {
-    color: #FFB89C;
+    color: hsl(171, 38%, 37%);
 }
 
 .derechos-footer{
     background-color: black;
-    margin: auto;
 }
 .texto-derechos{
     font-size: small;
     display: flex;
     justify-content: center;
+}
+.iconos{
+    display: inline;
+    position: relative;
+    left: 65.2%;
+}
+.ul{
+    display: inline;
+}
+.nav-item{
+    display: inline-block;
 }
