@@ -63,7 +63,7 @@ export const HomePage = () => {
         </div>
       </div>
 
-      <div class="container">
+      <div class="container mb-5">
         <Linea />
         <div class="row  card2 p-3  ">
           <div class="col-12  text-center title-curso text-black">
@@ -73,11 +73,7 @@ export const HomePage = () => {
           <div class="col-12  text-center  text-body titleC  text-black">
             <p>PROWESS OFRECE CURSOS DE CAPACITACIÓN EN LAS SIGUENTES AREAS.</p>
           </div>
-        </div>
-      </div>
 
-      <div class="container">
-        <div className="row gx-3 mb-5">
           <div class="col-12 col-md-4">
             <div>
               <img
