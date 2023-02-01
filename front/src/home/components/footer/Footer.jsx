@@ -66,12 +66,12 @@ const Footer = () => {
         </li>      
       </ul>
         <h3 className="texto-footer">
-            Dr. A. S. Luis Simbaña Taipéi
+            Dr.Luis Simbaña Taipe
       </h3>
       <h3 className="texto-footer">
-         Whatsapp:<a className="link-footer" href="https://api.whatsapp.com/send?phone=593998160293&text=Me%20interesa%20saber%20mas%20sobre%20PROWESSEC">(Click aquí ) Para envíarnos un mensaje de WhatsApp +593 99 816 0293.</a></h3>
+         Whatsapp:<a className="link-footer" href="https://api.whatsapp.com/send?phone=593998160293&text=Me%20interesa%20saber%20mas%20sobre%20PROWESSEC">+593 99 816 0293.</a></h3>
       <h3 className="texto-footer">
-         Correo:<a className="link-footer" href="lesimbania@espe.edu.ec">(Clik aquí ) Para envíarnos un mensaje de correo</a></h3>
+         Correo:<a className="link-footer" href="lesimbania@espe.edu.ec">lesimbania@espe.edu.ec</a></h3>
       <div className="derechos-footer">
         <h8 className="texto-derechos">Todos los derechos reservados - Prowess Ecuador 2021</h8> 
       </div>
