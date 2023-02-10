@@ -47,7 +47,7 @@ export const Navbar = () => {
           </button>
           <div className="collapse navbar-collapse" id="collapsibleNavId">
             <ul className="navbar-nav my-2 gap-2 gap-xl-4 ">
-              <li class="nav-item">
+              <li className="nav-item">
                 <NavLink
                   style={{ color: "#4D6066" }}
                   to="/"
@@ -122,7 +122,8 @@ export const Navbar = () => {
                   aria-haspopup="false"
                   aria-expanded="false"
                 >
-                  Ayuda ᐁ<div className="line"></div>
+                  Ayuda <span className="arrow-down"></span>
+                  <div className="line"></div>
                 </NavLink>
                 <div
                   className="dropdown-menu ml-2"

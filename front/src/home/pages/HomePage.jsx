@@ -144,9 +144,9 @@ export const HomePage = () => {
           </p>
           <div class="row card1 p-3 d-flex justify-content-center align-items-center mb-5">
             <div class="col-12 col-lg-6 text-center text-white">
-              <h1 className="title-curso text-white ">
+              <div className="title-curso text-white ">
                 <h1>¿POR QUÉ ESTUDIAR CON NOSOSTROS?</h1>
-              </h1>
+              </div>
               <p className="text-white text-center titleC">
                 Te ofrecemos cursos con tutores capacitados, y certificados
                 avalados por la universidad de las fuerzas armadas "ESPE"
