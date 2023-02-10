@@ -1,7 +1,4 @@
 import React from "react";
-
-import raya from "../imgs/raya.png";
-
 //<link rel="stylesheet" href="style.css">
 import "./style.css";
 export const Jumbotron = () => {
@@ -10,7 +7,7 @@ export const Jumbotron = () => {
       <div className="container">
         <h1 className="display-5">Preguntas frecuentes</h1>
 
-        <img className="image" src={raya} alt="" width="500" height="50" />
+        <img className="image" src="https://res.cloudinary.com/dena7lqj3/image/upload/v1670884219/modulomocc/ayudas/raya.png" alt="" width="500" height="50" />
 
         <h5 className="display-100">REGISTRO-SUSCRIPCIÓN</h5>
         <p>
