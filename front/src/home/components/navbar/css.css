@@ -71,6 +71,10 @@ ul li a:hover > .line {
   transition: 0.4s;
 }
 
+ul li a:hover {
+  color: #000 !important;
+}
+
 ul li a:hover > .line::after {
   opacity: 1;
   width: 100%;
@@ -80,6 +84,17 @@ ul li a:hover > .line::after {
 
 .help_icon::after {
   display: none;
+}
+
+.arrow-down {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-bottom: 3px;
+  border: 2px solid #666565;
+  border-top: 0;
+  border-left: 0;
+  transform: rotate(45deg);
 }
 
 @media (max-width: 768px) {
